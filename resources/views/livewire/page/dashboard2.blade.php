@@ -9,14 +9,14 @@
                 </x-slot>
             </x-dashboard.info-card>
 
-            <x-dashboard.info-card bg="white" title="JUMLAH PERMOHONAN YANG LULUS" value="2" iconbg="green"
-                percentage="33%" footerTitle="Daripada bulan lepas" cardRoute="#">
+            <x-dashboard.info-card bg="white" title="JUMLAH PERMOHONAN YANG LULUS" value="3" iconbg="green"
+                percentage="50%" footerTitle="Daripada bulan lepas" cardRoute="#">
                 <x-slot name="svg">
                     <x-heroicon-o-chart-pie class="h-7 w-7" />
                 </x-slot>
             </x-dashboard.info-card>
 
-            <x-dashboard.info-card bg="white" title="JUMLAH KESELURUHAN ANGGOTA BERDAFTAR" value="25" iconbg="yellow"
+            <x-dashboard.info-card bg="white" title="JUMLAH KESELURUHAN PENGGUNA BERDAFTAR" value="25" iconbg="yellow"
                 percentage="20%" footerTitle="Keseluruhan ahli" cardRoute="#">
                 <x-slot name="svg">
                     <x-heroicon-o-user-group class="h-7 w-7" />

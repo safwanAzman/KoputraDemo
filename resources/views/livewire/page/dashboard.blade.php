@@ -16,7 +16,7 @@
                 </x-slot>
             </x-dashboard.info-card>
 
-            <x-dashboard.info-card bg="white" title="JUMLAH KESELURUHAN ANGGOTA BERDAFTAR" value="25" iconbg="yellow"
+            <x-dashboard.info-card bg="white" title="JUMLAH KESELURUHAN PENGGUNA BERDAFTAR" value="25" iconbg="yellow"
                 percentage="20%" footerTitle="Keseluruhan ahli" cardRoute="#">
                 <x-slot name="svg">
                     <x-heroicon-o-user-group class="h-7 w-7" />
