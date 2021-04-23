@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-
+    
     <!-- Favicon -->
 
     <link rel="stylesheet" href="{{ asset('css/app.css')}}" />
@@ -21,11 +21,12 @@
 
     @livewireStyles
 </head>
-<body>
+<body class="bg-gray-100 ">
     <div class="flex h-screen  " :class="{ 'overflow-hidden': isSideMenuOpen }">
         @include('include.sidebar.desktop')
-        {{-- @include('include.sidebar.mobile') --}}
 
+        {{-- @include('include.sidebar.mobile') --}}
+        
 
         <div class="flex flex-col flex-1 w-full overflow-y-auto">
             @include('include.sidebar.topbar')

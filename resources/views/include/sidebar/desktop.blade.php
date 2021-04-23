@@ -22,7 +22,7 @@
             @include('include.sidebar.siskop.desktop')
         @endif
 
-        @if(Route::current()->uri == "adminkoputra")
+        @if(Route::current()->uri == "adminkoputra" || \Request::is("adminkoputra/*") )
             @include('include.sidebar.adminkoputra.desktop')
         @endif
 

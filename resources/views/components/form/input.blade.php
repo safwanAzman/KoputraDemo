@@ -7,7 +7,7 @@
 
     <div class="flex mt-1 mb-2 rounded-md shadow-sm">
         <input
-            type="{{ $type }}" {{ $attributes }}
+            type="{{ $type }}" {{ $attributes }} value="{{$value}}"
             class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5  {{ ($errors->has($value)) ? 'border-red-300 bg-red-50 text-red-900' : ''}}"
         >
     </div>
