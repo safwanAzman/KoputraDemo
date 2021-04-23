@@ -43,14 +43,42 @@ Route::middleware('guest')->group(function () {
 
     Route::get('alk', [AlkController::class, 'index'])->name('alk');
 
+    //SISKOP
+    Route::group([
+        'prefix'        => 'siskop',
+        'as'            => 'siskop.',
+    ], function (){
+        Route::get('/', [SiskopController::class, 'index'])->name('index');
+        Route::group([
+            'prefix'        => 'member',
+            'as'            => 'member.',
+        ], function (){
+            Route::get('/', [SiskopController::class, 'member_index'])->name('index');
+        });
 
+        Route::group([
+            'prefix'        => 'finance',
+            'as'            => 'finance.',
+        ], function (){
+            Route::get('/', [SiskopController::class, 'finance_index'])->name('index');
+        });
 
-    Route::get('siskop', [SiskopController::class, 'index'])->name('siskop');
+        Route::get('firasat', [SiskopController::class, 'firasat_index'])->name('firasat.index');
+        Route::group([
+            'prefix'        => 'teller',
+            'as'            => 'teller.',
+        ], function (){
+            Route::get('/', [SiskopController::class, 'teller_index'])->name('index');
+        });
 
-
-
-
-
+        Route::group([
+            'prefix'        => 'report',
+            'as'            => 'report.',
+        ], function (){
+            Route::get('/', [SiskopController::class, 'report_index'])->name('index');
+        });
+    });
+    //ENDSISKOP
     Route::get('home', [DashboardController::class, 'index'])->name('home');
     Route::get('home2', [DashboardController::class, 'index2'])->name('home2');
     Route::get('login', Login::class) ->name('login');
