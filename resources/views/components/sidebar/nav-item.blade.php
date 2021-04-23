@@ -1,6 +1,6 @@
 
 <li class="relative px-2 py-1 ">
-    <a class="inline-flex items-center w-full text-sm font-semibold   cursor-pointer
+    <a class="inline-flex items-center w-full text-sm font-semibold   cursor-pointer hover:text-indigo-600
         @if(Route::current()->uri == $uri)
         bg-indigo-600 p-1 rounded-lg text-white
         @else
