@@ -35,7 +35,7 @@
                 </div>
             </a>
 
-            <a href="{{route('siskop')}}" class="p-2 text-center cursor-pointer">
+            <a href="{{route('siskop.index')}}" class="p-2 text-center cursor-pointer">
                 <div
                     class="py-16 w-64 rounded-lg overflow-hidden shadow-lg bg-teal-600 transform  hover:scale-105 transition duration-300 ">
                     <div class="space-y-10">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </a>
-            
+
         </div>
     </div>
 

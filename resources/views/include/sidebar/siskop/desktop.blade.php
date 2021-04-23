@@ -13,7 +13,7 @@
         <div class="text-indigo-600">
             <div class="flex p-2">
                 <div class="flex py-3 px-2">
-                    <x-logo class="w-8 h-8 " /> 
+                    <x-logo class="w-8 h-8 " />
                     <p class="ml-2 font-semibold italic">SISKOP</p>
                 </div>
             </div>
@@ -21,11 +21,31 @@
                 <ul class="mt-6 leading-10">
 
                     <!-- Siskop nav item Start -->
-                        <x-sidebar.nav-item title="Siskop" route="#" uri="">
+                        <x-sidebar.nav-item title="Siskop" route="{{route('siskop.index')}}" uri="">
+                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                        </x-sidebar.nav-item>
+
+                        <x-sidebar.nav-item title="Member" route="{{route('siskop.member.index')}}" uri="">
+                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                        </x-sidebar.nav-item>
+
+                        <x-sidebar.nav-item title="Finance" route="{{route('siskop.finance.index')}}" uri="">
+                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                        </x-sidebar.nav-item>
+
+                        <x-sidebar.nav-item title="Teller" route="{{route('siskop.teller.index')}}" uri="">
+                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                        </x-sidebar.nav-item>
+
+                        <x-sidebar.nav-item title="Firasat" route="{{route('siskop.firasat.index')}}" uri="">
+                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                        </x-sidebar.nav-item>
+
+                        <x-sidebar.nav-item title="Report" route="{{route('siskop.report.index')}}" uri="">
                             <x-heroicon-o-chart-pie class="w-7 h-7" />
                         </x-sidebar.nav-item>
                     <!-- Siskop nav item End -->
-                    
+
                 </ul>
             </div>
         </div>

@@ -18,15 +18,15 @@
             @include('include.sidebar.alk.desktop')
         @endif
 
-        @if(Route::current()->uri == "siskop")
+        @if(substr(Route::current()->uri,0,6) == "siskop")
             @include('include.sidebar.siskop.desktop')
         @endif
 
         @if(Route::current()->uri == "adminkoputra")
             @include('include.sidebar.adminkoputra.desktop')
         @endif
-    
-        {{-- 
+
+        {{--
             <x-sidebar.dropdown-nav-item active="open" title="PERFORMANCE" uri="stock/*">
                 <x-slot name="icon">
                     <x-heroicon-o-archive class="w-7 h-7" />
