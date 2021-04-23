@@ -6,52 +6,52 @@
                     <a href="{{route('members')}}" class="flex px-4 py-1 text-sm font-bold text-white bg-indigo-600  hover:bg-indigo-700 rounded">
                         <div class="flex items-center space-x-2">
                             <x-heroicon-o-arrow-left class="w-4 h-4" /> 
-                            <p>Kembali</p>
+                            <p>Return</p>
                         </div>
                     </a>
                 </div>
                 <x-form.basic-form>
                     <x-slot name="content">
                         <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">
-                            <x-form.input label="Nama"  value="" />
-                            <x-form.input label="No K/P"  value="" />
+                            <x-form.input label="Name" wire:model="" value="" />
+                            <x-form.input label="IC No." wire:model="" value="" />
                             <div>
-                                <span class="block text-sm font-semibold leading-5 text-gray-700">Jantina</span>
+                                <span class="block text-sm font-semibold leading-5 text-gray-700">Gender</span>
                                 <div class="mt-2">
                                     <label class="inline-flex items-center">
                                         <input type="radio" class="form-radio" name="name" value="l">
-                                        <span class="ml-2 text-sm text-gray-700">Lelaki</span>
+                                        <span class="ml-2 text-sm text-gray-700">Male</span>
                                     </label>
                                     <label class="inline-flex items-center ml-6">
                                         <input type="radio" class="form-radio" name="name" value="">
-                                        <span class="ml-2 text-sm text-gray-700">Perempuan</span>
+                                        <span class="ml-2 text-sm text-gray-700">Female</span>
                                     </label>
                                 </div>
                             </div>
-                            <x-form.dropdown label="Bangsa" default="yes" value="" >
+                            <x-form.dropdown label="Race" default="yes" value="" wire:model="">
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Agama" default="yes" value="" >
+                            <x-form.dropdown label="Religion" default="yes" value="" wire:model="">
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Warganegara" default="yes" value="" >
+                            <x-form.dropdown label="Citizen" default="yes" value="" wire:model="">
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Taraf Perkahwinan" default="yes" value="" >
+                            <x-form.dropdown label="Marital Status" default="yes" value="" wire:model="">
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Jenis Kediaman" default="yes" value="" >
-                                <option value="">Kediaman Sendiri</option>
-                                <option value="">Keluarga</option>
-                                <option value="">Sewa</option>
-                                <option value="">Lain-lain</option>
+                            <x-form.dropdown label="Residence Type" default="yes" value="" wire:model="">
+                                <option value="">Own</option>
+                                <option value="">Family</option>
+                                <option value="">Rental</option>
+                                <option value="">Others</option>
                             </x-form.dropdown>
-                            <x-form.input label="Bil.Tanggungan"  value="" />
-                            <x-form.input label="Tel.Bimbit"  value="" />
-                            <x-form.input label="Tel.Kediaman"  value="" />
-                            <x-form.input label="No Akaun/Bank"  value="" />
-                            <x-form.input label="Email Perabadi"  value="" />
-                            <x-form.input label="Email Pejabat"  value="" />
+                            <x-form.input label="Total Liabilities" wire:model="" value="" />
+                            <x-form.input label="Phone No. (HP)" wire:model="" value="" />
+                            <x-form.input label="Phone No. (Home)" wire:model="" value="" />
+                            <x-form.input label="Account Bank No." wire:model="" value="" />
+                            <x-form.input label="Personal Email" wire:model="" value="" />
+                            <x-form.input label="Office/Work Email" wire:model="" value="" />
                         </x-general.grid>
                         <x-form.address class="" label="Address" value1="" value2="" value3="" value4="" value5=""
                             value6="" condition="state" />
@@ -60,7 +60,7 @@
                             <a href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
                                 <div class="flex items-center space-x-2">
                                     <x-heroicon-o-save class="w-4 h-4" /> 
-                                    <p>Simpan</p>
+                                    <p>Save</p>
                                 </div>
                             </a>
                         </div>
@@ -72,6 +72,6 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg="" title="Daftar Member" />
+        <x-general.header bgimg="" title="Register Member" />
     </div>
 </div>
