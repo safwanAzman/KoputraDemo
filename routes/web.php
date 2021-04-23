@@ -14,8 +14,8 @@ use App\Http\Controllers\DashboardController;
 
 use App\Http\Controllers\MembersController;
 use App\Http\Controllers\AdminKoputraController;
-use App\Http\Controllers\AkkController;
 use App\Http\Controllers\SiskopController;
+use App\Http\Controllers\AlkController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ Route::middleware('guest')->group(function () {
 
     Route::get('members', [MembersController::class, 'index'])->name('members');
     Route::get('adminkoputra', [AdminKoputraController::class, 'index'])->name('adminkoputra');
-    Route::get('akk', [AkkController::class, 'index'])->name('akk');
+    Route::get('alk', [AlkController::class, 'index'])->name('alk');
     Route::get('siskop', [SiskopController::class, 'index'])->name('siskop');
 
 

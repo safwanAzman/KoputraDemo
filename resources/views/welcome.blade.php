@@ -22,13 +22,13 @@
                 </div>
             </a>
 
-            <a href="{{route('akk')}}" class="p-2 text-center cursor-pointer">
+            <a href="{{route('alk')}}" class="p-2 text-center cursor-pointer">
                 <div
                     class="py-16 w-64 rounded-lg overflow-hidden shadow-lg bg-yellow-400 transform  hover:scale-105 transition duration-300 ">
                     <div class="space-y-10">
                         <div class="px-6 py-4">
                             <div class="space-y-5">
-                                <div class="font-bold text-2xl mb-2 text-white">AKK</div>
+                                <div class="font-bold text-2xl mb-2 text-white">ALK</div>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
 @extends('default.default')
 @section('content')
-    <livewire:page.akk.index />
+    <livewire:page.alk.index />
 @endsection

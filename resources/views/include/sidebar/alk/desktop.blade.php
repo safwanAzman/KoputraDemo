@@ -14,31 +14,18 @@
             <div class="flex p-2">
                 <div class="flex py-3 px-2">
                     <x-logo class="w-8 h-8 " /> 
-                    <p class="ml-2 font-semibold italic">KOPUTRA DEMO</p>
+                    <p class="ml-2 font-semibold italic">ALK</p>
                 </div>
             </div>
             <div>
                 <ul class="mt-6 leading-10">
 
-                    <!-- members nav item Start -->
-                        <x-sidebar.nav-item title="members" route="#" uri="">
+                    <!-- Alk nav item Start -->
+                        <x-sidebar.nav-item title="ALk" route="#" uri="">
                             <x-heroicon-o-chart-pie class="w-7 h-7" />
                         </x-sidebar.nav-item>
-                    <!-- members nav item End -->
+                    <!-- Alk nav item End -->
 
-                    {{--                     
-                    <x-sidebar.dropdown-nav-item active="open" title="PERFORMANCE" uri="stock/*">
-                        <x-slot name="icon">
-                            <x-heroicon-o-archive class="w-7 h-7" />
-                        </x-slot>
-                        <div class="leading-5">
-                            <x-sidebar.dropdown-item title="PRESTASI KESELURUHAN" href="#" uri="#">
-                                <x-slot name="icon">
-                                    <x-heroicon-o-cube class="w-5 h-5" />
-                                </x-slot>
-                            </x-sidebar.dropdown-item>
-                    </x-sidebar.dropdown-nav-item> --}}
-                    
                 </ul>
             </div>
         </div>
