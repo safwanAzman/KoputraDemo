@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DashboardController;
 
+use App\Http\Controllers\MembersController;
+use App\Http\Controllers\AdminKoputraController;
+use App\Http\Controllers\AkkController;
+use App\Http\Controllers\SiskopController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,9 +28,17 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', [DashboardController::class, 'index'])->name('home');
+Route::view('/', 'welcome')->name('wellcome');
 
 Route::middleware('guest')->group(function () {
+
+    Route::get('members', [MembersController::class, 'index'])->name('members');
+    Route::get('adminkoputra', [AdminKoputraController::class, 'index'])->name('adminkoputra');
+    Route::get('akk', [AkkController::class, 'index'])->name('akk');
+    Route::get('siskop', [SiskopController::class, 'index'])->name('siskop');
+
+
+
     Route::get('home', [DashboardController::class, 'index'])->name('home');
     Route::get('home2', [DashboardController::class, 'index2'])->name('home2');
     Route::get('login', Login::class) ->name('login');

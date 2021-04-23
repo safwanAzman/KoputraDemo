@@ -7,10 +7,12 @@ use Illuminate\View\Component;
 class header extends Component
 {
     public $bgimg;
+    public $title;
     
-    public function __construct($bgimg)
+    public function __construct($bgimg,$title)
     {
-        $this->bgimg = $bgimg; 
+        $this->bgimg = $bgimg;
+        $this->title = $title; 
     }
 
     

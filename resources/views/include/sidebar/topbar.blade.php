@@ -66,12 +66,12 @@
                             aria-label="submenu">
                             <li class="flex">
                                 <a class=" text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
-                                    href="#">
-                                    <x-heroicon-o-user class="w-5 h-5 mr-2" />
-                                    <span>Profile</span>
+                                    href="{{route('wellcome')}}">
+                                    <x-heroicon-o-home class="w-5 h-5 mr-2" />
+                                    <span>Main Page</span>
                                 </a>
                             </li>
-                            <li class="flex">
+                            {{-- <li class="flex">
                                 <a class="text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
                                     href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -83,7 +83,7 @@
                                     style="display: none;">
                                     @csrf
                                 </form>
-                            </li>
+                            </li> --}}
                         </ul>
                     </template>
                 </li>
