@@ -23,26 +23,7 @@
 </head>
 <body>
     <div class="flex h-screen  " :class="{ 'overflow-hidden': isSideMenuOpen }">
-        {{-- @include('include.sidebar.desktop') --}}
-
-        @if(Route::current()->uri == "members")
-            @include('include.sidebar.member.desktop')
-        @endif
-
-        @if(Route::current()->uri == "alk")
-            @include('include.sidebar.alk.desktop')
-        @endif
-
-        @if(Route::current()->uri == "siskop")
-            @include('include.sidebar.siskop.desktop')
-        @endif
-
-        @if(Route::current()->uri == "adminkoputra")
-            @include('include.sidebar.adminkoputra.desktop')
-        @endif
-
-
-
+        @include('include.sidebar.desktop')
         {{-- @include('include.sidebar.mobile') --}}
         
 
