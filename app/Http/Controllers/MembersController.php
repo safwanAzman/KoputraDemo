@@ -10,4 +10,9 @@ class MembersController extends Controller
     {
         return view ('pages.member.index');
     }
+
+    public function create()
+    {
+        return view ('pages.member.create');
+    }
 }

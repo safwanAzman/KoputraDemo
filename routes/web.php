@@ -33,9 +33,21 @@ Route::view('/', 'welcome')->name('wellcome');
 Route::middleware('guest')->group(function () {
 
     Route::get('members', [MembersController::class, 'index'])->name('members');
+    Route::get('members/create', [MembersController::class, 'create'])->name('members-create');
+
+
+
     Route::get('adminkoputra', [AdminKoputraController::class, 'index'])->name('adminkoputra');
+
+
+
     Route::get('alk', [AlkController::class, 'index'])->name('alk');
+
+
+
     Route::get('siskop', [SiskopController::class, 'index'])->name('siskop');
+
+
 
 
 
