@@ -10,4 +10,9 @@ class AdminKoputraController extends Controller
     {
         return view ('pages.adminkoputra.index');
     }
+
+    public function tetapan()
+    {
+        return view ('pages.adminkoputra.tetapan');
+    }
 }

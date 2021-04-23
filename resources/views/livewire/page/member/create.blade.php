@@ -13,8 +13,8 @@
                 <x-form.basic-form>
                     <x-slot name="content">
                         <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">
-                            <x-form.input label="Nama" wire:model="" value="" />
-                            <x-form.input label="No K/P" wire:model="" value="" />
+                            <x-form.input label="Nama"  value="" />
+                            <x-form.input label="No K/P"  value="" />
                             <div>
                                 <span class="block text-sm font-semibold leading-5 text-gray-700">Jantina</span>
                                 <div class="mt-2">
@@ -28,36 +28,36 @@
                                     </label>
                                 </div>
                             </div>
-                            <x-form.dropdown label="Bangsa" default="yes" value="" wire:model="">
+                            <x-form.dropdown label="Bangsa" default="yes" value="" >
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Agama" default="yes" value="" wire:model="">
+                            <x-form.dropdown label="Agama" default="yes" value="" >
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Warganegara" default="yes" value="" wire:model="">
+                            <x-form.dropdown label="Warganegara" default="yes" value="" >
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Taraf Perkahwinan" default="yes" value="" wire:model="">
+                            <x-form.dropdown label="Taraf Perkahwinan" default="yes" value="" >
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Jenis Kediaman" default="yes" value="" wire:model="">
+                            <x-form.dropdown label="Jenis Kediaman" default="yes" value="" >
                                 <option value="">Kediaman Sendiri</option>
                                 <option value="">Keluarga</option>
                                 <option value="">Sewa</option>
                                 <option value="">Lain-lain</option>
                             </x-form.dropdown>
-                            <x-form.input label="Bil.Tanggungan" wire:model="" value="" />
-                            <x-form.input label="Tel.Bimbit" wire:model="" value="" />
-                            <x-form.input label="Tel.Kediaman" wire:model="" value="" />
-                            <x-form.input label="No Akaun/Bank" wire:model="" value="" />
-                            <x-form.input label="Email Perabadi" wire:model="" value="" />
-                            <x-form.input label="Email Pejabat" wire:model="" value="" />
+                            <x-form.input label="Bil.Tanggungan"  value="" />
+                            <x-form.input label="Tel.Bimbit"  value="" />
+                            <x-form.input label="Tel.Kediaman"  value="" />
+                            <x-form.input label="No Akaun/Bank"  value="" />
+                            <x-form.input label="Email Perabadi"  value="" />
+                            <x-form.input label="Email Pejabat"  value="" />
                         </x-general.grid>
                         <x-form.address class="" label="Address" value1="" value2="" value3="" value4="" value5=""
                             value6="" condition="state" />
 
                         <div class="flex justify-center mt-8">
-                            <a href="{{route('members')}}" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
+                            <a href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
                                 <div class="flex items-center space-x-2">
                                     <x-heroicon-o-save class="w-4 h-4" /> 
                                     <p>Simpan</p>

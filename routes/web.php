@@ -38,6 +38,7 @@ Route::middleware('guest')->group(function () {
 
 
     Route::get('adminkoputra', [AdminKoputraController::class, 'index'])->name('adminkoputra');
+    Route::get('adminkoputra/tetapan', [AdminKoputraController::class, 'tetapan'])->name('tetapan');
 
 
 
