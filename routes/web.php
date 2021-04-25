@@ -31,18 +31,17 @@ use App\Http\Controllers\AlkController;
 Route::view('/', 'welcome')->name('wellcome');
 
 Route::middleware('guest')->group(function () {
-
+    //MEMBER
     Route::get('members', [MembersController::class, 'index'])->name('members');
     Route::get('members/create', [MembersController::class, 'create'])->name('members-create');
     Route::get('members/produk', [MembersController::class, 'produk'])->name('members-produk');
+    Route::get('members/produk/trading/makananTersedia', [MembersController::class, 'tradingMakananTersedia'])->name('members.product.trading.makananTersedia');
 
-
-
+    //ADMIN
     Route::get('adminkoputra', [AdminKoputraController::class, 'index'])->name('adminkoputra');
     Route::get('adminkoputra/tetapan', [AdminKoputraController::class, 'tetapan'])->name('tetapan');
 
-
-
+    //ALK
     Route::get('alk', [AlkController::class, 'index'])->name('alk');
 
     //SISKOP

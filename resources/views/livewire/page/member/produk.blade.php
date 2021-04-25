@@ -121,7 +121,7 @@
                             <x-page.member.dashboard-product-card type="trading" title="KURMA ABYAR" description="9.50" img="kurma.jpg"/>
                             <x-page.member.dashboard-product-card type="trading" title="KUIH BANGKIT CHEESE" description="18.99" img="bangkit_cheese.jpg"/>
                             <x-page.member.dashboard-product-card type="trading" title="KUIH TART" description="23.00" img="tart.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" img="masakan_segera.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" img="masakan_segera.jpg" route="{{ route('members.product.trading.makananTersedia') }}"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN BERCAGARKAN EMAS" description="5.00% p.a" img="emas.png"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN CASH-i PLUS" description="5.00% p.a" img="cash-i.png"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN KENDERAAN (PERODUA)" description="3.90% p.a" img="kereta_perodua.png"/>
@@ -141,7 +141,7 @@
 
                     <x-tab2.nav-content2 name="2">
                         <x-page.member.dashboard-grid>
-                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" img="masakan_segera.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" img="masakan_segera.jpg" route="{{ route('members.product.trading.makananTersedia') }}"/>
                             <x-page.member.dashboard-product-card type="trading" title="KURMA ABYAR" description="9.50" img="kurma.jpg"/>
                             <x-page.member.dashboard-product-card type="trading" title="KUIH BANGKIT CHEESE" description="18.99" img="bangkit_cheese.jpg"/>
                             <x-page.member.dashboard-product-card type="trading" title="KUIH TART" description="23.00" img="tart.jpg"/>
