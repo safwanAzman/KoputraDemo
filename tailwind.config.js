@@ -8,7 +8,12 @@ module.exports = {
             },
         },
     },
-    variants: {},
+    variants: {
+        extend: {
+            divideColor: ['group-hover'],
+            borderRadius: ['hover'],
+        }
+    },
     purge: {
         content: [
             './app/**/*.php',
