@@ -20,4 +20,14 @@ class MembersController extends Controller
     {
         return view ('pages.member.produk');
     }
+
+    public function tradingMakananTersedia()
+    {
+        return view('pages.member.produk.trading.makananTersedia');
+    }
+
+    public function tradingMakananTersediaBuy()
+    {
+        return view('pages.member.produk.trading.makananTersediaBuy');
+    }
 }
