@@ -36,6 +36,7 @@ Route::middleware('guest')->group(function () {
     Route::get('members/create', [MembersController::class, 'create'])->name('members-create');
     Route::get('members/produk', [MembersController::class, 'produk'])->name('members-produk');
     Route::get('members/produk/trading/makananTersedia', [MembersController::class, 'tradingMakananTersedia'])->name('members.product.trading.makananTersedia');
+    Route::get('members/produk/trading/makananTersedia/buy', [MembersController::class, 'tradingMakananTersediaBuy'])->name('members.product.trading.makananTersedia.buy');
 
     //ADMIN
     Route::get('adminkoputra', [AdminKoputraController::class, 'index'])->name('adminkoputra');

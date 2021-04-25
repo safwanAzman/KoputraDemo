@@ -25,7 +25,7 @@
                         </div>
                         <div class="grid grid-cols-4 gap-6 mt-6 sm:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
                             <button class="flex items-center justify-center w-full h-24 bg-gray-100 rounded-lg focus:outline-none md:h-32">
-                                <img src="{{ url('/img/member/masakan_segera.jpg')}}" class="w-full h-full bg-cover" @click="imageUrl = '{{ url('/img/member/masakan_segera.jpg')}}'" />
+                                <img src="{{ url('/img/member/masakan_segera.jpg')}}" class="w-full h-full bg-cover" @click="imageUrl = '{{ url('/img/member/masakan_segera.jpg') }}'" />
                             </button>
                             <button
                                 class="flex items-center justify-center w-full h-24 bg-gray-100 rounded-lg focus:outline-none md:h-32">
@@ -78,7 +78,7 @@
                                 </div>
 
                                 <div class="flex">
-                                    <a href="#" class="items-center px-6 py-4 font-semibold text-white bg-green-400 cursor-pointer rounded-xl hover:bg-green-300 focus:outline-none">
+                                    <a href="{{ route('members.product.trading.makananTersedia.buy') }}" class="items-center px-6 py-4 font-semibold text-white bg-green-400 cursor-pointer rounded-xl hover:bg-green-300 focus:outline-none">
                                         Buy Now
                                     </a>
                                     <a href="#" class="items-center px-6 py-4 ml-2 font-semibold text-white bg-yellow-400 cursor-pointer rounded-xl hover:bg-yellow-300 focus:outline-none">
