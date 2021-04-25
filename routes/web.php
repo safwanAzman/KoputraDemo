@@ -34,6 +34,7 @@ Route::middleware('guest')->group(function () {
 
     Route::get('members', [MembersController::class, 'index'])->name('members');
     Route::get('members/create', [MembersController::class, 'create'])->name('members-create');
+    Route::get('members/produk', [MembersController::class, 'produk'])->name('members-produk');
 
 
 

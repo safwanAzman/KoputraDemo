@@ -15,4 +15,9 @@ class MembersController extends Controller
     {
         return view ('pages.member.create');
     }
+
+    public function produk()
+    {
+        return view ('pages.member.produk');
+    }
 }
