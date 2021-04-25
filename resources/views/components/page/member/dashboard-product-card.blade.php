@@ -30,14 +30,14 @@
     <div>
         <div class="flex -mt-px divide-x divide-gray-200 ">
             @if ($type == 'financing')
-                <div class="flex flex-1 w-0 hover:bg-green-400 group">
+                <div class="flex flex-1 w-0 rounded-bl-lg hover:bg-green-400 group">
                     <div class="relative inline-flex items-center justify-center flex-1 w-0 py-4 -mr-px text-sm font-medium text-gray-700 border border-transparent rounded-bl-lg cursor-pointer hover:text-gray-500">
                         <x-heroicon-s-pencil-alt class="w-5 h-5 text-gray-400 group-hover:text-white"/>
                         <span class="ml-3 group-hover:text-white">Apply Now</span>
                     </div>
                 </div>
             @elseif  ($type == 'trading')
-                <div class="flex flex-1 w-0 hover:bg-green-400 group">
+                <div class="flex flex-1 w-0 rounded-bl-lg hover:bg-green-400 group">
                     <div class="relative inline-flex items-center justify-center flex-1 w-0 py-4 -mr-px text-sm font-medium text-gray-700 border border-transparent rounded-bl-lg cursor-pointer hover:text-gray-500">
                         <x-heroicon-s-shopping-bag class="w-5 h-5 text-gray-400 group-hover:text-white"/>
                         <span class="ml-3 group-hover:text-white">Buy Now</span>
@@ -50,14 +50,14 @@
                     </div>
                 </div>
             @elseif  ($type == 'homestay')
-                <div class="flex flex-1 w-0 hover:bg-green-400 group">
+                <div class="flex flex-1 w-0 rounded-bl-lg hover:bg-green-400 group">
                     <div class="relative inline-flex items-center justify-center flex-1 w-0 py-4 -mr-px text-sm font-medium text-gray-700 border border-transparent rounded-bl-lg cursor-pointer hover:text-gray-500">
-                        <x-heroicon-s-shopping-bag class="w-5 h-5 text-gray-400 group-hover:text-white"/>
+                        <x-heroicon-s-key class="w-5 h-5 text-gray-400 group-hover:text-white"/>
                         <span class="ml-3 group-hover:text-white">Book Now</span>
                     </div>
                 </div>
             @endif
-            <div class="flex flex-1 w-0 -ml-px hover:bg-blue-400 group">
+            <div class="flex flex-1 w-0 -ml-px rounded-br-lg hover:bg-blue-400 group">
                 <div class="relative inline-flex items-center justify-center flex-1 w-0 py-4 text-sm font-medium text-gray-700 border border-transparent rounded-br-lg cursor-pointer hover:text-gray-500">
                     <x-heroicon-s-information-circle class="w-5 h-5 text-gray-400 group-hover:text-white"/>
                     <span class="ml-3 group-hover:text-white">Details</span>
