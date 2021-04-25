@@ -9,7 +9,7 @@
             <h1>TITILE</h1>
         </div>
         <div class="flex justify-center  flex-col md:flex-row w-full lg:space-x-2 space-y-2 lg:space-y-0 mb-2 lg:mb-4">
-            <a href="{{route('members')}}" class="p-2 text-center cursor-pointer">
+            <a href="{{route('members-produk')}}" class="p-2 text-center cursor-pointer">
                 <div
                     class="py-16 w-64 rounded-lg overflow-hidden shadow-lg bg-pink-600 transform  hover:scale-105 transition duration-300 ">
                     <div class="space-y-10">
