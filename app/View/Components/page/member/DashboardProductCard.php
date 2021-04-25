@@ -11,16 +11,18 @@ class DashboardProductCard extends Component
     public $description;
     public $description2;
     public $img;
-    public $route;
+    public $routeBuy;
+    public $routeDetails;
 
-    public function __construct($type, $title, $description, $description2 = NULL, $img, $route = NULL)
+    public function __construct($type, $title, $description, $description2 = NULL, $img, $routeBuy = '#', $routeDetails = NULL)
     {
         $this->type = $type;
         $this->title = $title;
         $this->description = $description;
         $this->description2 = $description2;
         $this->img = $img;
-        $this->route = $route;
+        $this->routeBuy = $routeBuy;
+        $this->routeDetails = $routeDetails;
     }
 
     public function render()
