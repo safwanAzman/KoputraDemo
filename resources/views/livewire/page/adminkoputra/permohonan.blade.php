@@ -11,8 +11,8 @@
 
                                     <!-- Start Top Navigation -->
                                     <div class="px-4 py-4 border-b-2">
-                                        <div class="flex justify-between">
-                                            <div class="mb-1 text-xs font-bold leading-tight tracking-wide text-gray-500 uppercase"
+                                        <div class="flex justify-end">
+                                            <div class="mb-1 text-lg font-bold leading-tight tracking-wide text-white bg-indigo-600 p-4 rounded-md uppercase"
                                                 x-text="`Step: ${step} of 2`"></div>
                                         </div>
                                     </div>
