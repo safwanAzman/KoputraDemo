@@ -1,4 +1,4 @@
-<header class="z-30 py-4 bg-indigo-600 ">
+<header class="py-4 bg-indigo-600 ">
     <div class="flex items-center justify-between h-8 px-6 mx-auto">
             <!-- Mobile hamburger -->
             <button class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
@@ -33,7 +33,7 @@
                         <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
                             x-transition:leave-end="opacity-0" @click.away="closeNotificationsMenu"
                             @keydown.escape="closeNotificationsMenu"
-                            class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white rounded-md shadow-md">
+                            class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white rounded-md shadow-md z-50">
                             <li class="flex">
                                 <a class="text-gray-500 inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md "
                                     href="#">
@@ -62,7 +62,7 @@
                         <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
                             x-transition:leave-end="opacity-0" @click.away="closeProfileMenu"
                             @keydown.escape="closeProfileMenu"
-                            class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border rounded-md shadow-md"
+                            class="z-50 absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border rounded-md shadow-md"
                             aria-label="submenu">
                             <li class="flex">
                                 <a class=" text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
