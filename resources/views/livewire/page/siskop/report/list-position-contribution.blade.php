@@ -39,19 +39,27 @@
 
                             <tr>
                                 <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
-                                    <p class="text-xs"></p>
+                                    <p class="text-xs">1888</p>
                                 </x-general.table-body>
 
                                 <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                                    <p class="text-xs"></p>
+                                    <p class="text-xs uppercase">A Majid Bin Amdan</p>
                                 </x-general.table-body>
 
                                 <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
-                                    <p class="text-xs"></p>
+                                    <p class="text-xs">Regular Member</p>
                                 </x-general.table-body>
 
                                 <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
-                                    <p class="text-xs"></p>
+                                    <p class="text-xs">Stop</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">30/04/2018</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">1208.82</p>
                                 </x-general.table-body>
 
                                 <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
@@ -59,7 +67,37 @@
                                 </x-general.table-body>
 
                                 <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
-                                    <p class="text-xs"></p>
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">1208.82</p>
+                                </x-general.table-body>
+                            </tr>
+
+                            <tr>
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">4876</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs uppercase">Aan Nisa Binti Mohd Aziz</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Regular Member</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Active</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">25/05/2020</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">50.00</p>
                                 </x-general.table-body>
 
                                 <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
@@ -67,11 +105,315 @@
                                 </x-general.table-body>
 
                                 <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">1821.70</p>
+                                </x-general.table-body>
+                            </tr>
+
+                            <tr>
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">2956</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs uppercase">Ab Mansor Jinin</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Regular Member</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Active</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">25/05/2020</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">70.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
                                     <p class="text-xs"></p>
                                 </x-general.table-body>
 
                                 <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">12538.82</p>
+                                </x-general.table-body>
+                            </tr>
+
+                            <tr>
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">0603</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs uppercase">Ab Rahman Bin Md. Akib</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Lifetime Member</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Stop</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">30/12/2019</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">347.28</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">09/07/2020</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">4198.88</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+                            </tr>
+
+                            <tr>
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">0949</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs uppercase">Ab. Aziz Bin Loman</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Regular Member</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Stop</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">25/12/2018</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">50.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">18/12/2018</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">11147.71</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+                            </tr>
+
+                            <tr>
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">2292</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs uppercase">Ab. Razak Bin Ab. Raman</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Regular Member</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Stop</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">30/04/2018</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
                                     <p class="text-xs"></p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+                            </tr>
+
+                            <tr>
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">2551</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs uppercase">Ab. Sofi Bin Mustapa</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Regular Member</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Active</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">25/07/2020</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">50.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs"></p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">11834.47</p>
+                                </x-general.table-body>
+                            </tr>
+
+                            <tr>
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">1964</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs uppercase">Ab. Wahid @ Azman Ab. Wahab(K)</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Regular Member</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Stop</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">30/04/2018</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs"></p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+                            </tr>
+
+                            <tr>
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">2021</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs uppercase">Ab. Wahid Sulaiman</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Regular Member</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Stop</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">30/04/2018</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs"></p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+                            </tr>
+
+                            <tr>
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">2168</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs uppercase">Abang Sahriman Bin Abang Abu Bakar</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Regular Member</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">Active</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs">25/07/2020</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">110.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
+                                    <p class="text-xs"></p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">0.00</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">19185.59</p>
                                 </x-general.table-body>
                             </tr>
 
