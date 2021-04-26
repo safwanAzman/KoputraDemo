@@ -30,4 +30,14 @@ class MembersController extends Controller
     {
         return view('pages.member.produk.trading.makananTersediaBuy');
     }
+
+    public function homestayCameron()
+    {
+        # code...
+    }
+
+    public function homestayCameronBooking()
+    {
+        return view('pages.member.produk.homestay.cameronBooking');
+    }
 }

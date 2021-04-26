@@ -1,5 +1,4 @@
 <div>
-
     <div class="relative z-20 px-0 mx-auto my-1 text-lg font-medium leading-6 text-cool-gray-900">
         <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6" >
             <div class="px-4 py-4 bg-white rounded-lg">
@@ -113,7 +112,7 @@
                 <div class="px-5 py-5 mt-2 bg-white rounded-lg shadow-xl">
                     <x-tab2.nav-content2 name="0">
                         <x-page.member.dashboard-grid>
-                            <x-page.member.dashboard-product-card type="homestay" title="APARTMENT WHITE ROSE, CAMERON HIGHLAND" description="400" description2="350" img="white_rose_cameron.jpg"/>
+                            <x-page.member.dashboard-product-card type="homestay" title="APARTMENT WHITE ROSE, CAMERON HIGHLAND" description="400" description2="350" img="white_rose_cameron.jpg" route="{{ route('members.product.homestay.cameron.booking') }}"/>
                             <x-page.member.dashboard-product-card type="trading" title="BANANA ROYALE" description="15.00" img="banana_royale.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY LARKIN" description="400" description2="320" img="homestay_larkin.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY WHITE ROSE, SERI KEMBANGAN" description="250" description2="150" img="white_rose_seri_kembangan.jpg"/>
@@ -121,7 +120,7 @@
                             <x-page.member.dashboard-product-card type="trading" title="KURMA ABYAR" description="9.50" img="kurma.jpg"/>
                             <x-page.member.dashboard-product-card type="trading" title="KUIH BANGKIT CHEESE" description="18.99" img="bangkit_cheese.jpg"/>
                             <x-page.member.dashboard-product-card type="trading" title="KUIH TART" description="23.00" img="tart.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" img="masakan_segera.jpg" routeBuy="{{ route('members.product.trading.makananTersedia.buy') }}" routeDetails="{{ route('members.product.trading.makananTersedia') }}"/>
+                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" img="masakan_segera.jpg" route="{{ route('members.product.trading.makananTersedia.buy') }}" routeDetails="{{ route('members.product.trading.makananTersedia') }}"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN BERCAGARKAN EMAS" description="5.00% p.a" img="emas.png"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN CASH-i PLUS" description="5.00% p.a" img="cash-i.png"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN KENDERAAN (PERODUA)" description="3.90% p.a" img="kereta_perodua.png"/>
@@ -141,7 +140,7 @@
 
                     <x-tab2.nav-content2 name="2">
                         <x-page.member.dashboard-grid>
-                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" img="masakan_segera.jpg" routeBuy="{{ route('members.product.trading.makananTersedia.buy') }}" routeDetails="{{ route('members.product.trading.makananTersedia') }}"/>
+                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" img="masakan_segera.jpg" route="{{ route('members.product.trading.makananTersedia.buy') }}" routeDetails="{{ route('members.product.trading.makananTersedia') }}"/>
                             <x-page.member.dashboard-product-card type="trading" title="KURMA ABYAR" description="9.50" img="kurma.jpg"/>
                             <x-page.member.dashboard-product-card type="trading" title="KUIH BANGKIT CHEESE" description="18.99" img="bangkit_cheese.jpg"/>
                             <x-page.member.dashboard-product-card type="trading" title="KUIH TART" description="23.00" img="tart.jpg"/>
@@ -152,7 +151,7 @@
 
                     <x-tab2.nav-content2 name="3">
                         <x-page.member.dashboard-grid>
-                            <x-page.member.dashboard-product-card type="homestay" title="APARTMENT WHITE ROSE, CAMERON HIGHLAND" description="400" description2="350" img="white_rose_cameron.jpg"/>
+                            <x-page.member.dashboard-product-card type="homestay" title="APARTMENT WHITE ROSE, CAMERON HIGHLAND" description="400" description2="350" img="white_rose_cameron.jpg" route="{{ route('members.product.homestay.cameron.booking') }}"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY WHITE ROSE, SERI KEMBANGAN" description="250" description2="150" img="white_rose_seri_kembangan.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="THE HERITAGE, SERI KEMBANGAN" description="350" description2="300" img="the_heritage.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY LARKIN" description="400" description2="320" img="homestay_larkin.jpg"/>

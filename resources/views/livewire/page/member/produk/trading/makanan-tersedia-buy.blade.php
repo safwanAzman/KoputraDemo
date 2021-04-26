@@ -1,5 +1,5 @@
 <div class="">
-    <div class="z-20 relative mx-auto px-0 my-3 text-lg leading-6 font-medium text-cool-gray-900">
+    <div class="relative z-20 px-0 mx-auto my-3 text-lg font-medium leading-6 text-cool-gray-900">
         <div class="bg-white rounded-lg shadow">
             <main class="px-4 py-6 my-8">
                 <div class="container mx-auto">
@@ -209,7 +209,7 @@
                                     <div class="flex justify-between pb-4 mt-6 border-b-2">
                                         <div class="flex">
                                             <img class="object-cover w-20 h-20 rounded" src="{{ url('/img/member/masakan_segera.jpg')}}" alt="">
-                                            <div class="mx-3 my-3 w-40">
+                                            <div class="w-40 mx-3 my-3">
                                                 <h3 class="text-sm text-gray-600">Retort Food, Makanan Sedia Dihidang, Lauk Tapau Sambal</h3>
                                             </div>
                                         </div>
@@ -264,7 +264,7 @@
             </main>
         </div>
     </div>
-    
+
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
         <x-general.header bgimg=""  title="Checkout"/>
