@@ -36,4 +36,19 @@ class SiskopController extends Controller
         return view ('pages.siskop.report.index');
     }
 
+    public function listPositionContribution_report()
+    {
+        return view('pages.siskop.report.list-position-contribution');
+    }
+
+    public function contributionshare_projection()
+    {
+        return view('pages.siskop.report.contributionshare-projection');
+    }
+
+    public function member_summary()
+    {
+        return view('pages.siskop.report.member-summary');
+    }
+
 }
