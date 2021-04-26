@@ -14,7 +14,7 @@
             @include('include.sidebar.member.desktop')
         @endif
 
-        @if(Route::current()->uri == "alk")
+        @if(Route::current()->uri == "alk" || \Request::is("alk/*") )
             @include('include.sidebar.alk.desktop')
         @endif
 

@@ -13,8 +13,8 @@
                 <x-form.basic-form>
                     <x-slot name="content">
                         <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">
-                            <x-form.input label="Name" wire:model="" value="" />
-                            <x-form.input label="IC No." wire:model="" value="" />
+                            <x-form.input label="Name"  value="" />
+                            <x-form.input label="IC No."  value="" />
                             <div>
                                 <span class="block text-sm font-semibold leading-5 text-gray-700">Gender</span>
                                 <div class="mt-2">
@@ -28,30 +28,30 @@
                                     </label>
                                 </div>
                             </div>
-                            <x-form.dropdown label="Race" default="yes" value="" wire:model="">
+                            <x-form.dropdown label="Race" default="yes" value="" >
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Religion" default="yes" value="" wire:model="">
+                            <x-form.dropdown label="Religion" default="yes" value="" >
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Citizen" default="yes" value="" wire:model="">
+                            <x-form.dropdown label="Citizen" default="yes" value="" >
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Marital Status" default="yes" value="" wire:model="">
+                            <x-form.dropdown label="Marital Status" default="yes" value="" >
                                 <option value=""></option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Residence Type" default="yes" value="" wire:model="">
+                            <x-form.dropdown label="Residence Type" default="yes" value="" >
                                 <option value="">Own</option>
                                 <option value="">Family</option>
                                 <option value="">Rental</option>
                                 <option value="">Others</option>
                             </x-form.dropdown>
-                            <x-form.input label="Total Liabilities" wire:model="" value="" />
-                            <x-form.input label="Phone No. (HP)" wire:model="" value="" />
-                            <x-form.input label="Phone No. (Home)" wire:model="" value="" />
-                            <x-form.input label="Account Bank No." wire:model="" value="" />
-                            <x-form.input label="Personal Email" wire:model="" value="" />
-                            <x-form.input label="Office/Work Email" wire:model="" value="" />
+                            <x-form.input label="Total Liabilities"  value="" />
+                            <x-form.input label="Phone No. (HP)"  value="" />
+                            <x-form.input label="Phone No. (Home)"  value="" />
+                            <x-form.input label="Account Bank No."  value="" />
+                            <x-form.input label="Personal Email"  value="" />
+                            <x-form.input label="Office/Work Email"  value="" />
                         </x-general.grid>
                         <x-form.address class="" label="Address" value1="" value2="" value3="" value4="" value5=""
                             value6="" condition="state" />

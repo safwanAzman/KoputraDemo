@@ -261,7 +261,7 @@
         </x-general.grid>
     </div>
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg="" />
+        <x-general.header bgimg="" title="Dashboard"/>
     </div>
 
     @push('js')
@@ -277,7 +277,7 @@
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
                     Swal.fire('Permohonan Ditolak!', '', 'error')
-                    setTimeout("location.href = '{{route('home2')}}';", 2500);
+                    setTimeout("location.href = '{{route('alk2')}}';", 2500);
                 }
             })
         }
@@ -293,7 +293,7 @@
                 if (result.isConfirmed) {
                     Swal.fire('Permohonan Diluluskan!', '', 'success')
                     // window.location = "dashboard2.html";
-                    setTimeout("location.href = '{{route('home2')}}';", 2500);
+                    setTimeout("location.href = '{{route('alk2')}}';", 2500);
                 }
             })
         }
@@ -313,7 +313,7 @@
                     return new Promise(function(resolve, reject) {
                         if (value !== '') {
                             resolve();
-                            setTimeout("location.href = '{{route('home2')}}';", 2500);
+                            setTimeout("location.href = '{{route('alk2')}}';", 2500);
                         } else {
                             resolve('You need to select a Tier');
                         }
