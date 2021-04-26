@@ -6,7 +6,8 @@
     </div>
 
     <!-- header -->
-    <div class="absolute top-0 left-0 right-0">
-        <x-general.header bgimg=""  title="Member"/>
+    <div class="absolute top-0 left-0 right-0 z-0">
+        <x-general.header bgimg=""  title="Contribution & Share Projection"/>
     </div>
+
 </div>

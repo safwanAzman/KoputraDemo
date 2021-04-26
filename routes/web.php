@@ -17,6 +17,10 @@ use App\Http\Controllers\AdminKoputraController;
 use App\Http\Controllers\SiskopController;
 use App\Http\Controllers\AlkController;
 
+use App\Http\Controllers\kutipan\SenaraiKutipanController;
+use App\Http\Controllers\cukai\TaxInvoiceController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -71,7 +75,8 @@ Route::middleware('guest')->group(function () {
             'prefix'        => 'teller',
             'as'            => 'teller.',
         ], function (){
-            Route::get('/', [SiskopController::class, 'teller_index'])->name('index');
+            // Route::get('/', [SiskopController::class, 'teller_index'])->name('index');
+            Route::get('/', [SenaraiKutipanController::class, 'index'])->name('index');
         });
 
         Route::group([
@@ -79,9 +84,20 @@ Route::middleware('guest')->group(function () {
             'as'            => 'report.',
         ], function (){
             Route::get('/', [SiskopController::class, 'report_index'])->name('index');
+            Route::get('list-position-contribution', [SiskopController::class, 'listPositionContribution_report'])->name('listPositionContribution_report');
+            Route::get('contributionshare-projection', [SiskopController::class, 'contributionshare_projection'])->name('contributionshare_projection');
+            Route::get('member-summary', [SiskopController::class, 'member_summary'])->name('member_summary');
         });
     });
+
+    // Route::get('teller', [SenaraiKutipanController::class, 'index'])->name('teller');
+    Route::get('SenaraiResit', [SenaraiKutipanController::class, 'senaraiResit'])->name('senaraiResit');
+    Route::get('resitPDF/{id}', [SenaraiKutipanController::class, 'senaraiTransaksiPDF'])->name('resitPDF');
+    Route::get('senaraiTransaksiPDF/{duration}', [SenaraiKutipanController::class, 'ssenaraiTransaksiPDF'])->name('senaraiTransaksiPDF');
+    Route::get('TaxinvoicePDF/{id}', [TaxInvoiceController::class, 'taxInvoice'])->name('taxInvoice');
     //ENDSISKOP
+
+
     // Route::get('home', [DashboardController::class, 'index'])->name('home');
     // Route::get('home2', [DashboardController::class, 'index2'])->name('home2');
     Route::get('login', Login::class) ->name('login');

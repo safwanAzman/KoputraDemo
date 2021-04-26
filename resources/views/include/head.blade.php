@@ -18,6 +18,7 @@
 
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     @livewireStyles
 </head>
@@ -42,6 +43,7 @@
 
     <script src="{{ url(mix('js/app.js')) }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.4/dist/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         tippy('.tooltipbtn', {
             content:(reference)=>reference.getAttribute('data-title'),
@@ -51,6 +53,12 @@
                 });
             },
             allowHTML: true,
+        });
+    </script>
+    <script>
+        AOS.init({
+            offset:400,
+            duration :1000
         });
     </script>
     @stack('js')
