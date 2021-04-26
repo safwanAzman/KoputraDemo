@@ -45,6 +45,8 @@ Route::middleware('guest')->group(function () {
     //ADMIN
     Route::get('adminkoputra', [AdminKoputraController::class, 'index'])->name('adminkoputra');
     Route::get('adminkoputra/tetapan', [AdminKoputraController::class, 'tetapan'])->name('tetapan');
+    Route::get('adminkoputra/permohonan', [AdminKoputraController::class, 'permohonan'])->name('permohonan');
+    Route::get('adminkoputra/permohonan1', [AdminKoputraController::class, 'donepermohonan'])->name('donepermohonan');
 
     //ALK
     Route::get('alk', [AlkController::class, 'index'])->name('alk');

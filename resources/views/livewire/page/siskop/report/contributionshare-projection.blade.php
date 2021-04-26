@@ -33,8 +33,8 @@
                         <x-heroicon-o-printer class="-ml-0.5 mr-2 h-4 w-4" />
                     </x-general.button.icon>
                 </div>
-                <div class="p-4 h-auto z-0">
-                    <div id="chart" class="h-96"></div>
+                <div class="p-4 h-auto z-0 flex justify-center">
+                    <img src="{{asset('img/contribution.png')}}" class="w-auto"/>
                 </div>
             </x-general.card>
         </div>

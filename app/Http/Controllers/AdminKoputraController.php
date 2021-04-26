@@ -15,4 +15,14 @@ class AdminKoputraController extends Controller
     {
         return view ('pages.adminkoputra.tetapan');
     }
+
+    public function permohonan()
+    {
+        return view ('pages.adminkoputra.permohonan');
+    }
+
+    public function donepermohonan()
+    {
+        return view ('pages.adminkoputra.done-permohonan');
+    }
 }
