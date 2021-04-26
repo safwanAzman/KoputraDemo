@@ -44,6 +44,7 @@ Route::middleware('guest')->group(function () {
 
     //ALK
     Route::get('alk', [AlkController::class, 'index'])->name('alk');
+    Route::get('alk/2', [DashboardController::class, 'index2'])->name('alk2');
 
     //SISKOP
     Route::group([
@@ -81,8 +82,8 @@ Route::middleware('guest')->group(function () {
         });
     });
     //ENDSISKOP
-    Route::get('home', [DashboardController::class, 'index'])->name('home');
-    Route::get('home2', [DashboardController::class, 'index2'])->name('home2');
+    // Route::get('home', [DashboardController::class, 'index'])->name('home');
+    // Route::get('home2', [DashboardController::class, 'index2'])->name('home2');
     Route::get('login', Login::class) ->name('login');
 
     Route::get('register', Register::class)->name('register');

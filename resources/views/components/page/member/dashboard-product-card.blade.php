@@ -29,8 +29,8 @@
     </div>
     <div>
         <div class="flex -mt-px divide-x divide-gray-200 ">
-            <div class="flex flex-1 w-0 rounded-bl-lg hover:bg-green-400 group">
-                <a href="{{ $routeBuy }}" class="relative inline-flex items-center justify-center flex-1 w-0 py-4 -mr-px text-sm font-medium text-gray-700 border border-transparent rounded-bl-lg cursor-pointer hover:text-gray-500">
+            <div class="flex flex-1 w-0 rounded-bl-lg hover:bg-green-400 group" x-data="{Open : false}">
+                <a x-on:click="Open = true" href="{{ $routeBuy }}" class="relative inline-flex items-center justify-center flex-1 w-0 py-4 -mr-px text-sm font-medium text-gray-700 border border-transparent rounded-bl-lg cursor-pointer hover:text-gray-500">
                     @if ($type == 'financing')
                         <x-heroicon-s-pencil-alt class="w-5 h-5 text-gray-400 group-hover:text-white"/>
                         <span class="ml-3 group-hover:text-white">Apply Now</span>
@@ -42,6 +42,9 @@
                         <span class="ml-3 group-hover:text-white">Book Now</span>
                     @endif
                 </a>
+                @if ($type == 'financing')
+                    @include('pages.member.financing.apply')
+                @endif
             </div>
             @if ($type == 'trading')
                 <div class="flex flex-1 w-0 hover:bg-yellow-400 group">
