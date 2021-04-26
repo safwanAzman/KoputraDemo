@@ -30,7 +30,7 @@
     <div>
         <div class="flex -mt-px divide-x divide-gray-200 ">
             <div class="flex flex-1 w-0 rounded-bl-lg hover:bg-green-400 group" x-data="{Open : false}">
-                <a x-on:click="Open = true" href="{{ $routeBuy }}" class="relative inline-flex items-center justify-center flex-1 w-0 py-4 -mr-px text-sm font-medium text-gray-700 border border-transparent rounded-bl-lg cursor-pointer hover:text-gray-500">
+                <a x-on:click="Open = true" href="{{ $route }}" class="relative inline-flex items-center justify-center flex-1 w-0 py-4 -mr-px text-sm font-medium text-gray-700 border border-transparent rounded-bl-lg cursor-pointer hover:text-gray-500">
                     @if ($type == 'financing')
                         <x-heroicon-s-pencil-alt class="w-5 h-5 text-gray-400 group-hover:text-white"/>
                         <span class="ml-3 group-hover:text-white">Apply Now</span>
@@ -54,11 +54,11 @@
                         </div>
                     </div>
                     <!--cart slider-->
-                    <div :class="cartOpen ? 'translate-x-0 ease-out' : 'translate-x-full ease-in'" class="z-50 fixed right-0 top-0 max-w-xs w-full h-full px-6 py-4 transition duration-300 transform overflow-y-auto bg-white border-l-2 border-gray-300">
+                    <div :class="cartOpen ? 'translate-x-0 ease-out' : 'translate-x-full ease-in'" class="fixed top-0 right-0 z-50 w-full h-full max-w-xs px-6 py-4 overflow-y-auto transition duration-300 transform bg-white border-l-2 border-gray-300">
                         <div class="flex items-center justify-between">
                             <h3 class="text-2xl font-medium text-gray-700">Your cart</h3>
                             <button @click="cartOpen = !cartOpen" class="text-gray-600 focus:outline-none">
-                                <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M6 18L18 6M6 6l12 12"></path></svg>
+                                <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M6 18L18 6M6 6l12 12"></path></svg>
                             </button>
                         </div>
                         <hr class="my-3">
@@ -69,7 +69,7 @@
                                     alt="">
                                 <div class="mx-3">
                                     <h3 class="text-sm font-semibold text-left">{{ $title }}</h3>
-                                    <h4 class="font-semibold text-red-600 text-left">RM {{ $description }}</h4>
+                                    <h4 class="font-semibold text-left text-red-600">RM {{ $description }}</h4>
                                 </div>
                             </div>
                         </div>
