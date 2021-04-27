@@ -6,61 +6,64 @@
                     <a href="{{route('members')}}" class="flex px-4 py-1 text-sm font-bold text-white bg-indigo-600  hover:bg-indigo-700 rounded">
                         <div class="flex items-center space-x-2">
                             <x-heroicon-o-arrow-left class="w-4 h-4" /> 
-                            <p>Return</p>
+                            <p>Kembali</p>
                         </div>
                     </a>
                 </div> --}}
                 <x-form.basic-form>
                     <x-slot name="content">
                         <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">
-                            <x-form.input label="Name"  value="" />
-                            <x-form.input label="IC No."  value="" />
+                            <x-form.input label="Nama"  value="MOHD AIZUDDIN BIN MOHD YUSOFF" readonly/>
+                            <x-form.input label="No. Kad Pengenalan"  value="850409035147" readonly/>
                             <div>
-                                <span class="block text-sm font-semibold leading-5 text-gray-700">Gender</span>
+                                <span class="block text-sm font-semibold leading-5 text-gray-700">Jantina</span>
                                 <div class="mt-2">
                                     <label class="inline-flex items-center">
-                                        <input type="radio" class="form-radio" name="name" value="l">
-                                        <span class="ml-2 text-sm text-gray-700">Male</span>
+                                        <input type="radio" class="form-radio" name="name" value="l" checked>
+                                        <span class="ml-2 text-sm text-gray-700">Lelaki</span>
                                     </label>
                                     <label class="inline-flex items-center ml-6">
                                         <input type="radio" class="form-radio" name="name" value="">
-                                        <span class="ml-2 text-sm text-gray-700">Female</span>
+                                        <span class="ml-2 text-sm text-gray-700">Perempuan</span>
                                     </label>
+                                    
                                 </div>
                             </div>
-                            <x-form.dropdown label="Race" default="yes" value="" >
-                                <option value=""></option>
+                            <x-form.input label="No. Pendaftaran Member"  value="178179" disabled/>
+                            <x-form.dropdown label="Kaum" default="yes" value="" >
+                                <option value="">Melayu</option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Religion" default="yes" value="" >
-                                <option value=""></option>
+                            <x-form.dropdown label="Agama" default="yes" value="" >
+                                <option value="">Islam</option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Citizen" default="yes" value="" >
-                                <option value=""></option>
+                            <x-form.dropdown label="Warganegara" default="yes" value="" >
+                                <option value="">Malaysia</option>
                             </x-form.dropdown>
                             <x-form.dropdown label="Marital Status" default="yes" value="" >
-                                <option value=""></option>
+                                <option value="">Bujang</option>
+                                <option value="">Berkahwin</option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Residence Type" default="yes" value="" >
-                                <option value="">Own</option>
-                                <option value="">Family</option>
-                                <option value="">Rental</option>
-                                <option value="">Others</option>
+                            <x-form.dropdown label="Jenis Kediaman" default="yes" value="" >
+                                <option value="">Sendiri</option>
+                                <option value="">Keluarga</option>
+                                <option value="">Sewa</option>
+                                <option value="">Lain-lain</option>
                             </x-form.dropdown>
-                            <x-form.input label="Total Liabilities"  value="" />
-                            <x-form.input label="Phone No. (HP)"  value="" />
-                            <x-form.input label="Phone No. (Home)"  value="" />
-                            <x-form.input label="Account Bank No."  value="" />
-                            <x-form.input label="Personal Email"  value="" />
-                            <x-form.input label="Office/Work Email"  value="" />
+                            <x-form.input label="Jumlah Tanggungan"  value="1" />
+                            <x-form.input label="No. Telefon Bimbit"  value="0183546808" />
+                            <x-form.input label="No. Telefon Rumah"  value="" />
+                            <x-form.input label="No. Akaun Bank"  value="8700954277" />
+                            <x-form.input label="Emel Persendirian"  value="aizuddin.yusoff@ymail.com" />
+                            <x-form.input label="Emel Kerja"  value="" />
                         </x-general.grid>
-                        <x-form.address class="" label="Address" value1="" value2="" value3="" value4="" value5=""
+                        <x-form2.address class="" label="Alamat" value1="Lot 900, Jalan 2G," value2="Kg. Baru Lanjut," value3="" value4="Sepang" value5="43650"
                             value6="" condition="state" />
 
                         <div class="flex justify-center mt-8">
                             <a onclick="save()" href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
                                 <div class="flex items-center space-x-2">
                                     <x-heroicon-o-save class="w-4 h-4" /> 
-                                    <p>Save</p>
+                                    <p>Hantar Permohonan</p>
                                 </div>
                             </a>
                         </div>
@@ -72,7 +75,7 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg="" title="Register Member" />
+        <x-general.header bgimg="" title="Daftar Member" />
     </div>
 </div>
 
