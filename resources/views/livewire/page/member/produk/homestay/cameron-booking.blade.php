@@ -1,27 +1,69 @@
 <div class="">
     <div class="relative z-20 px-0 mx-auto my-3 text-lg font-medium leading-6 text-cool-gray-900">
-        <div class="bg-white rounded-lg shadow mt-8 px-6 py-6">
-            <h1>TEST</h1>
+        <div class="px-6 py-6 mt-8 bg-white rounded-lg shadow">
+            <h1 class="text-2xl font-bold text-gray-900 uppercase whitespace-nowrap">APARTMENT WHITE ROSE, CAMERON HIGHLAND</h1>
             <div class="grid grid-cols-12 gap-6">
                 <div class="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-5 xxl:col-span-5">
-                    <div class="border-2 mt-4 rounded-md p-4">
+                    <div class="p-4 mt-4 border-2 rounded-md">
+                        <h1 class="text-xl font-semibold text-gray-900 uppercase whitespace-nowrap">Booking Information</h1>
                         <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-6">
-                            <div class="flex space-x-2">
-                                <x-form.input type="date" label="Start Date" value="" />
-                                <x-form.input type="date" label="End Date" value="" />
-                            </div>
+                            <x-form.input type="date" label="Check-in Date" value="" />
+                            <x-form.input type="date" label="Check-out Date" value="" />
+                            <x-form.dropdown label="Adults" value="adults" default="yes">
+                                @for ($x = 1; $x <= 30; $x++)
+                                    <option value="{{ $x }}" selected>{{ $x }} adult</option>
+                                @endfor
+                            </x-form.dropdown>
+                            <x-form.dropdown label="Children" value="children" default="yes">
+                                @for ($x = 1; $x <= 15; $x++)
+                                    <option value="{{ $x }}" selected>{{ $x }} children</option>
+                                @endfor
+                            </x-form.dropdown>
+                        </x-general.grid>
+                    </div>
+                    {{-- term & condition --}}
+                    <div class="p-4 mt-4 border-2 rounded-md">
+                        <h1 class="font-semibold text-gray-900 uppercase text-l whitespace-nowrap">Terms & Conditions</h1>
 
-                        </x-general.grid>
-                        <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-6">
-                            <x-form.input label="Test" value="" />
-                            <x-form.input label="Test" value="" />
-                            <x-form.input label="Test" value="" />
-                            <x-form.input label="Test" value="" />
-                        </x-general.grid>
+                        <div class="text-xs text-gray-700 ">
+                            <p>Last updated: April 27, 2021</p>
+                            <p>Please read these terms and conditions carefully before using Our Service.</p>
+                            <h1>Interpretation and Definitions</h1>
+                            <h2>Interpretation</h2>
+                            <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+                            <h2>Definitions</h2>
+                            <p>For the purposes of these Terms and Conditions:</p>
+                            <ul>
+                                <li>
+                                <p><strong>Country</strong> refers to:  Malaysia</p>
+                                </li>
+                                <li>
+                                <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Koputra, 1, 43A &amp; 43B, 19, Jalan Sungai Besi Indah 2, Taman Sungai Besi Indah, 43300 Seri Kembangan, Selangor.</p>
+                                </li>
+                                <li>
+                                <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
+                                </li>
+                                <li>
+                                <p><strong>Service</strong> refers to the Website.</p>
+                                </li>
+                                <li>
+                                <p><strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the <a href="https://www.termsfeed.com/terms-conditions-generator/" target="_blank">Terms and Conditions Generator</a>.</p>
+                                </li>
+                                <li>
+                                <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
+                                </li>
+                            </ul>
+                            <h1>Contact Us</h1>
+                            <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
+                            <ul>
+                                <li>By email: admin@koputra.com.my</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-span-12 sm:col-span-12 md:col-span-7 lg:col-span-7 xxl:col-span-7">
-                    <div class="border-2 mt-4 rounded-md p-4">
+                    <div class="p-4 mt-4 border-2 rounded-md">
                         <div id='calendar'></div>
                     </div>
                 </div>
@@ -45,7 +87,36 @@
         document.addEventListener('DOMContentLoaded', function() {
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth'
+                initialView: 'dayGridMonth',
+                googleCalendarApiKey: 'AIzaSyADnip91wbBqE3zSJBGkTfL4sbuZYR-Slg',
+                eventSources: [
+                    {
+                        events: [ // put the array in the `events` property
+                            {
+                                title  : 'Family Day Pn Syarifah',
+                                start  : '2021-04-01',
+                                end  : '2021-04-03'
+                            },
+                            {
+                                title  : 'Team Building Bank Muamalat',
+                                start  : '2021-04-05',
+                                end    : '2021-04-07'
+                            },
+                            {
+                                title  : 'Kursus Jati Diri',
+                                start  : '2021-04-28',
+                                end    : '2021-05-02'
+                            }
+                        ],
+                        color: 'green',     // an option!
+                        textColor: 'white' // an option!
+                    },
+                    {
+                        googleCalendarId: 'en.malaysia#holiday@group.v.calendar.google.com',
+                        color: '#faf089',
+                        textColor: '#000000'
+                    }
+                ]
             });
             calendar.render();
         });
