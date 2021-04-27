@@ -348,7 +348,7 @@
 </div>
 @push('js')
 <script>
-     function save() {
+    function save() {
         Swal.fire({
             icon: 'success',
             title: 'Berjaya Simpan',
@@ -356,6 +356,5 @@
             timer: 1500
         })
     }
-</script>
-    
+</script>  
 @endpush
