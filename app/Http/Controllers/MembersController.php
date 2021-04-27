@@ -38,7 +38,7 @@ class MembersController extends Controller
 
     public function homestayCameron()
     {
-        # code...
+        return view('pages.member.produk.homestay.cameron');
     }
 
     public function homestayCameronBooking()

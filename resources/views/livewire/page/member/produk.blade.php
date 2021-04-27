@@ -112,7 +112,7 @@
                 <div class="px-5 py-5 mt-2 bg-white rounded-lg shadow-xl">
                     <x-tab2.nav-content2 name="0">
                         <x-page.member.dashboard-grid>
-                            <x-page.member.dashboard-product-card type="homestay" title="APARTMENT WHITE ROSE, CAMERON HIGHLAND" description="400" description2="350" img="white_rose_cameron.jpg" route="{{ route('members.product.homestay.cameron.booking') }}"/>
+                            <x-page.member.dashboard-product-card type="homestay" title="APARTMENT WHITE ROSE, CAMERON HIGHLAND" description="400" description2="350" img="white_rose_cameron.jpg" route="{{ route('members.product.homestay.cameron.booking') }}" routeDetails="{{ route('members.product.homestay.cameron') }}"/>
                             <x-page.member.dashboard-product-card type="trading" title="BANANA ROYALE" description="15.00" img="banana_royale.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY LARKIN" description="400" description2="320" img="homestay_larkin.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY WHITE ROSE, SERI KEMBANGAN" description="250" description2="150" img="white_rose_seri_kembangan.jpg"/>
