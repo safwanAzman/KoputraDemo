@@ -36,9 +36,10 @@ Route::view('/', 'welcome')->name('wellcome');
 
 Route::middleware('guest')->group(function () {
     //MEMBER
-    Route::get('members', [MembersController::class, 'index'])->name('members');
+    Route::get('adminkoputra/members', [MembersController::class, 'index'])->name('adminkoputra-members');
     Route::get('members/create', [MembersController::class, 'create'])->name('members-create');
     Route::get('members/produk', [MembersController::class, 'produk'])->name('members-produk');
+    Route::get('members/produk2', [MembersController::class, 'produk2'])->name('members-produk2');
     //Details Trading
     Route::get('members/produk/trading/makananTersedia', [MembersController::class, 'tradingMakananTersedia'])->name('members.product.trading.makananTersedia');
     //Buy Trading

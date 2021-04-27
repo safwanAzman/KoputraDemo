@@ -1,15 +1,15 @@
 <div>
     <div class="z-20 relative mx-auto px-0 my-3 text-lg leading-6 font-medium text-cool-gray-900">
         <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="1" xl="1" class="col-span-6 items-center mt-8">
-            <div class="bg-white py-6 px-10 rounded-lg shadow-lg">
-                <div class="flex justify-end">
+            <div class="bg-white py-10 px-10 rounded-lg shadow-lg">
+                {{-- <div class="flex justify-end">
                     <a href="{{route('members')}}" class="flex px-4 py-1 text-sm font-bold text-white bg-indigo-600  hover:bg-indigo-700 rounded">
                         <div class="flex items-center space-x-2">
                             <x-heroicon-o-arrow-left class="w-4 h-4" /> 
                             <p>Return</p>
                         </div>
                     </a>
-                </div>
+                </div> --}}
                 <x-form.basic-form>
                     <x-slot name="content">
                         <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">

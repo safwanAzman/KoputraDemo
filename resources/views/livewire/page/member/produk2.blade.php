@@ -19,7 +19,7 @@
                     </div>
                     <div>
                         <p class="text-lg">STATUS PERMOHONAN</p>
-                        <p class="text-lg text-gray-400 uppercase">-</p>
+                        <p class="text-lg text-gray-400 uppercase">SEDANG DIPOHON</p>
                     </div>
                     <div>
                         <p class="text-lg">TARIKH PERMOHONAN</p>

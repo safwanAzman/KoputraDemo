@@ -21,27 +21,27 @@
                 <ul class="mt-6 leading-10">
 
                     <!-- Siskop nav item Start -->
-                        <x-sidebar.nav-item title="Siskop" route="{{route('siskop.index')}}" uri="siskop">
+                        <x-sidebar.nav-item title="Siskop" route="{{route('siskop.index')}}" uri="">
                             <x-heroicon-o-chart-pie class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
-                        <x-sidebar.nav-item title="Member" route="{{route('siskop.member.index')}}" uri="siskop/member">
+                        <x-sidebar.nav-item title="Member" route="{{route('siskop.member.index')}}" uri="">
                             <x-heroicon-o-chart-pie class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
-                        <x-sidebar.nav-item title="Finance" route="{{route('siskop.finance.index')}}" uri="siskop/finance">
+                        <x-sidebar.nav-item title="Finance" route="{{route('siskop.finance.index')}}" uri="">
                             <x-heroicon-o-chart-pie class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
-                        <x-sidebar.nav-item title="Teller" route="{{route('siskop.teller.index')}}" uri="siskop/teller">
+                        <x-sidebar.nav-item title="Teller" route="{{route('siskop.teller.index')}}" uri="">
                             <x-heroicon-o-chart-pie class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
-                        <x-sidebar.nav-item title="Firasat" route="{{route('siskop.firasat.index')}}" uri="siskop/firasat">
+                        <x-sidebar.nav-item title="Firasat" route="{{route('siskop.firasat.index')}}" uri="">
                             <x-heroicon-o-chart-pie class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
-                        <x-sidebar.nav-item title="Report" route="{{route('siskop.report.index')}}" uri="siskop/report">
+                        <x-sidebar.nav-item title="Report" route="{{route('siskop.report.index')}}" uri="">
                             <x-heroicon-o-chart-pie class="w-7 h-7" />
                         </x-sidebar.nav-item>
                     <!-- Siskop nav item End -->

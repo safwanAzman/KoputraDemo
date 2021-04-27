@@ -11,7 +11,7 @@
             <ul class="mt-6 leading-10">
 
                 <!-- Alk nav item Start -->
-                    <x-sidebar.nav-item title="ALK" route="{{route('alk')}}" uri="alk">
+                    <x-sidebar.nav-item title="ALK" route="{{route('alk')}}" uri="">
                         <x-heroicon-o-chart-pie class="w-7 h-7" />
                     </x-sidebar.nav-item>
                 <!-- Alk nav item End -->

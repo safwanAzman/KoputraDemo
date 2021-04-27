@@ -12,11 +12,11 @@
 
                 <!-- members nav item Start -->
 
-                    <x-sidebar.nav-item title="Dashboard" route="{{route('members-produk')}}" uri="members/produk">
+                    <x-sidebar.nav-item title="Dashboard" route="{{route('members-produk')}}" uri="">
                         <x-heroicon-o-chart-pie class="w-7 h-7" />
                     </x-sidebar.nav-item> 
 
-                    <x-sidebar.nav-item title="members" route="{{route('members')}}" uri="members">
+                    <x-sidebar.nav-item title="members" route="{{route('members-create')}}" uri="">
                         <x-heroicon-o-user-group class="w-7 h-7" />
                     </x-sidebar.nav-item>
                 <!-- members nav item End -->
