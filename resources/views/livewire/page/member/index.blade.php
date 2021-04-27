@@ -484,7 +484,7 @@
                                 </x-table.table-body>
                             </tr>
 
-                            <tr>
+                            {{-- <tr>
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
                                     <p>6.</p>
                                 </x-table.table-body>
@@ -947,7 +947,7 @@
                                         </x-general.modal>
                                     </div>
                                 </x-table.table-body>
-                            </tr>
+                            </tr> --}}
                         </x-slot>
                     </x-table.table>
                 </div>

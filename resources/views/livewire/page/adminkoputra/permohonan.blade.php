@@ -12,7 +12,7 @@
                             <x-table.table-header class="text-left" value="NAMA PENUH" sort="" />
                             <x-table.table-header class="text-left" value="NO. K/P BARU" sort="" />
                             <x-table.table-header class="text-left" value="STATUS PERMOHONAN" sort="" />
-                            <x-table.table-header class="text-left" value="KEPUTUSAN KELULUSAN" sort="" />
+                            <x-table.table-header class="text-left" value="Tindakan" sort="" />
                             <x-table.table-header class="text-left" value="PERJANJIAN" sort="" />
                             <x-table.table-header class="text-left" value="TARIKH PERMOHONAN" sort="" />
                         </x-slot>
@@ -72,12 +72,206 @@
                                 </x-table.table-body>
 
                             </tr>
+
+                            <tr>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>2.</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+
+                                    <div x-data="{Open : false}">
+                                        <a href="#" class="flex items-center space-x-1">
+                                            <x-heroicon-s-information-circle
+                                                class="h-5 w-5 text-indigo-700 tooltipbtn focus:outline-none"
+                                                data-title="Maklumat Permohonan" data-placement="top" />
+                                            <p>002202310474</p>
+                                        </a>
+                                    </div>
+
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>20,000.00</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>MUHAMMAD AHMAD ALI</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>980110053049</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                    <p>Sedang di Prosess</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <div>
+                                        <x-heroicon-o-clock class="w-6 h-6 text-yellow-500" />
+                                    </div>
+                                </x-table.table-body>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+
+                                </x-table.table-body>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>25-04-2021</p>
+                                </x-table.table-body>
+
+                            </tr>
+
+                            <tr>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>3.</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+
+                                    <div x-data="{Open : false}">
+                                        <a href="#" class="flex items-center space-x-1">
+                                            <x-heroicon-s-information-circle
+                                                class="h-5 w-5 text-indigo-700 tooltipbtn focus:outline-none"
+                                                data-title="Maklumat Permohonan" data-placement="top" />
+                                            <p>002202310252</p>
+                                        </a>
+                                    </div>
+
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>13,000.00</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>AMIRUL FIKRI BIN HERMAN</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>961203106711</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                    <p>Sedang di Prosess</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <div>
+                                        <x-heroicon-o-clock class="w-6 h-6 text-yellow-500" />
+                                    </div>
+                                </x-table.table-body>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+
+                                </x-table.table-body>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>12-04-2021</p>
+                                </x-table.table-body>
+
+                            </tr>
+
+                            <tr>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>4.</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+
+                                    <div x-data="{Open : false}">
+                                        <a href="#" class="flex items-center space-x-1">
+                                            <x-heroicon-s-information-circle
+                                                class="h-5 w-5 text-indigo-700 tooltipbtn focus:outline-none"
+                                                data-title="Maklumat Permohonan" data-placement="top" />
+                                            <p>002203432567</p>
+                                        </a>
+                                    </div>
+
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>23,000.00</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>NUR HANI BALQIS BINTI AZMI</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>000603036446</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                    <p>Sedang di Prosess</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <div>
+                                        <x-heroicon-o-clock class="w-6 h-6 text-yellow-500" />
+                                    </div>
+                                </x-table.table-body>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+
+                                </x-table.table-body>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>14-04-2021</p>
+                                </x-table.table-body>
+
+                            </tr>
+
+                            <tr>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>5.</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+
+                                    <div x-data="{Open : false}">
+                                        <a href="#" class="flex items-center space-x-1">
+                                            <x-heroicon-s-information-circle
+                                                class="h-5 w-5 text-indigo-700 tooltipbtn focus:outline-none"
+                                                data-title="Maklumat Permohonan" data-placement="top" />
+                                            <p>002202323451</p>
+                                        </a>
+                                    </div>
+
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>12,000.00</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>RASMIZAM BIN MOHAMAD</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>960211103167</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                    <p>Sedang di Prosess</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <div>
+                                        <x-heroicon-o-clock class="w-6 h-6 text-yellow-500" />
+                                    </div>
+                                </x-table.table-body>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+
+                                </x-table.table-body>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>19-04-2021</p>
+                                </x-table.table-body>
+
+                            </tr>
+                        
                         </x-slot>
                     </x-table.table>
+                    @include('pages.adminkoputra.modal-permohonan')
                 </div>
+                
             </div>
         </x-general.grid>
-        @include('pages.adminkoputra.modal-permohonan')
     </div>
 
     <!-- header -->
