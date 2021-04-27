@@ -2,14 +2,14 @@
     <div class="z-20 relative mx-auto px-0 my-3 text-lg leading-6 font-medium text-cool-gray-900">
         <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="1" xl="1" class="col-span-6  mt-8">
             <div class="">
-                <div class="bg-white shadow-lg px-5 py-3">
+                <div class="bg-white shadow-lg rounded-md  px-5 py-3">
                     <div class="flex justify-between mb-4">
                         <div class="flex flex-col sm:flex-row mb-4">
                             <div class="flex items-center">
-                                <x-form.input name="search" label="Start Date" value="" livewire="" :editable=false />
+                                <x-form.input name="search" label="Start Date" value="" livewire=""  readonly />
                             </div>
                             <div class="flex items-center ml-0 sm:ml-4">
-                                <x-form.input name="search" label="End Date" value="" livewire="" :editable=false />
+                                <x-form.input name="search" label="End Date" value="" livewire="" readonly/>
                             </div>
                         </div>
                         <div class="mt-4">

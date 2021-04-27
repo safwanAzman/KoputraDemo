@@ -9,16 +9,16 @@
             <div>
                 <ul class="mt-6 leading-10">
                     <!-- AdminKoputra nav item Start -->
-                        <x-sidebar.nav-item title="Permohonan" route="{{route('permohonan')}}" uri="adminkoputra/permohonan">
-                            <x-heroicon-o-home class="w-7 h-7" />
-                        </x-sidebar.nav-item>
-
                         <x-sidebar.nav-item title="Kemas Kini Produk" route="{{route('adminkoputra')}}" uri="adminkoputra">
                             <x-heroicon-o-archive class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
                         <x-sidebar.nav-item title="Tetapan" route="{{route('tetapan')}}" uri="adminkoputra/tetapan">
                             <x-heroicon-o-cog class="w-7 h-7" />
+                        </x-sidebar.nav-item>
+
+                        <x-sidebar.nav-item title="Permohonan" route="{{route('permohonan')}}" uri="adminkoputra/permohonan">
+                            <x-heroicon-o-home class="w-7 h-7" />
                         </x-sidebar.nav-item>
                     <!-- AdminKoputra nav item End -->
                 </ul>
