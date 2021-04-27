@@ -6,7 +6,7 @@
                     <a href="{{route('members-create')}}" class="flex px-4 py-1 text-sm font-bold text-white bg-indigo-600  hover:bg-indigo-700 rounded">
                         <div class="flex items-center space-x-2">
                             <x-heroicon-o-user class="w-4 h-4" /> 
-                            <p>Register Member</p>
+                            <p>Daftar Member</p>
                         </div>
                     </a>
                 </div> --}}
@@ -14,9 +14,9 @@
                     <x-table.table>
                         <x-slot name="thead">
                             <x-table.table-header class="text-left" value="NO." sort="" />
-                            <x-table.table-header class="text-left" value="Name" sort="" />
-                            <x-table.table-header class="text-left" value="New IC No." sort="" />
-                            <x-table.table-header class="text-left" value="Action" sort="" />
+                            <x-table.table-header class="text-left" value="Nama" sort="" />
+                            <x-table.table-header class="text-left" value="No. Kad Pengenalan" sort="" />
+                            <x-table.table-header class="text-left" value="Tindakan" sort="" />
                         </x-slot>
                         <x-slot name="tbody">
                             <tr>
@@ -38,7 +38,7 @@
                                         <div class="flex space-x-2">
                                             <a href="#" x-on:click="Open = true"
                                                 class="rounded-full px-2 py-2 bg-indigo-600 hover:bg-indigo-700 shadow-lg tooltipbtn"
-                                                data-title="View Detail" data-placement="top">
+                                                data-title="Lihat Maklumat" data-placement="top">
                                                 <x-heroicon-o-eye class="h-4 w-4 text-white" />
                                             </a>
                                         </div>
@@ -118,11 +118,11 @@
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>MUHAMMAD RIDZUAN</p>
+                                    <p>MOHD AIZUDDIN</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>920901045929</p>
+                                    <p>850409035147</p>
                                 </x-table.table-body>
 
 
@@ -131,7 +131,7 @@
                                         <div class="flex space-x-2">
                                             <a href="#" x-on:click="Open = true"
                                                 class="rounded-full px-2 py-2 bg-indigo-600 hover:bg-indigo-700 shadow-lg tooltipbtn"
-                                                data-title="View Detail" data-placement="top">
+                                                data-title="Lihat Maklumat" data-placement="top">
                                                 <x-heroicon-o-eye class="h-4 w-4 text-white" />
                                             </a>
                                         </div>
@@ -139,65 +139,65 @@
                                                 <div class="px-4 py-4  overflow-y-auto">
                                                     <x-general.grid mobile="1" gap="1" sm="3" md="3" lg="3" xl="3" class="col-span-6 leading-8">
                                                         <div>
-                                                            <p class="text-sm">Name</p>
-                                                            <p class="text-sm font-semibold text-gray-400 uppercase">MUHAMMAD RIDZUAN</p>
+                                                            <p class="text-sm">Nama</p>
+                                                            <p class="text-sm font-semibold text-gray-400 uppercase">MOHD AIZUDDIN BIN MOHD YUSOFF</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">New IC No.</p>
-                                                            <p class="text-sm font-semibold text-gray-400 uppercase">920901045929</p>
+                                                            <p class="text-sm">No. Kad Pengenalan Baru</p>
+                                                            <p class="text-sm font-semibold text-gray-400 uppercase">850409035147</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Gender</p>
+                                                            <p class="text-sm">Jantina</p>
                                                             <p class="text-sm font-semibold text-gray-400 uppercase">LELAKI</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Race</p>
+                                                            <p class="text-sm">Kaum</p>
                                                             <p class="text-sm font-semibold text-gray-400 uppercase">MELAYU</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Religion</p>
+                                                            <p class="text-sm">Agama</p>
                                                             <p class="text-sm font-semibold text-gray-400 uppercase">ISLAM</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Citizen</p>
+                                                            <p class="text-sm">Warganegara</p>
                                                             <p class="text-sm font-semibold text-gray-400 uppercase">MALAYSIA</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Marital Status</p>
-                                                            <p class="text-sm font-semibold text-gray-400 uppercase">BUJANG</p>
+                                                            <p class="text-sm">Status Perkahwinan</p>
+                                                            <p class="text-sm font-semibold text-gray-400 uppercase">BERKAHWIN</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Residence Type</p>
-                                                            <p class="text-sm font-semibold text-gray-400 uppercase">SEWA</p>
+                                                            <p class="text-sm">Jenis Kediaman</p>
+                                                            <p class="text-sm font-semibold text-gray-400 uppercase">SENDIRI</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Total Liabilities</p>
-                                                            <p class="text-sm font-semibold text-gray-400 uppercase">TIADA</p>
+                                                            <p class="text-sm">Jumlah Tanggungan</p>
+                                                            <p class="text-sm font-semibold text-gray-400 uppercase">1</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Phone No. (HP)</p>
-                                                            <p class="text-sm font-semibold text-gray-400 uppercase">0139871165</p>
+                                                            <p class="text-sm">No. Telefon Bimbit</p>
+                                                            <p class="text-sm font-semibold text-gray-400 uppercase">0183546808</p>
                                                         </div>
                                                         <div>
-                                                            <p class="ttext-sm">Phone No. (Home)</p>
+                                                            <p class="ttext-sm">No. Telefon Rumah</p>
                                                             <p class="text-sm font-semibold text-gray-400 uppercase">Tiada</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Account Bank No.</p>
+                                                            <p class="text-sm">No. Akaun Bank </p>
                                                             <p class="text-sm font-semibold text-gray-400 uppercase">8700954277</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Personal Email</p>
-                                                            <p class="text-sm font-semibold text-gray-400 uppercase">muridzuan@gmail.com</p>
+                                                            <p class="text-sm">Emel Peribadi</p>
+                                                            <p class="text-sm font-semibold text-gray-400">aizuddin.yusoff@ymail.com</p>
                                                         </div>
                                                         <div>
-                                                            <p class="text-sm">Office/Work Email</p>
-                                                            <p class="text-sm font-semibold text-gray-400 uppercase">muhammadridzuan@megah.com</p>
+                                                            <p class="text-sm">Emel Kerja</p>
+                                                            <p class="text-sm font-semibold text-gray-400"></p>
                                                         </div>
                                                     </x-general.grid>
                                                     <div>
-                                                        <p class="text-sm">Address</p>
-                                                        <p class="text-sm font-semibold text-gray-400 uppercase">Unit 9-01 Residensi Kayangan, Jalan Semarak, 58100 WP Kuala Lumpur</p>
+                                                        <p class="text-sm">Alamat</p>
+                                                        <p class="text-sm font-semibold text-gray-400 uppercase">Lot 900, Jalan 2G, Kg. Baru Lanjut, 43650 Sepang, Selangor</p>
                                                     </div>
                                                 </div>
                                         </x-general.modal>

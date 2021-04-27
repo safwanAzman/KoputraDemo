@@ -39,9 +39,9 @@
                                             <option value="">POLIS</option>
                                             <option value="">TENTERA</option>
                                         </x-form.dropdown>
-                                        <x-form.input label="No.K/P Lama :" value="" />
-                                        <x-form.input label="Tarikh Lahir :" value="" />
-                                        <x-form.input label="Umur :" value="" />
+                                        <x-form.input label="No.K/P Lama :"  value="" />
+                                        <x-form.input label="Tarikh Lahir :"  value="" />
+                                        <x-form.input label="Umur :"  value="" />
 
                                         <div>
                                             <span class="block text-sm font-semibold leading-5 text-gray-700">Jantina
@@ -99,9 +99,8 @@
                                         <x-form2.address class="" label="Alamat" value1="" value2="" value3="" value4=""
                                             value5="" value6="" condition="state" />
                                     </x-general.grid>
-                                    <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2"
-                                        class="col-span-6 mt-3">
-                                        <x-form.input label="No.Tel Bimbit :" value="" />
+                                    <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-3">
+                                        <x-form.input label="No.Tel Bimbit :"  value="" />
                                         <div>
                                             <span class="block text-sm font-semibold leading-5 text-gray-700">Taraf
                                                 Perkahwinan :</span>
@@ -111,7 +110,7 @@
                                                     <span class="ml-2 text-sm text-gray-700">Sudah</span>
                                                 </label>
                                                 <label class="inline-flex items-center ml-6">
-                                                    <input type="radio" class="form-radio" name="name" value="">
+                                                    <input type="radio" class="form-radio" name="name" value="" checked>
                                                     <span class="ml-2 text-sm text-gray-700">Belum</span>
                                                 </label>
                                             </div>
@@ -119,7 +118,7 @@
                                         <x-form.dropdown label="Bilangan Tanggungan (Jika Ada) :" default="no" value="">
                                             <option value="" selected>Sila Pilih</option>
                                             <option value="0">0</option>
-                                            <option value="1">1</option>
+                                            <option value="1" selected>1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                             <option value="4">4</option>
@@ -145,49 +144,45 @@
                                         class="font-semibold text-lg text-indigo-600 border-b-4 border-indigo-600 py-2 mt-6">
                                         <p>MAKLUMAT PASANGAN SUAMI/ISTERI</p>
                                     </div>
-                                    <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2"
-                                        class="col-span-6 mt-3">
-                                        <x-form.input label="Nama Pasangan :" value="" />
-                                        <x-form.input label="No.K/P Baru Pasangan :" value="" />
-                                        <x-form.input label="No.K/P Lama Pasangan :" value="" />
-                                        <x-form.input label="No.Tel Bimbit Pasangan :" value="" />
+                                    <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-3">
+                                        <x-form.input label="Nama Pasangan :"  value="" />
+                                        <x-form.input label="No.K/P Baru Pasangan :"  value="" />
+                                        <x-form.input label="No.K/P Lama Pasangan :"  value="" />
+                                        <x-form.input label="No.Tel Bimbit Pasangan :"  value="" />
                                     </x-general.grid>
                                     <div
                                         class="font-semibold text-lg text-indigo-600 border-b-4 border-indigo-600 py-2 mt-6">
                                         <p>MAKLUMAT IBU BAPA</p>
                                     </div>
-                                    <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2"
-                                        class="col-span-6 mt-3">
-                                        <x-form.input label="Nama Ibu/Bapa :" value="" />
-                                        <x-form.input label="No K/P Ibu/Bapa :" value="" />
-                                        <x-form.input label="No K/P Lama Ibu/Bapa :" value="" />
-                                        <x-form.input label="No.Tel Bimbit Ibu/Bapa :" value="" />
+                                    <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-3">
+                                        <x-form.input label="Nama Ibu/Bapa :"  value="" />
+                                        <x-form.input label="No K/P Ibu/Bapa :"  value="" />
+                                        <x-form.input label="No K/P Lama Ibu/Bapa :"  value="" />
+                                        <x-form.input label="No.Tel Bimbit Ibu/Bapa :"  value="" />
                                     </x-general.grid>
                                     <div
                                         class="font-semibold text-lg text-indigo-600 border-b-4 border-indigo-600 py-2 mt-6">
                                         <p>MAKLUMAT PEKERJAAN</p>
                                     </div>
-                                    <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1"
-                                        class="col-span-6 mt-3">
-                                        <x-form.input label="Nama Jabatan/Bahagian/Unit :" value="" />
-                                        <x-form2.address class="" label="Alamat Pejabat/Majikan :" value1="" value2=""
-                                            value3="" value4="" value5="" value6="" condition="state" />
+                                    <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="col-span-6 mt-3">
+                                        <x-form.input label="Nama Jabatan/Bahagian/Unit :"  value="" />
+                                        <x-form2.address class="" label="Alamat Pejabat/Majikan :"  value1="" value2="" value3="" value4="" value5=""
+                                            value6="" condition="state" />
                                     </x-general.grid>
-                                    <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2"
-                                        class="col-span-6 mt-3">
-                                        <x-form.input label="No.Tel Pejabat :" value="" />
-                                        <x-form.input label="No.Fax Pejabat :" value="" />
-                                        <x-form.input label="Jawatan :" value="" />
-                                        <x-form.input label="Gaji Pokok :" value="" />
-                                        <x-form.dropdown label="Jenis Kediaman :" default="no" value="">
+                                    <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-3">
+                                        <x-form.input label="No.Tel Pejabat :"  value="" />
+                                        <x-form.input label="No.Fax Pejabat :"  value="" />
+                                        <x-form.input label="Jawatan :"  value="" />
+                                        <x-form.input label="Gaji Pokok :"  value="" />
+                                        <x-form.dropdown label="Jenis Kediaman :" default="no" value="" >
                                             <option value="tetap" selected>Tetap</option>
                                             <option value="kontrak">Kontrak</option>
                                             <option value="sementara">Sementara</option>
                                             <option value="percubaan">Percubaan</option>
                                         </x-form.dropdown>
-                                        <x-form.input type="date" label="Tarikh Mula Bekerja: " value="" />
-                                        <x-form.input type="date" label="Tarikh Sah Jawatan :" value="" />
-                                        <x-form.input label="No. Gaji / No. Pekerja :" value="" />
+                                        <x-form.input type="date" label="Tarikh Mula Bekerja: "  value="" />
+                                        <x-form.input type="date" label="Tarikh Sah Jawatan :"  value="" />
+                                        <x-form.input label="No. Gaji / No. Pekerja :"  value="" />
                                     </x-general.grid>
                                 </x-slot>
                             </x-form.basic-form>
