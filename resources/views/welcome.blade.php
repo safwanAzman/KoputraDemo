@@ -6,7 +6,7 @@
 
     <div class="w-full  mx-auto py-6 sm:px-6 lg:px-8">
         <div class="font-bold text-4xl text-white uppercase text-center mb-4">
-            <h1>TITILE</h1>
+            <h1>TITLE</h1>
         </div>
         <div class="flex justify-center  flex-col md:flex-row w-full lg:space-x-2 space-y-2 lg:space-y-0 mb-2 lg:mb-4">
             <a href="{{route('members-produk')}}" class="p-2 text-center cursor-pointer">
