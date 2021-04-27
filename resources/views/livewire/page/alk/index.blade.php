@@ -58,6 +58,75 @@
                                             <x-heroicon-s-information-circle
                                                 class="h-5 w-5 text-indigo-700 tooltipbtn focus:outline-none"
                                                 data-title="Maklumat Permohonan" data-placement="top" />
+                                            <p>009011210063</p>
+                                        </a>
+
+                                        <x-general.modal modalActive="Open" title="Informasi" modalSize="4xl">
+                                            {{-- <div class="px-6 py-4 ">
+                                                <h1 class="text-indigo-700 text-xl font-semibold border-b-4 border-indigo-500">MAKLUMAT PEBIAYAAN DIPOHON</h1>
+                                            </div> --}}
+                                            <x-general.grid mobile="1" gap="4" sm="1" md="1" lg="1" xl="1"
+                                                class="col-span-6">
+                                                <div class="h-96 overflow-y-auto mt-4 pl-4">
+                                                    <img src="{{asset('img/test.png')}}" class="w-auto" />
+                                                </div>
+                                            </x-general.grid>
+                                        </x-general.modal>
+                                    </div>
+
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>100,000.00</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>MOHD AIZUDDIN BIN MOHD YUSOFF</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>850409-03-5147</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>SEDANG DIPROSES</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <div class="flex space-x-2">
+                                        <a href="#" onclick="lPermohonan()"
+                                            class="rounded-full px-1 py-1 bg-green-500 hover:bg-green-600 shadow-lg tooltipbtn"
+                                            data-title="Lulus Permohonan" data-placement="top">
+                                            <x-heroicon-o-check class="h-4 w-4 text-white" />
+                                        </a>
+
+                                        <a href="#" onclick="tPermohonan()"
+                                            class="rounded-full px-1 py-1 bg-red-500 hover:bg-red-600 shadow-lg tooltipbtn"
+                                            data-title="Tolak Permohonan" data-placement="top">
+                                            <x-heroicon-o-x class="h-4 w-4 text-white" />
+                                        </a>
+
+                                        <a href="#" onclick="eksekutifT()"
+                                            class="rounded-full px-1 py-1 bg-orange-500 hover:bg-orange-600 shadow-lg tooltipbtn"
+                                            data-title="Pindah Eksekutif" data-placement="top">
+                                            <x-heroicon-o-users class="h-4 w-4 text-white" />
+                                        </a>
+                                    </div>
+                                </x-table.table-body>
+
+                            </tr>
+                            <tr>
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                    <p>2.</p>
+                                </x-table.table-body>
+
+                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+
+                                    <div x-data="{Open : false}">
+                                        <a href="#" class="flex items-center space-x-1" x-on:click="Open = true">
+                                            <x-heroicon-s-information-circle
+                                                class="h-5 w-5 text-indigo-700 tooltipbtn focus:outline-none"
+                                                data-title="Maklumat Permohonan" data-placement="top" />
                                             <p>009011210039</p>
                                         </a>
 
@@ -117,7 +186,7 @@
                             </tr>
                             <tr>
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>2.</p>
+                                    <p>3.</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
@@ -186,7 +255,7 @@
                             </tr>
                             <tr>
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>3.</p>
+                                    <p>4.</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
@@ -224,75 +293,6 @@
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
                                     <p>830528-04-7920</p>
-                                </x-table.table-body>
-
-                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>SEDANG DIPROSES</p>
-                                </x-table.table-body>
-
-                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <div class="flex space-x-2">
-                                        <a href="#" onclick="lPermohonan()"
-                                            class="rounded-full px-1 py-1 bg-green-500 hover:bg-green-600 shadow-lg tooltipbtn"
-                                            data-title="Lulus Permohonan" data-placement="top">
-                                            <x-heroicon-o-check class="h-4 w-4 text-white" />
-                                        </a>
-
-                                        <a href="#" onclick="tPermohonan()"
-                                            class="rounded-full px-1 py-1 bg-red-500 hover:bg-red-600 shadow-lg tooltipbtn"
-                                            data-title="Tolak Permohonan" data-placement="top">
-                                            <x-heroicon-o-x class="h-4 w-4 text-white" />
-                                        </a>
-
-                                        <a href="#" onclick="eksekutifT()"
-                                            class="rounded-full px-1 py-1 bg-orange-500 hover:bg-orange-600 shadow-lg tooltipbtn"
-                                            data-title="Pindah Eksekutif" data-placement="top">
-                                            <x-heroicon-o-users class="h-4 w-4 text-white" />
-                                        </a>
-                                    </div>
-                                </x-table.table-body>
-
-                            </tr>
-                            <tr>
-                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>4.</p>
-                                </x-table.table-body>
-
-                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-
-                                    <div x-data="{Open : false}">
-                                        <a href="#" class="flex items-center space-x-1" x-on:click="Open = true">
-                                            <x-heroicon-s-information-circle
-                                                class="h-5 w-5 text-indigo-700 tooltipbtn focus:outline-none"
-                                                data-title="Maklumat Permohonan" data-placement="top" />
-                                            <p>009011210063</p>
-                                        </a>
-
-                                        <x-general.modal modalActive="Open" title="Informasi" modalSize="4xl">
-                                            {{-- <div class="px-6 py-4 ">
-                                                <h1 class="text-indigo-700 text-xl font-semibold border-b-4 border-indigo-500">MAKLUMAT PEBIAYAAN DIPOHON</h1>
-                                            </div> --}}
-                                            <x-general.grid mobile="1" gap="4" sm="1" md="1" lg="1" xl="1"
-                                                class="col-span-6">
-                                                <div class="h-96 overflow-y-auto mt-4 pl-4">
-                                                    <img src="{{asset('img/test.png')}}" class="w-auto" />
-                                                </div>
-                                            </x-general.grid>
-                                        </x-general.modal>
-                                    </div>
-
-                                </x-table.table-body>
-
-                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>100,000.00</p>
-                                </x-table.table-body>
-
-                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>MOHD AIZUDDIN BIN MOHD YUSOFF</p>
-                                </x-table.table-body>
-
-                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>850409-03-5147</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">

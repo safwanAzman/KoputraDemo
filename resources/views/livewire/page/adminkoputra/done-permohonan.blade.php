@@ -30,20 +30,28 @@
                                                 data-title="Maklumat Permohonan" data-placement="top" />
                                             <p>002002210074</p>
                                         </a>
+                                        <x-general.modal modalActive="Open" title="Informasi" modalSize="4xl">
+                                            <x-general.grid mobile="1" gap="4" sm="1" md="1" lg="1" xl="1"
+                                                class="col-span-6">
+                                                <div class="h-96 overflow-y-auto mt-4 pl-4">
+                                                    <img src="{{asset('img/test.png')}}" class="w-auto" />
+                                                </div>
+                                            </x-general.grid>
+                                        </x-general.modal>
                                     </div>
 
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>10,000.00</p>
+                                    <p>100,000.00</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>SAFWAN</p>
+                                    <p>MOHD AIZUDDIN BIN MOHD YUSOFF</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>991212121212</p>
+                                    <p>85409035147</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
@@ -54,7 +62,7 @@
                                     <x-heroicon-o-check-circle class="w-5 h-5 text-green-500" />
                                 </x-table.table-body>
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                   
+                                
                                 </x-table.table-body>
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
                                     <p>26-04-2021</p>

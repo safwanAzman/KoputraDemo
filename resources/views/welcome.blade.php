@@ -22,6 +22,19 @@
                 </div>
             </a>
 
+            <a href="{{route('permohonan')}}" class="p-2 text-center cursor-pointer">
+                <div
+                    class="py-16 w-64 rounded-lg overflow-hidden shadow-lg bg-indigo-600 transform  hover:scale-105 transition duration-300 ">
+                    <div class="space-y-10">
+                        <div class="px-6 py-4">
+                            <div class="space-y-5">
+                                <div class="font-bold text-2xl mb-2 text-white">ADMIN KOPUTRA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
             <a href="{{route('alk')}}" class="p-2 text-center cursor-pointer">
                 <div
                     class="py-16 w-64 rounded-lg overflow-hidden shadow-lg bg-yellow-400 transform  hover:scale-105 transition duration-300 ">
@@ -48,18 +61,7 @@
                 </div>
             </a>
 
-            <a href="{{route('adminkoputra')}}" class="p-2 text-center cursor-pointer">
-                <div
-                    class="py-16 w-64 rounded-lg overflow-hidden shadow-lg bg-indigo-600 transform  hover:scale-105 transition duration-300 ">
-                    <div class="space-y-10">
-                        <div class="px-6 py-4">
-                            <div class="space-y-5">
-                                <div class="font-bold text-2xl mb-2 text-white">ADMIN KOPUTRA</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
+           
 
         </div>
     </div>
