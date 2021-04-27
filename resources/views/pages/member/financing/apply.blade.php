@@ -1,4 +1,4 @@
-<x-general.modal modalActive="Open" title="Status Permohonan" modalSize="4xl">
+<x-general.modal modalActive="Open" title="Status Permohonan" modalSize="3xl">
     <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="col-span-6 ">
         <div class=" p-4" x-data="app()" x-cloak>
 
