@@ -9,8 +9,8 @@
                             <p>Maklumat Produk</p>
                         </div>
                         <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
-                            <x-form.input label="Nama Produk"  value="Homestay" />
-                            <x-form.input label="Kadar Keuntungan (%p.a)"  value="5.75" />
+                            <x-form.input label="Nama Produk"  value="PEMBIAYAAN CASH-i PLUS" />
+                            <x-form.input label="Kadar Keuntungan (%p.a)"  value="5.00" />
                             <x-form.input label="Tempoh Kelulusan (Hari)"  value="3" />
                             <x-form.input label="Payout Tertinggi (%)"  value="0.00" />
                             <x-form.input label="Caj Pemprosesan (RM)"  value="0.00" />
