@@ -57,7 +57,7 @@
                             value6="" condition="state" />
 
                         <div class="flex justify-center mt-8">
-                            <a href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
+                            <a onclick="save()" href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
                                 <div class="flex items-center space-x-2">
                                     <x-heroicon-o-save class="w-4 h-4" /> 
                                     <p>Save</p>
@@ -75,3 +75,16 @@
         <x-general.header bgimg="" title="Register Member" />
     </div>
 </div>
+
+@push('js')
+<script>
+    function save() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Berjaya Simpan',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+</script>
+@endpush
