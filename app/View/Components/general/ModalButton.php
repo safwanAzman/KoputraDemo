@@ -6,21 +6,32 @@ use Illuminate\View\Component;
 
 class ModalButton extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
+    public $modalActive,
+        $icon,
+        $title,
+        $description,
+        $colour,
+        $lButton,
+        $rButton;
+
+    public function __construct(
+        $modalActive,
+        $icon,
+        $title,
+        $description,
+        $colour,
+        $lButton,
+        $rButton
+    ) {
+        $this->modalActive = $modalActive;
+        $this->icon = $icon;
+        $this->title = $title;
+        $this->description = $description;
+        $this->colour = $colour;
+        $this->lButton = $lButton;
+        $this->rButton = $rButton;
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     *
-     * @return \Illuminate\Contracts\View\View|string
-     */
     public function render()
     {
         return view('components.general.modal-button');
