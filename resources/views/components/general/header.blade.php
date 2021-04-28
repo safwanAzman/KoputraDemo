@@ -1,5 +1,5 @@
 <header {{ $attributes->merge(['class' => '']) }}>
-    <div class="w-full bg-cover bg-center" style="height:25rem; background-image: url({{$bgimg}});">
+    <div class="w-full bg-cover bg-center" style="height:{{$height}}; background-image: url({{$bgimg}});">
         <div class=" px-8 py-4 h-full w-full bg-indigo-600 bg-opacity-100">
             <!-- Main content header -->
             <div class="">

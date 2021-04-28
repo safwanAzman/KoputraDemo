@@ -1,0 +1,20 @@
+<table>
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Details</th>
+        <th>Amount</th>
+        <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach($statements as $item)
+        <tr>
+            <td>{{$item->date}}</td>
+            <td>{{$item->detail->description}}</td>
+            <td>{{number_format($item->amount,2,".",",")}}</td>
+            <td>{{number_format($item->total_amount,2,".",",")}}</td>
+        </tr>
+    @endforeach
+    </tbody>
+</table>

@@ -70,6 +70,12 @@ Route::middleware('guest')->group(function () {
             'as'            => 'member.',
         ], function (){
             Route::get('/', [SiskopController::class, 'member_index'])->name('index');
+            Route::group([
+                'prefix'        => 'individual',
+                'as'            => 'individual.',
+            ], function (){
+                Route::get('{uuid}', [SiskopController::class, 'member_show'])->name('show');
+            });
         });
 
         Route::group([
@@ -77,6 +83,7 @@ Route::middleware('guest')->group(function () {
             'as'            => 'finance.',
         ], function (){
             Route::get('/', [SiskopController::class, 'finance_index'])->name('index');
+            Route::get('{uuid}', [SiskopController::class, 'finance_show'])->name('show');
         });
 
         Route::get('firasat', [SiskopController::class, 'firasat_index'])->name('firasat.index');
