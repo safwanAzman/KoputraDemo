@@ -151,7 +151,7 @@
 
                     <x-tab2.nav-content2 name="3">
                         <x-page.member.dashboard-grid>
-                            <x-page.member.dashboard-product-card type="homestay" title="APARTMENT WHITE ROSE, CAMERON HIGHLAND" description="400" description2="350" img="white_rose_cameron.jpg" route="{{ route('members.product.homestay.cameron.booking') }}"/>
+                            <x-page.member.dashboard-product-card type="homestay" title="APARTMENT WHITE ROSE, CAMERON HIGHLAND" description="400" description2="350" img="white_rose_cameron.jpg" route="{{ route('members.product.homestay.cameron.booking') }}" routeDetails="{{ route('members.product.homestay.cameron') }}"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY WHITE ROSE, SERI KEMBANGAN" description="250" description2="150" img="white_rose_seri_kembangan.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="THE HERITAGE, SERI KEMBANGAN" description="350" description2="300" img="the_heritage.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY LARKIN" description="400" description2="320" img="homestay_larkin.jpg"/>
