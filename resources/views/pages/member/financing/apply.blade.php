@@ -24,7 +24,7 @@
                                         <p>PERMOHONAN PEMBIAYAAN</p>
                                     </div>
                                     <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
-                                        <x-form.input label="Kadar Keuntungan" value="3.99" readonly/>
+                                        <x-form.input label="Kadar Keuntungan" value="5.00" readonly/>
                                         <x-form.input label="Jumlah Pembiayaan Dipohon (RM)" value="100,000.00" />
                                         <x-form.dropdown label="Tempoh Pembiayaan Dipohon" default="no" value="">
                                             <option value="">3</option>

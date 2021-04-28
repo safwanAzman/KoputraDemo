@@ -467,7 +467,7 @@
                                                         </div>
                                                         <div>
                                                             <p class="text-sm">Emel Peribadi</p>
-                                                            <p class="text-sm font-semibold text-gray-400 uppercase">rasmizammohamad@gmail.com</p>
+                                                            <p class="text-sm font-semibold text-gray-400 uppercase">rasmizam@gmail.com</p>
                                                         </div>
                                                         <div>
                                                             <p class="text-sm">Emel Kerja</p>
