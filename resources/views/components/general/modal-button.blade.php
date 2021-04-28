@@ -52,18 +52,7 @@ aria-modal="true">
         </div>
       </div>
       @if ($alkCheck=="true")
-      <div>
-        <div class="mt-1 rounded-md shadow-sm flex justify-center pb-5">
-            <select name="a" class="block w-2/3 transition duration-150 ease-in-out form-select sm:text-sm sm:leading-5 ">
-                
-                    <option value="" selected disabled>Senarai ALK</option>
-                    <option value="1" >ALK 1</option>
-                    <option value="2" >ALK 2</option>
-                    <option value="3" >ALK 3</option>
-    
-            </select>
-        </div>
-      </div>
+      {{$slot}}
       @endif
       <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
         <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-{{$colour}}-600 text-base font-medium text-white hover:bg-{{$colour}}-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm" @click="{{$modalActive}} = false" wire:click= @if($rButton=="Terima") "approve({{$itemid}})" @elseif($rButton=="Tolak") "reject({{$itemid}})" @elseif($rButton=="Ya") "pass({{$itemid}})" @endif>
