@@ -16,9 +16,23 @@ class SiskopController extends Controller
         return view ('pages.siskop.member.index');
     }
 
+    public function member_show($uuid)
+    {
+        return view ('pages.siskop.member.individual.show',[
+            'uuid'=>$uuid,
+        ]);
+    }
+
     public function finance_index()
     {
         return view ('pages.siskop.finance.index');
+    }
+
+    public function finance_show($uuid)
+    {
+        return view ('pages.siskop.finance.show',[
+            'uuid'=>$uuid,
+        ]);
     }
 
     public function firasat_index()

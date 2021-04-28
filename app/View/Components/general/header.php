@@ -8,14 +8,16 @@ class header extends Component
 {
     public $bgimg;
     public $title;
-    
-    public function __construct($bgimg,$title)
+    public $height;
+
+    public function __construct($bgimg,$title,$height = "25rem")
     {
         $this->bgimg = $bgimg;
-        $this->title = $title; 
+        $this->title = $title;
+        $this->height = $height;
     }
 
-    
+
     public function render()
     {
         return view('components.general.header');
