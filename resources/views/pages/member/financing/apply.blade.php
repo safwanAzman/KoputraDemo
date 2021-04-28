@@ -218,20 +218,20 @@
                                     <p>NAMA BORANG</p>
                                 </div>
                                 <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
-                                    <x-form.input type="file" label="PERMOHONAN ANGGOTA BARU & PEMBIAYAAN EKSPRESS" value="" />
-                                    <x-form.input type="file" label="KEBENARAN PENZAHIRAN MAKLUMAT KREDIT INDIVIDU " value="" />
+                                    <x-form.input type="file" label="PERMOHONAN ANGGOTA BARU & PEMBIAYAAN EKSPRESS" value="" accept="application/pdf"/>
+                                    <x-form.input type="file" label="KEBENARAN PENZAHIRAN MAKLUMAT KREDIT INDIVIDU " value="" accept="application/pdf"/>
                                 </x-general.grid>
                                 <div
                                     class="font-semibold text-lg text-indigo-600 border-b-4 border-indigo-600 py-2 mb-4">
                                     <p>DOKUMEN SOKONGAN</p>
                                 </div>
                                 <x-general.grid mobile="1" gap="5" sm="1" md="3" lg="3" xl="3" class="col-span-6 mt-6">
-                                    <x-form.input type="file" label="SALINAN KAD PENGENALAN (DEPAN DAN BELAKANG)" value="" />
-                                    <x-form.input type="file" label="SIJIL BERANAK (UNTUK POLIS SAHAJA)" value="" />
-                                    <x-form.input type="file" label="SALINAN PENYATA GAJI TERKINI (BESERTA COP PENGESAHAN MAJIKAN)" value="" />
-                                    <x-form.input type="file" label="SALINAN PENYATA GAJI 1 BULAN SEBELUMNYA (BESERTA COP PENGESAHAN MAJIKAN)" value="" />
-                                    <x-form.input type="file" label="SALINAN PENYATA GAJI 2 BULAN SEBELUMNYA (BESERTA COP PENGESAHAN MAJIKAN)" value="" />
-                                    <x-form.input type="file" label="SALINAN BUKU/PENYATA BANK " value="" />
+                                    <x-form.input type="file" label="SALINAN KAD PENGENALAN (DEPAN DAN BELAKANG)" value="" accept="application/pdf" />
+                                    <x-form.input type="file" label="SIJIL BERANAK (UNTUK POLIS SAHAJA)" value="" accept="application/pdf"/>
+                                    <x-form.input type="file" label="SALINAN PENYATA GAJI TERKINI (BESERTA COP PENGESAHAN MAJIKAN)" value="" accept="application/pdf"/>
+                                    <x-form.input type="file" label="SALINAN PENYATA GAJI 1 BULAN SEBELUMNYA (BESERTA COP PENGESAHAN MAJIKAN)" value="" accept="application/pdf"/>
+                                    <x-form.input type="file" label="SALINAN PENYATA GAJI 2 BULAN SEBELUMNYA (BESERTA COP PENGESAHAN MAJIKAN)" value="" accept="application/pdf"/>
+                                    <x-form.input type="file" label="SALINAN BUKU/PENYATA BANK " value="" accept="application/pdf"/>
                                 </x-general.grid>
                             </div>
                         </div>
