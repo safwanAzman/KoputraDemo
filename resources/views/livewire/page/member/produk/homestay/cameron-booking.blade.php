@@ -20,6 +20,14 @@
                                 @endfor
                             </x-form.dropdown>
                         </x-general.grid>
+                        <div class="flex justify-end mt-4">
+                            <a onclick="save()" href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
+                                <div class="flex items-center space-x-2">
+                                    <x-heroicon-o-save class="w-4 h-4" /> 
+                                    <p>Submit</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     {{-- term & condition --}}
                     <div class="p-4 mt-4 border-2 rounded-md">
@@ -122,3 +130,17 @@
         });
     </script>
 </div>
+@push('js')
+<script>
+    function save() {
+        
+            Swal.fire({
+            icon: 'success',
+            title: 'Booking Success!',
+            showConfirmButton: false,
+            })
+            setTimeout("location.href = '{{route('members-produk2')}}';", 2500);
+    }
+</script>
+
+@endpush

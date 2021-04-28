@@ -88,7 +88,7 @@
                             <a onclick="save()" href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
                                 <div class="flex items-center space-x-2">
                                     <x-heroicon-o-save class="w-4 h-4" /> 
-                                    <p>Hantar Permohonan</p>
+                                    <p>Simpan</p>
                                 </div>
                             </a>
                         </div>
@@ -100,7 +100,7 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg="" title="Daftar Member" />
+        <x-general.header bgimg="" title="Maklumat Keahlian" />
     </div>
 </div>
 

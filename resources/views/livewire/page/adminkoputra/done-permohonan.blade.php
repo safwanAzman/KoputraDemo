@@ -55,7 +55,7 @@
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                    <p>Lulus/Menunggu Pengesahan</p>
+                                    <p>Menunggu Kelulusan ALK</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">

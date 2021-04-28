@@ -45,4 +45,24 @@ class MembersController extends Controller
     {
         return view('pages.member.produk.homestay.cameronBooking');
     }
+
+    public function jaminan()
+    {
+        return view('pages.member.jaminan');
+    }
+
+    public function yuran()
+    {
+        return view('pages.member.yuran');
+    }
+
+    public function saham()
+    {
+        return view('pages.member.saham');
+    }
+
+    public function pembiayaan()
+    {
+        return view('pages.member.pembiayaan');
+    }
 }

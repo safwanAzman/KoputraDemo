@@ -40,6 +40,10 @@ Route::middleware('guest')->group(function () {
     Route::get('members/create', [MembersController::class, 'create'])->name('members-create');
     Route::get('members/produk', [MembersController::class, 'produk'])->name('members-produk');
     Route::get('members/produk2', [MembersController::class, 'produk2'])->name('members-produk2');
+    Route::get('members/yuran', [MembersController::class, 'yuran'])->name('members-yuran');
+    Route::get('members/saham', [MembersController::class, 'saham'])->name('members-saham');
+    Route::get('members/jaminan', [MembersController::class, 'jaminan'])->name('members-jaminan');
+    Route::get('members/pembiayaan', [MembersController::class, 'pembiayaan'])->name('members-pembiayaan');
     //Details Trading
     Route::get('members/produk/trading/makananTersedia', [MembersController::class, 'tradingMakananTersedia'])->name('members.product.trading.makananTersedia');
     //Buy Trading
@@ -58,6 +62,7 @@ Route::middleware('guest')->group(function () {
     //ALK
     Route::get('alk', [AlkController::class, 'index'])->name('alk');
     Route::get('alk/2', [DashboardController::class, 'index2'])->name('alk2');
+    Route::get('alk/3', [AlkController::class, 'tolakpermohonan'])->name('alk3');
 
     //SISKOP
     Route::group([

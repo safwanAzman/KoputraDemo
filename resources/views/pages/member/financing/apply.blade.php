@@ -1,4 +1,4 @@
-<x-general.modal modalActive="Open" title="Status Permohonan" modalSize="3xl">
+<x-general.modal modalActive="Open" title="Permohonan Pembiayaan" modalSize="3xl">
     <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="col-span-6 ">
         <div class=" p-4" x-data="app()" x-cloak>
 
@@ -277,18 +277,11 @@
 
     function save() {
         Swal.fire({
-                title: 'Luluskan permohonan pembiayaan ini?',
-                showCancelButton: true,
-                confirmButtonText: `Ya`,
-                cancelButtonText: 'Batal',
-            }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
-                if (result.isConfirmed) {
-                    Swal.fire('Permohonan dikemukakan dengan jayanya!', '', 'success')
-                    // window.location = "dashboard2.html";
-                    setTimeout("location.href = '{{route('members-produk2')}}';", 2500);
-                }
-            })
+            icon: 'success',
+            title: 'Permohonan dikemukakan dengan jayanya!',
+            showConfirmButton: false,
+        })
+        setTimeout("location.href = '{{route('members-produk2')}}';", 2500);
     }
 </script>
 @endpush

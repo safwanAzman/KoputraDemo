@@ -68,7 +68,7 @@
                                             <x-heroicon-s-information-circle
                                                 class="h-5 w-5 text-indigo-700 tooltipbtn focus:outline-none"
                                                 data-title="Maklumat Permohonan" data-placement="top" />
-                                            <p>009011210063</p>
+                                            <p>002002210074</p>
                                         </a>
 
                                         <x-general.modal modalActive="Open" title="Informasi" modalSize="4xl">
@@ -99,7 +99,7 @@
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>SEDANG DIPROSES</p>
+                                    <p>MENUNGGU KELULUSAN ALK</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
@@ -202,7 +202,7 @@
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>SEDANG DIPROSES</p>
+                                    <p>MENUNGGU KELULUSAN ALK</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
@@ -305,7 +305,7 @@
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>SEDANG DIPROSES</p>
+                                    <p>MENUNGGU KELULUSAN ALK</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
@@ -408,7 +408,7 @@
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>SEDANG DIPROSES</p>
+                                    <p>MENUNGGU KELULUSAN ALK</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
@@ -511,7 +511,7 @@
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>SEDANG DIPROSES</p>
+                                    <p>MENUNGGU KELULUSAN ALK</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">

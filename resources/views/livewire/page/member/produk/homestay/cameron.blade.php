@@ -51,7 +51,7 @@
                         <p class="text-sm text-gray-500">By
                             <span class="text-yellow-400">KOPUTRA</span>
                         </p>
-                        <div class="my-4 space-x-4">
+                        <div class="my-4">
                             <div class="text-sm ">Menginaplah di Apartment White Rose, Cameron Highlands sambil menikmati suasana tenang jauh dari kesesakan ibukota.</div>
                             <div class="text-sm ">Kami menawarkan apartment dilengkapi 3 bilik tidur beserta kemudahan penyediaan makanan sendiri dan wifi percuma! Bertempat di Tanah Rata, apartment ini juga hanya 700 meter daripada perkampungan Orang Asli. Kemudahan meletak kenderaan percuma juga di sediakan di kawasan yang berhampiran.</div>
                             <div class="mt-2 text-sm">Ladang strawberi dan ladang teh hanya mengambil masa 10 minit daripada apartment kami manakala Taman Rama-rama juga hanya 20 minit sahaja!</div>
