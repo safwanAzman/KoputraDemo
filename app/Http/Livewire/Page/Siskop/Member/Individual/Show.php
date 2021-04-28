@@ -16,7 +16,7 @@ class Show extends Component
     public function mount(){
         $this->customer = collect([
             'title_id'                       => 'ENCIK',
-            'name'                           => 'MOHD AIZUDDIN BIN MOHD YUSOFF ',
+            'name'                           => 'MOHD AIZUDDIN BIN MOHD YUSOFF',
             'identity_type_id'               => 'Identity Card(MyKad)',
             'identity_no'                    => '850409-03-5147',
             'other_identity_type_id'         => '',
