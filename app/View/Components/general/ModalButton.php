@@ -7,29 +7,38 @@ use Illuminate\View\Component;
 class ModalButton extends Component
 {
     public $modalActive,
-        $icon,
         $title,
         $description,
+        $iconColour,
+        $draw,
         $colour,
         $lButton,
-        $rButton;
+        $rButton,
+        $alkCheck,
+        $itemid;
 
     public function __construct(
         $modalActive,
-        $icon,
         $title,
         $description,
+        $iconColour,
+        $draw,
         $colour,
         $lButton,
-        $rButton
+        $rButton,
+        $alkCheck,
+        $itemid
     ) {
         $this->modalActive = $modalActive;
-        $this->icon = $icon;
         $this->title = $title;
         $this->description = $description;
+        $this->iconColour = $iconColour;
+        $this->draw = $draw;
         $this->colour = $colour;
         $this->lButton = $lButton;
         $this->rButton = $rButton;
+        $this->alkCheck = $alkCheck;
+        $this->itemid = $itemid;
     }
 
     public function render()
