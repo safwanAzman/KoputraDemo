@@ -21,10 +21,33 @@
                                 <x-slot name="content">
                                     <div
                                         class="font-semibold text-lg text-indigo-600 border-b-4 border-indigo-600 py-2 ">
-                                        <p>PEMBIAYAAN</p>
+                                        <p>PERMOHONAN PEMBIAYAAN</p>
                                     </div>
                                     <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
-                                        <x-form.input label="Jumlah Pembiayaan Dipohon: * (RM)" value="100,000.00" />
+                                        <x-form.input label="Kadar Keuntungan" value="3.99" readonly/>
+                                        <x-form.input label="Jumlah Pembiayaan Dipohon (RM)" value="100,000.00" />
+                                        <x-form.dropdown label="Tempoh Pembiayaan Dipohon" default="no" value="">
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="" selected>5</option>
+                                            <option value="">6</option>
+                                            <option value="">7</option>
+                                        </x-form.dropdown>
+                                        <x-form.dropdown label="Tujuan Permohonan" default="no" value="">
+                                            <option value="1">KEPERLUAN PERIBADI</option>
+                                            <option value="2">KEPERLUAN KELUARGA</option>
+                                            <option value="3">PENDIDIKAN PERIBADI</option>
+                                            <option value="4">PENDIDIKAN ANAK ANAK</option>
+                                            <option value="5">PENDIDIKAN AHLI KELUARGA</option>
+                                            <option value="6">KESIHATAN PERIBADI</option>
+                                            <option value="7">KESIHATAN AHLI KELUARGA</option>
+                                            <option value="8">BAYAR HUTANG SEDIA ADA</option>
+                                            <option value="9">BELANJA MELANCONG</option>
+                                            <option value="10">BELANJA UBAH-SUAI / BINA RUMAH</option>
+                                            <option value="11">BELANJA KENDERAAN</option>
+                                            <option value="12">BELANJA PERKAHWINAN</option>
+                                            <option value="13">KEPERLUAN LAIN-LAIN</option>
+                                        </x-form.dropdown>
                                     </x-general.grid>
                                     <div
                                         class="font-semibold text-lg text-indigo-600 border-b-4 border-indigo-600 py-2 mt-6">
@@ -96,8 +119,8 @@
                                     </x-general.grid>
                                     <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1"
                                         class="col-span-6 mt-3">
-                                        <x-form2.address class="" label="Alamat" value1="" value2="" value3="" value4=""
-                                            value5="" value6="" condition="state" />
+                                        <x-form2.address class="" label="Alamat" value1="Lot 900, Jalan 2G," value2="Kg. Baru Lanjut," value3="" value4="Sepang" value5="43650"
+                                            value6="" condition="state" />
                                     </x-general.grid>
                                     <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-3">
                                         <x-form.input label="No.Tel Bimbit :"  value="" />
