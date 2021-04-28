@@ -31,23 +31,48 @@
                             </div>
                             <x-form.input label="No. Pendaftaran Member"  value="178179" disabled/>
                             <x-form.dropdown label="Kaum" default="yes" value="" >
-                                <option value="">Melayu</option>
+                                <option value="1" selected>MELAYU</option>
+                                <option value="2">CINA</option>
+                                <option value="3">INDIA</option>
+                                <option value="4">SIAM</option>
+                                <option value="5">IBAN</option>
+                                <option value="6">BIDAYUH</option>
+                                <option value="7">KADAZAN</option>
+                                <option value="8">MELANAU</option>
+                                <option value="9">INDIA MUSLIM</option>
+                                <option value="10">DUSUN</option>
+                                <option value="11">ORANG ASLI</option>
+                                <option value="12">BUMIPUTERA SARAWAK</option>
+                                <option value="13">BUMIPUTERA SABAH</option>
+                                <option value="14">LAIN - LAIN</option>
                             </x-form.dropdown>
                             <x-form.dropdown label="Agama" default="yes" value="" >
-                                <option value="">Islam</option>
+                                <option value="1" selected="">ISLAM</option>
+                                <option value="2">KRISTIAN</option>
+                                <option value="3">BUDDHA</option>
+                                <option value="4">HINDU</option>
+                                <option value="5">LAIN - LAIN</option>
                             </x-form.dropdown>
                             <x-form.dropdown label="Warganegara" default="yes" value="" >
-                                <option value="">Malaysia</option>
+                                <option value="1" selected="">MALAYSIA</option>
+                                <option value="2">INDONESIA</option>
+                                <option value="3">SINGAPURA</option>
+                                <option value="4">THAILAND</option>
+                                <option value="5">FILIPINA</option>
+                                <option value="6">BRUNAI</option>
+                                <option value="7">VIETNAM</option>
+                                <option value="8">KEMBOJA</option>
+                                <option value="9">MYANMAR</option>
                             </x-form.dropdown>
-                            <x-form.dropdown label="Marital Status" default="yes" value="" >
-                                <option value="">Bujang</option>
-                                <option value="">Berkahwin</option>
+                            <x-form.dropdown label="Taraf Perkahwinan" default="yes" value="" >
+                                <option value="" selected>BUJANG</option>
+                                <option value="">BERKAHWIN</option>
                             </x-form.dropdown>
                             <x-form.dropdown label="Jenis Kediaman" default="yes" value="" >
-                                <option value="">Sendiri</option>
-                                <option value="">Keluarga</option>
-                                <option value="">Sewa</option>
-                                <option value="">Lain-lain</option>
+                                <option value="" selected>SENDIRI</option>
+                                <option value="">KELUARGA</option>
+                                <option value="">SEWA</option>
+                                <option value="">KAIN-LAIN</option>
                             </x-form.dropdown>
                             <x-form.input label="Jumlah Tanggungan"  value="1" />
                             <x-form.input label="No. Telefon Bimbit"  value="0183546808" />

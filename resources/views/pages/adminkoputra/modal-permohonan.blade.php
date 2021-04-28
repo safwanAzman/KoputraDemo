@@ -26,7 +26,7 @@
                                     </div>
                                     <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
                                         <x-form.input label="JUMLAH PEMBIAYAAN DIPOHON (RM)"  value="100,000.00" readonly/>
-                                        <x-form.input label="KADAR KEUNTUNGAN (%)"  value="3.9900" readonly/>
+                                        <x-form.input label="KADAR KEUNTUNGAN (%)"  value="5.00" readonly/>
                                         <x-form.input label="TEMPOH PEMBIAYAAN (tahun)"  value="5 tahun" readonly/>
                                         <x-form.input label="JUMLAH KEUNTUNGAN (RM)"  value="1,995.00" readonly/>
                                         <x-form.input label="JUMLAH JUALAN (RM)"  value="1,995.00" readonly/>
