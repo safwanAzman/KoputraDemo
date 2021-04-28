@@ -9,7 +9,7 @@
                 </x-slot>
             </x-dashboard.info-card>
 
-            <x-dashboard.info-card bg="white" title="JUMLAH PERMOHONAN YANG LULUS" value="3" iconbg="green"
+            <x-dashboard.info-card bg="white" title="JUMLAH PERMOHONAN YANG LULUS" value="2" iconbg="green"
                 percentage="50%" footerTitle="Daripada bulan lepas" cardRoute="#">
                 <x-slot name="svg">
                     <x-heroicon-o-chart-pie class="h-7 w-7" />

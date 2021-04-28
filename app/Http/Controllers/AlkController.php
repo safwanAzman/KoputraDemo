@@ -10,4 +10,9 @@ class AlkController extends Controller
     {
         return view ('pages.alk.index');
     }
+
+    public function tolakpermohonan()
+    {
+        return view ('pages.alk.tolak-permohonan');
+    }
 }

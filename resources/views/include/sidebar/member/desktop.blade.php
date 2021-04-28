@@ -16,9 +16,26 @@
                         <x-heroicon-o-chart-pie class="w-7 h-7" />
                     </x-sidebar.nav-item> 
 
-                    <x-sidebar.nav-item title="members" route="{{route('members-create')}}" uri="">
+                    <x-sidebar.nav-item title="Maklumat Keahlian" route="{{route('members-create')}}" uri="">
                         <x-heroicon-o-user-group class="w-7 h-7" />
                     </x-sidebar.nav-item>
+
+                    <x-sidebar.nav-item title="Yuran" route="{{route('members-yuran')}}" uri="">
+                        <x-heroicon-o-cash class="w-7 h-7" />
+                    </x-sidebar.nav-item>
+
+                    <x-sidebar.nav-item title="Saham" route="{{route('members-saham')}}" uri="">
+                        <x-heroicon-o-presentation-chart-line class="w-7 h-7" />
+                    </x-sidebar.nav-item>
+
+                    <x-sidebar.nav-item title="Rekod Pembiayaan" route="{{route('members-pembiayaan')}}" uri="">
+                        <x-heroicon-o-currency-dollar class="w-7 h-7" />
+                    </x-sidebar.nav-item>
+
+                    <x-sidebar.nav-item title="Jaminan" route="{{route('members-jaminan')}}" uri="">
+                        <x-heroicon-o-shield-check class="w-7 h-7" />
+                    </x-sidebar.nav-item>
+
                 <!-- members nav item End -->
 
             </ul>

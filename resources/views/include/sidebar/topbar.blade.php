@@ -16,7 +16,15 @@
             </div>
 
             <ul class="flex items-center flex-shrink-0 space-x-6">
-
+                @if(Route::current()->uri == "members" || \Request::is("members/*") )
+                    <h1 class="text-white">AIZUDDIN</h1>
+                @endif
+                @if(Route::current()->uri == "alk" || \Request::is("alk/*") )
+                    <h1 class="text-white">NASIR</h1>
+                @endif
+                @if(Route::current()->uri == "adminkoputra" || \Request::is("adminkoputra/*") )
+                    <h1 class="text-white">ADMIN</h1>
+                @endif
                 <!-- Notifications menu -->
                 <li class="relative">
                     <button class="p-2 bg-white text-indigo-600 align-middle shadow-xl rounded-full  focus:outline-none "

@@ -291,19 +291,12 @@
     }
 
     function save() {
-            Swal.fire({
-                title: 'Luluskan permohonan pembiayaan ini?',
-                showCancelButton: true,
-                confirmButtonText: `Ya`,
-                cancelButtonText: 'Batal',
-            }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
-                if (result.isConfirmed) {
-                    Swal.fire('Permohonan Dihantar Kepada ALK Dengan Jayanya!', '', 'success')
-                    // window.location = "dashboard2.html";
-                    setTimeout("location.href = '{{route('donepermohonan')}}';", 2500);
-                }
-            })
+        Swal.fire({
+            icon: 'success',
+            title: 'Permohonan Dihantar Kepada ALK Dengan Jayanya!',
+            showConfirmButton: false,
+        })
+        setTimeout("location.href = '{{route('donepermohonan')}}';", 2500);
         }
 </script>
 @endpush
