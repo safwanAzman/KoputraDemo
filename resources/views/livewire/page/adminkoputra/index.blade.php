@@ -342,7 +342,7 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg=""  title="KEMAS KINI PRODUK"/>
+        <x-general.header bgimg=""  title="KEMAS KINI PRODUK" height="8rem"/>
     </div>
 
 </div>

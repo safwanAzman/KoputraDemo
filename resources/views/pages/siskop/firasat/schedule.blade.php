@@ -1,4 +1,4 @@
-<div class="">
+<div class="p-4 h-96 overflow-y-auto overflow-x-hidden">
     <x-general.table>
         <x-slot name="thead">
             <x-general.table-header class="text-left" value="Instalment No." sort="" livewire=""/>

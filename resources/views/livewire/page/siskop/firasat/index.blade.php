@@ -1,4 +1,4 @@
-<div>
+<div x-data="{Open : false}">
     <div class="z-20 relative mx-auto px-0 my-3 text-lg leading-6 font-medium text-cool-gray-900">
         <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="1" xl="1" class="col-span-6 items-center mt-8">
 
@@ -10,14 +10,14 @@
         {{-- body --}}
         <div class="mx-auto px-0 my-3 text-lg leading-6 font-medium text-cool-gray-900 sm:px-6 lg:px-8">
             <x-general.card class="bg-white shadow-lg px-5 py-3">
-                <div class="flex-col lg:flex-row flex justify-between pt-4 border-b-2  py-4 px-4">
-                    <div class="flex lg:mt-0">
+                <div class="flex-col lg:flex-row flex justify-end pt-4 border-b-2  py-4 px-4">
+                    <div class="flex space-x-2 lg:mt-0" >
+                        <a  x-on:click="Open = true"  href="#" class="bg-indigo-500 hover:bg-indigo-700 text-white text-sm py-1 px-4 rounded  flex items-center {{$show_schedule?'':'hidden'}}">
+                            Schedule
+                        </a>
                         <a href="#" class="bg-indigo-500 hover:bg-indigo-700 text-white text-sm py-1 px-4 rounded  flex items-center"
                             wire:click="calculate()">
                             Calculate
-                        </a>
-                        <a href="#" class="bg-indigo-500 hover:bg-indigo-700 text-white text-sm py-1 px-4 rounded  flex items-center {{$show_schedule?'':'hidden'}}">
-                            Schedule
                         </a>
                     </div>
                 </div>
@@ -118,9 +118,11 @@
                             <div class="">
                                 <x-general.card class="bg-white shadow-lg p-4">
                                     <div class="flex justify-between">
+                                        <div>
                                         <h1 class="font-semibold text-indigo-500">Step-Up Instalment</h1>
-                                        <div class="flex items-center w-full">
-                                            <span class="mr-2 -mt-4 text-base text-gray-500">End Month : </span>
+                                        </div>
+                                        <div class="flex">
+                                            <span class="mr-2 mt-2 text-base text-gray-500">End Month : </span>
                                             <x-form.input label="" value="" livewire="" />
                                         </div>
                                     </div>
@@ -133,8 +135,8 @@
                                 <x-general.card class="bg-white shadow-lg p-4">
                                     <div class="flex justify-between">
                                         <h1 class="font-semibold text-indigo-500">Multiple Step-Up/Down Installment</h1>
-                                        <div class="flex items-center w-full">
-                                            <span class="mr-2 -mt-4 text-base text-gray-500">No.of Step : </span>
+                                        <div class="flex">
+                                            <span class="mr-2 mt-2 text-base text-gray-500">No.of Step : </span>
                                             <x-form.dropdown label="" value="">
                                                 <option value=""></option>
                                                 <option value="1">1</option>
@@ -252,7 +254,9 @@
                     </div>
                 </div>
                 @if($show_schedule)
-                @include('pages.siskop.firasat.schedule')
+                <x-general.modal modalActive="Open" title="Repayment Schedule" modalSize="4xl">
+                        @include('pages.siskop.firasat.schedule')
+                </x-general.modal>
                 @endif
             </x-general.card>
         </div>
