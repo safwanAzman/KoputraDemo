@@ -13,7 +13,6 @@
         <div class="text-indigo-600">
             <div class="flex p-2">
                 <div class="flex py-3 px-2">
-                    <x-logo class="w-8 h-8 " />
                     <p class="ml-2 font-semibold italic">SISKOP</p>
                 </div>
             </div>
