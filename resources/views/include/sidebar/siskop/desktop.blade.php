@@ -22,27 +22,27 @@
 
                     <!-- Siskop nav item Start -->
                         <x-sidebar.nav-item title="Siskop" route="{{route('siskop.index')}}" uri="">
-                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                            <x-heroicon-o-chart-square-bar class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
                         <x-sidebar.nav-item title="Member" route="{{route('siskop.member.index')}}" uri="">
-                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                            <x-heroicon-o-user-group class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
                         <x-sidebar.nav-item title="Finance" route="{{route('siskop.finance.index')}}" uri="">
-                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                            <x-heroicon-o-calculator class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
                         <x-sidebar.nav-item title="Teller" route="{{route('siskop.teller.index')}}" uri="">
-                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                            <x-heroicon-o-currency-dollar  class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
                         <x-sidebar.nav-item title="Firasat" route="{{route('siskop.firasat.index')}}" uri="">
-                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                            <x-heroicon-o-desktop-computer class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
                         <x-sidebar.nav-item title="Report" route="{{route('siskop.report.index')}}" uri="">
-                            <x-heroicon-o-chart-pie class="w-7 h-7" />
+                            <x-heroicon-o-document-text class="w-7 h-7" />
                         </x-sidebar.nav-item>
                     <!-- Siskop nav item End -->
 
