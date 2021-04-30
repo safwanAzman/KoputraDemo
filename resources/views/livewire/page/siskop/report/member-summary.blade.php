@@ -5,40 +5,102 @@
 
                 <div class="mb-4 border-2 rounded-lg py-2 px-3 grid gap-2 lg:grid-cols-4 sm:grid-cols-4">
 
-                    <x-form.dropdown label="Member Summary" value=""  default="no" disabled>
+                    <x-form.dropdown label="Member Summary" value=""  default="no">
                         <option value="1">Status</option>
-                        <option value="2">Nationality</option>
-                        <option value="3">Type</option>
-                        <option value="4">Gender</option>
-                        <option value="4">Material Status</option>
-                        <option value="4">Race</option>
-                        <option value="4">Religion</option>
-                        <option value="4">Title</option>
                     </x-form.dropdown>
 
-                    <x-form.dropdown label="Type" value="" default="no" disabled>
-                        <option value="1" selected>Chart</option>
-                        <option value="2">Table</option>
+                    <x-form.dropdown label="Type" value="type" default="no">
+                        <option value="chart" selected>Chart</option>
+                        <option value="table" >Table</option>
                     </x-form.dropdown>
-
-                    <x-form.dropdown label="Data" value=""  default="no" disabled>
-                        <option value="1"selected>Please choose</option>
-                        <option value="2">Contribution</option>
-                        <option value="2">Share</option>
-                    </x-form.dropdown>
+                    <div class="{{$type == 'table' ? 'hidden' : '' }}">
+                        <x-form.dropdown label="Data" value="data"  default="no">
+                            <option value="Please choose"selected>Please choose</option>
+                            <option value="Contribution">Contribution</option>
+                            <option value="Share">Share</option>
+                        </x-form.dropdown>
+                    </div>
                 </div>
-                <div class="flex justify-between printHide">
-                    <x-general.button.icon href="#" target="" label="Generate" livewire="" color="indigo">
-                        <x-heroicon-o-cog class="-ml-0.5 mr-2 h-4 w-4" />
-                    </x-general.button.icon>
-
+                <div class="flex justify-end printHide">
                     <x-general.button.icon href="#" target="" label="Print" livewire="" color="indigo" >
                         <x-heroicon-o-printer class="-ml-0.5 mr-2 h-4 w-4" />
                     </x-general.button.icon>
                 </div>
-                <div class="p-4 h-auto z-0 flex justify-center">
-                    <img src="{{asset('img/summary.png')}}" class="w-auto"/>
+                <div class="my-6  {{$type == 'table' ? '' : 'hidden' }}">
+                    <x-general.table>
+                        <x-slot name="thead">
+                            <x-general.table-header class="text-left" value="Description" sort="" livewire="" />
+                            <x-general.table-header class="text-right" value="Total Member" sort="" livewire="" />
+                            <x-general.table-header class="text-right" value="Total Contribution (RM)" sort="" livewire="" />
+                            <x-general.table-header class="text-right" value="Total Share (RM)" sort="" livewire="" />
+                        </x-slot>
+
+                        <x-slot name="tbody">
+                            
+                            <tr>
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs">Active</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">2,566</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">25,885,928.61</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">4,772,061.68</p>
+                                </x-general.table-body>
+                            </tr>
+                            <tr>
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs">Stop</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">1,474</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">205,279.49</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">55,441.91</p>
+                                </x-general.table-body>
+                            </tr>
+                            <tr>
+                                <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
+                                    <p class="text-xs">TOTAL</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">4,040</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">26,091,208.10</p>
+                                </x-general.table-body>
+
+                                <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
+                                    <p class="text-xs">4,827,503.59</p>
+                                </x-general.table-body>
+                            </tr>
+                        </x-slot>
+                    </x-general.table>
                 </div>
+                <div class="p-4 h-auto z-0 flex justify-center {{$type == 'chart' ? '' : 'hidden' }}">
+                    @if($data == 'Please choose')
+                    <img src="{{asset('img/summary.png')}}" class="w-auto"/>
+                    @elseif($data == 'Contribution')
+                    <img src="{{asset('img/summaryC.png')}}" class="w-auto"/>
+                    @elseif($data == 'Share')
+                    <img src="{{asset('img/summaryS.png')}}" class="w-auto"/>
+                    @endif
+                </div>
+            </div>
             </x-general.card>
         </div>
     </div>
