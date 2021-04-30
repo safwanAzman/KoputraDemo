@@ -10,7 +10,7 @@ class Dropdown extends Component
     public $value;
     public $default;
 
-    public function __construct($label, $value, $default)
+    public function __construct($label, $value, $default="")
     {
         $this->label = $label;
         $this->value = $value;
