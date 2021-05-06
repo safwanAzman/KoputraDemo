@@ -66,7 +66,8 @@
                             </x-table.table>
                         </div>
                     </div>
-                    {{ $members->links('pagination::tailwind') }}
+                    {{ $members->links() }}
+                    {{-- {{ $members->links('pagination::tailwind') }} --}}
                 </x-general.grid>
             </div>
         </div>
