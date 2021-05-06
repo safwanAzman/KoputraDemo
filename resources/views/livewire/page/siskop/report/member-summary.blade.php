@@ -15,7 +15,6 @@
                     </x-form.dropdown>
                     <div class="{{$type == 'table' ? 'hidden' : '' }}">
                         <x-form.dropdown label="Data" value="data"  default="no">
-                            <option value="Please choose"selected>Please choose</option>
                             <option value="Contribution">Contribution</option>
                             <option value="Share">Share</option>
                         </x-form.dropdown>
@@ -36,7 +35,7 @@
                         </x-slot>
 
                         <x-slot name="tbody">
-                            
+
                             <tr>
                                 <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
                                     <p class="text-xs">Active</p>
@@ -92,7 +91,7 @@
                     </x-general.table>
                 </div>
                 <div class="p-4 h-auto z-0 flex justify-center {{$type == 'chart' ? '' : 'hidden' }}">
-                    @if($data == 'Please choose')
+                    @if($data == '')
                     <img src="{{asset('img/summary.png')}}" class="w-auto"/>
                     @elseif($data == 'Contribution')
                     <img src="{{asset('img/summaryC.png')}}" class="w-auto"/>

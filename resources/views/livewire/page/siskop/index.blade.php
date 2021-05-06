@@ -20,7 +20,7 @@
                                             <p class="text-base">Total </p>
                                         </div>
                                         <div>
-                                            <p class="text-base">4040</p>
+                                            <p class="text-base">4017</p>
                                         </div>
                                     </div>
                                     <div class="mt-2"></div>
@@ -38,7 +38,7 @@
                                             <p class="text-base">Active</p>
                                         </div>
                                         <div>
-                                            <p class="text-base">2566</p>
+                                            <p class="text-base">2543</p>
                                         </div>
                                     </div>
 
@@ -64,7 +64,7 @@
                                     <div
                                         class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-pink-500">
                                         <div class="flex">
-                                            <p class="text-base">Regular Member</p>
+                                            <p class="text-base">Agent/Dealer</p>
                                         </div>
                                         <div>
                                             <p class="text-base">3494</p>
@@ -74,7 +74,7 @@
                                     <div
                                         class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-pink-500">
                                         <div class="flex">
-                                            <p class="text-base">Ex-Staff Member</p>
+                                            <p class="text-base">Dropship</p>
                                         </div>
                                         <div>
                                             <p class="text-base">241</p>
@@ -84,7 +84,7 @@
                                     <div
                                         class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-pink-500">
                                         <div class="flex">
-                                            <p class="text-base">Lifetime Member</p>
+                                            <p class="text-base">Customer</p>
                                         </div>
                                         <div>
                                             <p class="text-base">241</p>
@@ -94,17 +94,7 @@
                                     <div
                                         class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-pink-500">
                                         <div class="flex">
-                                            <p class="text-base">Board Member</p>
-                                        </div>
-                                        <div>
-                                            <p class="text-base">23</p>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-pink-500">
-                                        <div class="flex">
-                                            <p class="text-base">Coop Staff</p>
+                                            <p class="text-base">Master Dealer</p>
                                         </div>
                                         <div>
                                             <p class="text-base">29</p>
@@ -123,7 +113,7 @@
                             <div class="flex  text-white bg-yellow-500 py-4 px-4 rounded-t-md">
                                 <x-heroicon-o-currency-dollar class="w-7 h-7 mr-2" />
                                 <p class="font-semibold text-xl">
-                                    Contribution
+                                    Sales Transactions
                                 </p>
                             </div>
                             <div class="p-4">
@@ -141,7 +131,7 @@
                                     <div
                                         class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-yellow-500">
                                         <div class="flex">
-                                            <p class="text-base">Balance</p>
+                                            <p class="text-base">Balance (RM)</p>
                                         </div>
                                         <div>
                                             <p class="text-base">0.00</p>
@@ -150,7 +140,7 @@
                                     <div
                                         class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-yellow-500">
                                         <div class="flex">
-                                            <p class="text-base">Payment Amount </p>
+                                            <p class="text-base">Sales Amount (RM)</p>
                                         </div>
                                         <div>
                                             <p class="text-base">0.00</p>
@@ -159,7 +149,7 @@
                                     <div
                                         class="flex justify-between mb-2 bg-white py-2 px-2 shadow-lg border-l-4 border-yellow-500">
                                         <div class="flex">
-                                            <p class="text-base">Withdraw Amount </p>
+                                            <p class="text-base">Credited Amount (RM)</p>
                                         </div>
                                         <div>
                                             <p class="text-base">0.00</p>
@@ -178,7 +168,7 @@
                                     <div
                                         class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-yellow-500">
                                         <div class="flex">
-                                            <p class="text-base">Balance</p>
+                                            <p class="text-base">Balance (RM)</p>
                                         </div>
                                         <div>
                                             <p class="text-base">27,455,303.33</p>
@@ -187,7 +177,7 @@
                                     <div
                                         class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-yellow-500">
                                         <div class="flex">
-                                            <p class="text-base">Payment Amount </p>
+                                            <p class="text-base">Sales Amount (RM)</p>
                                         </div>
                                         <div>
                                             <p class="text-base">31,757,476.42</p>
@@ -196,7 +186,7 @@
                                     <div
                                         class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-yellow-500">
                                         <div class="flex">
-                                            <p class="text-base">Withdraw Amount </p>
+                                            <p class="text-base">Credited Amount (RM)</p>
                                         </div>
                                         <div>
                                             <p class="text-base">4,302,173.09</p>
@@ -208,7 +198,7 @@
                         <!-- End current Contribution card -->
                     </div>
 
-                    <div class="swiper-slide mr-4">
+                    {{-- <div class="swiper-slide mr-4">
                         <!-- Start current Share card -->
                         <div class="bg-white shadow-xl rounded-md">
                             <div class="flex  text-white bg-teal-500 py-4 px-4 rounded-t-md">
@@ -298,7 +288,7 @@
                             </div>
                         </div>
                         <!-- End current Share card -->
-                    </div>
+                    </div> --}}
 
                     <div class="swiper-slide">
                         <!-- Start Financing card -->
@@ -306,7 +296,7 @@
                             <div class="flex  text-white bg-indigo-500 py-4 px-4 rounded-t-md">
                                 <x-heroicon-o-currency-dollar class="w-7 h-7 mr-2" />
                                 <p class="font-semibold text-xl">
-                                    Financing
+                                    Commission - Rewards
                                 </p>
                             </div>
                             <div class="p-4">
@@ -315,7 +305,7 @@
                                         class="flex justify-between my-2 mb-0 font-bold text-indigo-500 bg-white py-2 px-2 shadow-lg">
                                         <div class="flex">
                                             <x-heroicon-o-check-circle class="w-6 h-6 mr-2" />
-                                            <p class="text-lg">Applied Amount</p>
+                                            <p class="text-lg">Gold Bar</p>
                                         </div>
                                         <div></div>
                                     </div>
@@ -332,7 +322,7 @@
                                         class="flex justify-between my-2 mb-0 font-bold text-indigo-500 bg-white py-2 px-2 shadow-lg ">
                                         <div class="flex">
                                             <x-heroicon-o-check-circle class="w-6 h-6 mr-2" />
-                                            <p class="text-lg">Approve Amount</p>
+                                            <p class="text-lg">Commission Rewards (RM)</p>
                                         </div>
                                         <div></div>
                                     </div>
@@ -377,9 +367,7 @@
                     <div class="w-full">
                         <div class="leading-6">
                             <p class="mb-2 text-xl font-semibold text-indigo-600">Welcome to SISKOP Web</p>
-                            <p class="text-sm text-gray-400">
-                                Also known as “Sistem Koperasi CSC” Used to manage information of customer (Anggota) of a co-op Consists of 3 main modules : Customer Information File (CIF) Customer Information Financing Teller Reporting
-                            </p>
+                            <p class="text-sm text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum ultricies felis feugiat malesuada. Nulla nulla urna, pharetra et tincidunt ut, mollis interdum metus. In accumsan imperdiet dui, ut aliquam quam euismod non. Fusce pulvinar, elit et ultrices vestibulum, ex tellus consectetur augue, in faucibus augue nunc sed magna. Praesent eget fermentum magna. Morbi velit elit, posuere ultrices vehicula at, cursus sit amet mi. Aliquam erat volutpat. Maecenas pretium ornare lobortis. Nulla sed sagittis elit.</p>
                         </div>
                     </div>
                     <div class="mt-2 flex text-indigo-600">

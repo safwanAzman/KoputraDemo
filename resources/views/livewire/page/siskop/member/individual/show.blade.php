@@ -6,7 +6,7 @@
     </div>
     <div class="absolute top-0 left-0 right-0 z-0">
         {{-- header --}}
-        <x-general.header bgimg=""  title="Member" height="8rem"/>
+        <x-general.header bgimg=""  title="Dealer" height="8rem"/>
         {{-- body --}}
         <div class="mx-auto px-0 my-3 text-lg leading-6 font-medium text-cool-gray-900 sm:px-6 lg:px-8">
             <div class="bg-white sm:rounded-lg shadow px-5 py-3">
@@ -19,7 +19,7 @@
                                         <p class="py-2 text-base">Category</p>
                                     </div>
                                     <div class="flex space-x-3 bg-pink-600 text-white py-2 px-4 rounded-lg">
-                                        <p>Name: <span>{{ $customer['name'] }}</span></p>
+                                        <p>Name: <span>{{ $customer->name }}</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -38,19 +38,19 @@
                                 </x-hovertab.title>
                                 <x-hovertab.title name="3">
                                     <x-heroicon-o-cash class="w-6 h-6 mr-2"/>
-                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Contribution</span>
+                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Sales Transactions</span>
                                 </x-hovertab.title>
                                 <x-hovertab.title name="4">
                                     <x-heroicon-o-presentation-chart-line class="w-6 h-6 mr-2"/>
-                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Share</span>
+                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Commission Statements</span>
                                 </x-hovertab.title>
-                                <x-hovertab.title name="7">
+                                {{-- <x-hovertab.title name="7">
                                     <x-heroicon-o-currency-dollar class="w-6 h-6 mr-2"/>
                                     <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Finance</span>
-                                </x-hovertab.title>
+                                </x-hovertab.title> --}}
                                 <x-hovertab.title name="8">
                                     <x-heroicon-o-shield-check class="w-6 h-6 mr-2"/>
-                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Guarantee</span>
+                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Customer Orders</span>
                                 </x-hovertab.title>
                                 {{-- <x-tab.title name="3"><x-heroicon-o-user-group class="w-6 h-6 mr-2"/>Welfare</x-tab.title> --}}
                             </div>
@@ -62,7 +62,7 @@
                         <x-hovertab.content name="2">@include('pages.siskop.member.individual.relative')</x-hovertab.content>
                         <x-hovertab.content name="3">@include('pages.siskop.member.individual.contribution')</x-hovertab.content>
                         <x-hovertab.content name="4">@include('pages.siskop.member.individual.share')</x-hovertab.content>
-                        <x-hovertab.content name="7">@include('pages.siskop.finance.list-active-account')</x-hovertab.content>
+                        {{-- <x-hovertab.content name="7">@include('pages.siskop.finance.list-active-account')</x-hovertab.content> --}}
                         <x-hovertab.content name="8">@include('pages.siskop.member.individual.guarantee')</x-hovertab.content>
                         {{-- <x-tab.content name="3">@include('pages.siskop.member.individual.welfare')</x-tab.content> --}}
                     </div>

@@ -5,10 +5,10 @@ namespace App\Http\Livewire\Page\Siskop\Report;
 use Livewire\Component;
 
 class MemberSummary extends Component
-{   
-    
+{
+
     public $type  = 'chart';
-    public $data  = 'Please choose';
+    public $data  = '';
 
     public function render()
     {

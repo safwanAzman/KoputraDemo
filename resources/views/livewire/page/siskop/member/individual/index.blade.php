@@ -1,5 +1,5 @@
 <div class="mx-auto px-0 my-3 text-lg leading-6 font-medium text-cool-gray-900 sm:px-6 lg:px-8">
-    <x-general.page-title class="mb-0" title="Member list"/>
+    <x-general.page-title class="mb-0" title="Dealer list"/>
     <div class="bg-white sm:rounded-lg shadow px-5 py-3">
         <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="col-span-6">
             <!-- Start: Customer list-->

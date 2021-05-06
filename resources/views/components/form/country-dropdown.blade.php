@@ -21,9 +21,9 @@
             wire:loading.class="bg-gray-300"
             wire:target="submit"
         >
-            <option value="">Please choose</option>
+            <option value="">Choose Country</option>
             {{ $slot }}
         </select>
     </div>
-    @if($value !="" && $errors->has($value)) <p class="text-sm text-red-600">Please choose</p> @endif
+    @if($value !="" && $errors->has($value)) <p class="text-sm text-red-600">Choose Country</p> @endif
 </div>

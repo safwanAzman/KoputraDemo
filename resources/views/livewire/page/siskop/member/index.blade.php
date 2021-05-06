@@ -6,7 +6,7 @@
     </div>
     <div class="absolute top-0 left-0 right-0 z-0">
         {{-- header --}}
-        <x-general.header bgimg=""  title="Member List" height="8rem"/>
+        <x-general.header bgimg=""  title="Dealer List" height="8rem"/>
         {{-- body --}}
         <div class="mx-auto px-0 my-3 text-lg leading-6 font-medium text-cool-gray-900 sm:px-6 lg:px-8">
             <div class="bg-white sm:rounded-lg shadow px-5 py-3">
@@ -30,42 +30,43 @@
                                     </x-btn.icon>
                                 </div>
                             </div>
-                            {{-- <div wire:loading wire:target="search">
-                                @include('misc.loading')
-                            </div> --}}
                             <x-table.table>
                                 <x-slot name="thead">
+                                    <x-table.table-header sort="true" value="Membership No" />
                                     <x-table.table-header sort="true" value="Identity No" />
                                     <x-table.table-header sort="yes" value="Name" />
-                                    <x-table.table-header sort="yes" value="Created At" />
-                                    <x-table.table-header sort="yes" value="Updated At" />
+                                    <x-table.table-header sort="yes" value="Last Modified Date" />
                                     <x-table.table-header sort="" value="Action" />
                                 </x-slot>
                                 <x-slot name="tbody">
+                                    @forelse ($members as $item)
                                     <tr>
                                         <x-table.table-body colspan="" class="text-left text-gray-500">
-                                            <p>850409-03-5147</p>
+                                            <p>{{$item->ref_no}}</p>
                                         </x-table.table-body>
                                         <x-table.table-body colspan="" class="text-left text-gray-500">
-                                            <p>MOHD AIZUDDIN BIN MOHD YUSOFF </p>
+                                            <p>{{$item->identity_no}}</p>
                                         </x-table.table-body>
                                         <x-table.table-body colspan="" class="text-left text-gray-500">
-                                            <p>01/03/2021</p>
+                                            <p>{{$item->name}}</p>
                                         </x-table.table-body>
                                         <x-table.table-body colspan="" class="text-left text-gray-500">
-                                            <p>15/03/2021</p>
+                                            <p>{{isset($item->updated_at)||$item->updated_at != '1900-01-01 00:00:00.000' ? date('d/m/Y',strtotime($item->updated_at)) : ''}}</p>
                                         </x-table.table-body>
                                         <x-table.table-body colspan="" class="text-center text-gray-500">
-                                            <x-btn.icon href="{{ route('siskop.member.individual.show', 1) }}" target="" label="View" color="indigo" livewire="">
+                                            <x-btn.icon href="{{ route('siskop.member.individual.show', $item->uuid) }}" target="" label="View" color="indigo" livewire="">
                                                 <x-heroicon-o-eye class="-ml-0.5 mr-2 h-4 w-4"/>
                                             </x-btn.icon>
                                         </x-table.table-body>
                                     </tr>
+                                    @empty
+
+                                    @endforelse
                                 </x-slot>
                             </x-table.table>
                         </div>
                     </div>
-                    {{-- {{ $customers->links('pagination::tailwind') }} --}}
+                    {{ $members->links('pagination::tailwind') }}
                 </x-general.grid>
             </div>
         </div>
