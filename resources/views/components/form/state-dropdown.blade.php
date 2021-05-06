@@ -4,13 +4,15 @@
     </label>
     <div class="mt-1 rounded-md shadow-sm">
         <select
-            wire:model="{{ $value }}"
+            @if ($value != "")
+                wire:model.lazy="{{ $value }}"
+            @endif
             class="block w-full transition duration-150 ease-in-out form-select sm:text-sm sm:leading-5"
             wire:loading.attr='readonly'
             wire:loading.class="bg-gray-300"
             wire:target="submit"
         >
-            <option value="" selected disabled>Choose State</option>
+            <option value="" selected>Choose State</option>
             {{ $slot }}
         </select>
     </div>

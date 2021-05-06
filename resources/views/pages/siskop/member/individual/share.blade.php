@@ -3,7 +3,7 @@
     <x-general.card class="bg-white shadow-lg p-4">
             <div class="flex justify-between mb-4">
                 <div>
-                    <h1 class="font-semibold text-indigo-500">Share Statements</h1>
+                    <h1 class="font-semibold text-indigo-500">Commission Statements</h1>
                 </div>
                 <div>
                     {{-- <x-general.button.icon href="{{route('user.cif.individual.shareExcel',$customer->uuid)}}" target="" label="Excel" color="indigo" livewire="">
@@ -40,7 +40,7 @@
                             <p>25/01/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Initial Purchase - Cheque/IBT</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -54,7 +54,7 @@
                             <p>25/02/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -68,7 +68,7 @@
                             <p>25/03/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -82,7 +82,7 @@
                             <p>25/04/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -96,7 +96,7 @@
                             <p>25/05/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -110,7 +110,7 @@
                             <p>25/06/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -124,7 +124,7 @@
                             <p>25/07/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -138,7 +138,7 @@
                             <p>25/08/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -152,7 +152,7 @@
                             <p>25/09/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -166,7 +166,7 @@
                             <p>25/10/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -180,7 +180,7 @@
                             <p>25/11/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -194,7 +194,7 @@
                             <p>25/12/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -208,7 +208,7 @@
                             <p>25/12/2020</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share's Dividend</p>
+                            <p>Gold Bar (0.25g) 999.9</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>7.47</p>
@@ -222,7 +222,7 @@
                             <p>25/01/2021</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -236,7 +236,7 @@
                             <p>25/02/2021</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>
@@ -250,7 +250,7 @@
                             <p>25/03/2021</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-left font-medium text-gray-900">
-                            <p>Share Purchase - Salary Deduction</p>
+                            <p>Introducer Commission</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
                             <p>30.00</p>

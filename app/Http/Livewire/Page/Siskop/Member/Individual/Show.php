@@ -2,80 +2,94 @@
 
 namespace App\Http\Livewire\Page\Siskop\Member\Individual;
 
+use App\Models\AccountMaster;
 use App\Models\State;
 use App\Models\Country;
+use App\Models\Gender;
+use App\Models\IdentityType;
+use App\Models\Language;
+use App\Models\Marital;
+use App\Models\Member;
+use App\Models\MemberStatus;
+use App\Models\MemberType;
+use App\Models\Race;
+use App\Models\Title;
 use Livewire\Component;
 
 use Illuminate\Database\Eloquent\Collection;
 
 class Show extends Component
 {
-    public  /*general use*/     $uuid, $customer, $addresses, $families, $states, $countries;
+    public  /*general use*/     $uuid, $customer, $addresses, $families, $states, $countries, $genders, $races, $maritals, $identity_types, $other_identity_types, $languages, $titles, $relations, $religions, $statuses, $types, $guarantee_accounts;
+
+    protected $rules = [
+        'customer.title_id'                       => '',
+        'customer.name'                           => '',
+        'customer.identity_type_id'               => '',
+        'customer.identity_no'                    => '',
+        'customer.other_identity_type_id'         => '',
+        'customer.other_identity_no'              => '',
+        'customer.gender_id'                      => '',
+        'customer.birth_date'                     => '',
+        'customer.race_id'                        => '',
+        'customer.language_id'                    => '',
+        'customer.marital_id'                     => '',
+        'customer.country_id'                     => '',
+        'customer.income_group_id'                => '',
+        'customer.phone'                          => '',
+        'customer.email'                          => '',
+        'customer.current_employer_name'          => '',
+        'customer.current_employment_date'        => '',
+        'customer.current_employent_year_service' => '',
+        'customer.entity_type_id'                 => '',
+        'customer.bnm_customer_type_id'           => '',
+        'customer.business_activity_code_id'      => '',
+        'customer.business_type_id'               => '',
+        'customer.franchisor_name'                => '',
+        'customer.brand_name'                     => '',
+        'customer.risk_rating'                    => '',
+        'customer.risk_rating_date'               => '',
+        'customer.watchlist_type_id'              => '',
+        'customer.review_frequency_id'            => '',
+        'customer.watchlist_start_date'           => '',
+        'customer.watchlist_end_date'             => '',
+        'customer.watchlist_remarks'              => '',
+
+        'customer.ref_no'                         => '',
+        'customer.status_id'                      => '',
+        'customer.type_id'                        => '',
+        'customer.apply_date'                     => '',
+        'customer.start_date'                     => '',
+        'customer.end_date'                       => '',
+
+        'customer.total_share'                    => '',
+        'customer.monthly_share'                  => '',
+        'customer.last_purchase_amount'           => '',
+        'customer.last_purchase_date'             => '',
+        'customer.last_selling_amount'            => '',
+        'customer.last_selling_date'              => '',
+
+        'customer.total_contribution'             => '',
+        'customer.monthly_contribution'           => '',
+        'customer.last_payment_amount'            => '',
+        'customer.last_payment_date'              => '',
+        'customer.last_withdraw_amount'           => '',
+        'customer.last_withdraw_date'             => '',
+    ];
 
 
     public function mount(){
-        $this->customer = collect([
-            'title_id'                       => 'ENCIK',
-            'name'                           => 'MOHD AIZUDDIN BIN MOHD YUSOFF',
-            'identity_type_id'               => 'Identity Card(MyKad)',
-            'identity_no'                    => '850409-03-5147',
-            'other_identity_type_id'         => '',
-            'other_identity_no'              => '',
-            'gender_id'                      => 'MALE',
-            'birth_date'                     => '1985-04-09',
-            'race_id'                        => 'MALAY',
-            'language_id'                    => 'ENGLISH',
-            'marital_id'                     => 'MARRIED',
-            'country_id'                     => 'MALAYSIA',
-            'income_group_id'                => '',
-            'phone'                          => '012-345 6789',
-            'email'                          => 'aizuddin.yusoff@ymail.com',
+        $this->customer = Member::where('uuid','=',$this->uuid)->first();
 
-            'current_employer_name'          => '',
-            'current_employer_address'       => '',
-            'current_employer_phone'         => '',
-            'current_employer_fax'           => '',
-            'current_employment_date'        => '',
-            'current_employent_year_service' => '',
-            'current_employment_group_id'    => '',
-            'current_employment_status_id'   => '',
-            'current_employment_position'    => '',
-            'current_salary'                 => '',
-            'entity_type_id'                 => '',
-            'bnm_customer_type_id'           => '',
-            'business_activity_code_id'      => '',
-            'business_type_id'               => '',
-            'franchisor_name'                => '',
-            'brand_name'                     => '',
-            'risk_rating'                    => '',
-            'risk_rating_date'               => '',
-            'watchlist_type_id'              => '',
-            'review_frequency_id'            => '',
-            'watchlist_start_date'           => '',
-            'watchlist_end_date'             => '',
-            'watchlist_remarks'              => '',
-
-            'ref_no'                         => '4954',
-            'status_id'                      => 'ACTIVE',
-            'type_id'                        => 'REGULAR MEMBER',
-            'apply_date'                     => '2020-01-05',
-            'start_date'                     => '2020-01-15',
-            'end_date'                       => '',
-
-            'total_share'                    => '457.47',
-            'monthly_share'                  => '30.00',
-            'last_purchase_amount'           => '30.00',
-            'last_purchase_date'             => '2021-03-25',
-            'last_selling_amount'            => '',
-            'last_selling_date'              => '',
-
-            'total_contribution'             => '457.47',
-            'monthly_contribution'           => '30.00',
-            'last_payment_amount'            => '30.00',
-            'last_payment_date'              => '2021-03-25',
-            'last_withdraw_amount'           => '',
-            'last_withdraw_date'             => '',
-        ]);
+        $this->genders              = Gender::all();
+        $this->races                = Race::all();
+        $this->maritals             = Marital::all();
+        $this->identity_types       = IdentityType::all();
+        $this->other_identity_types = IdentityType::all();
+        $this->languages            = Language::all();
+        $this->titles               = Title::all();
+        $this->statuses             = MemberStatus::all();
+        $this->types                = MemberType::where('id','<>',4)->get();
 
         $this->states     = collect([
             ['id'=> '1',  'description'=>'Johor'],
@@ -101,12 +115,19 @@ class Show extends Component
 
         $this->addresses = array();
         $this->families = array();
+
+        $this->guarantee_accounts = AccountMaster::where('account_status','=',1)
+                                    ->where(function($query) {
+                                        $query
+                                            ->orWhere('gtr1', '=', $this->customer->ref_no)
+                                            ->orWhere('gtr2', '=', $this->customer->ref_no);
+                                    })
+                                    ->get();
     }
 
     public function render(){
-
         return view('livewire.page.siskop.member.individual.show',[
-
+            'bumi'=>Race::where('id','=',$this->customer->race_id)->first()->bumi == 1 ? 'YES':'NO'
         ]);
     }
 
