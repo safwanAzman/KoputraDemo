@@ -108,7 +108,7 @@
             <div>
                 <!-- Start current Contribution card -->
                 <div class="bg-white shadow-xl rounded-md">
-                    <div class="flex  text-white bg-orange-500 py-4 px-4 rounded-t-md">
+                    <div class="flex  text-white bg-teal-500 py-4 px-4 rounded-t-md">
                         <x-heroicon-o-currency-dollar class="w-7 h-7 mr-2" />
                         <p class="font-semibold text-xl">
                             Sales Transactions
@@ -117,7 +117,7 @@
                     <div class="p-4">
                         <div class="leading-6">
                             <div
-                                class="flex justify-between my-2 mb-0 font-bold text-orange-500 bg-white py-2 px-2 shadow-lg ">
+                                class="flex justify-between my-2 mb-0 font-bold text-teal-500 bg-white py-2 px-2 shadow-lg ">
                                 <div class="flex">
                                     <x-heroicon-o-calendar class="w-6 h-6 mr-2" />
                                     <p class="text-lg">Today</p>
@@ -127,7 +127,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-orange-500">
+                                class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-teal-500">
                                 <div class="flex">
                                     <p class="text-base">Balance (RM)</p>
                                 </div>
@@ -136,7 +136,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-orange-500">
+                                class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-teal-500">
                                 <div class="flex">
                                     <p class="text-base">Sales Amount (RM)</p>
                                 </div>
@@ -145,7 +145,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex justify-between mb-2 bg-white py-2 px-2 shadow-lg border-l-4 border-orange-500">
+                                class="flex justify-between mb-2 bg-white py-2 px-2 shadow-lg border-l-4 border-teal-500">
                                 <div class="flex">
                                     <p class="text-base">Credited Amount (RM)</p>
                                 </div>
@@ -154,7 +154,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex justify-between  my-2 mb-0 font-bold text-orange-500 bg-white py-2 px-2 shadow-lg">
+                                class="flex justify-between  my-2 mb-0 font-bold text-teal-500 bg-white py-2 px-2 shadow-lg">
                                 <div class="flex">
                                     <x-heroicon-o-clock class="w-6 h-6 mr-2" />
                                     <p class="text-lg">Current</p>
@@ -164,7 +164,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-orange-500">
+                                class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-teal-500">
                                 <div class="flex">
                                     <p class="text-base">Balance (RM)</p>
                                 </div>
@@ -173,7 +173,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-orange-500">
+                                class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-teal-500">
                                 <div class="flex">
                                     <p class="text-base">Sales Amount (RM)</p>
                                 </div>
@@ -182,7 +182,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-orange-500">
+                                class="flex justify-between bg-white py-2 px-2 shadow-lg border-l-4 border-teal-500">
                                 <div class="flex">
                                     <p class="text-base">Credited Amount (RM)</p>
                                 </div>

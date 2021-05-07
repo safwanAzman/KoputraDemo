@@ -2,7 +2,7 @@
     <x-slot name="content">
         <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="col-span-6">
             <x-general.card class="bg-white shadow-lg p-4">
-                <x-general.button.icon href="#" target="" label="Add New" color="indigo" livewire="wire:click=newFamily()">
+                <x-general.button.icon href="#" target="" label="Add New" color="yellow" livewire="wire:click=newFamily()">
                     <x-heroicon-o-plus class="-ml-0.5 mr-2 h-4 w-4" />
                 </x-general.button.icon>
                 <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="2" class="mt-5">
