@@ -25,9 +25,9 @@
                                     <x-form.input name="search" label="" value=""  livewire="wire:model=search"/>
                                 </div>
                                 <div class="float-right align-middle">
-                                    <x-btn.icon href="" target="" label="Create" color="yellow" livewire="">
+                                    {{-- <x-btn.icon href="" target="" label="Create" color="yellow" livewire="">
                                         <x-heroicon-o-user-add class="-ml-0.5 mr-2 h-4 w-4"/>
-                                    </x-btn.icon>
+                                    </x-btn.icon> --}}
                                 </div>
                             </div>
                             <x-table.table>

@@ -167,16 +167,7 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <header>
-            <div class="w-full bg-center bg-cover" style="height:30rem; background-image: url();">
-                <div class="w-full h-full px-8 py-4 bg-indigo-600 bg-opacity-100 ">
-                    <!-- Main content header -->
-                    <div class="">
-                        <h1 class="text-4xl font-bold text-white uppercase whitespace-nowrap"></h1>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <x-general.header bgimg=""  title="" height="30rem"/>
     </div>
 
 </div>
