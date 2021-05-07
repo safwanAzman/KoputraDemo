@@ -3,7 +3,7 @@
         <div class="">
             <x-general.card class="bg-white shadow-lg px-5 py-3 mt-8">
                 <div class="mb-4 border-2 rounded-lg py-2 px-3 grid gap-2 lg:grid-cols-4 sm:grid-cols-4">
-                    <x-form.input label="New Member" type="text" value="{{$rate}}"  readonly/>
+                    <x-form.input label="New Dealers" type="text" value="{{$rate}}"  readonly/>
 
                     <x-form.dropdown label="Year" value="" default="no">
                         <option value="1">1</option>
@@ -24,11 +24,7 @@
                     </x-form.dropdown>
                 </div>
                 <div class="flex justify-end printHide">
-                    {{-- <x-general.button.icon href="#" target="" label="Generate" livewire="" color="indigo">
-                        <x-heroicon-o-cog class="-ml-0.5 mr-2 h-4 w-4" />
-                    </x-general.button.icon> --}}
-
-                    <x-general.button.icon href="#" target="" label="Print" livewire="" color="indigo" >
+                    <x-general.button.icon href="#" target="" label="Print" livewire="" color="yellow" >
                         <x-heroicon-o-printer class="-ml-0.5 mr-2 h-4 w-4" />
                     </x-general.button.icon>
                 </div>
@@ -45,7 +41,7 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg="" title="Contribution & Share Projection" />
+        <x-general.header bgimg="" title="Sales Transactions & Commission Rewards Projection" />
     </div>
 
 </div>

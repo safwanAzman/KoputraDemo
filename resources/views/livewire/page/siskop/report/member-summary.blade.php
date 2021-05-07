@@ -5,7 +5,7 @@
 
                 <div class="mb-4 border-2 rounded-lg py-2 px-3 grid gap-2 lg:grid-cols-4 sm:grid-cols-4">
 
-                    <x-form.dropdown label="Member Summary" value=""  default="no">
+                    <x-form.dropdown label="Dealers Summary" value="table"  default="no">
                         <option value="1">Status</option>
                     </x-form.dropdown>
 
@@ -15,13 +15,13 @@
                     </x-form.dropdown>
                     <div class="{{$type == 'table' ? 'hidden' : '' }}">
                         <x-form.dropdown label="Data" value="data"  default="no">
-                            <option value="Contribution">Contribution</option>
-                            <option value="Share">Share</option>
+                            <option value="Contribution">Sales Transactions</option>
+                            <option value="Share">Commission Rewards</option>
                         </x-form.dropdown>
                     </div>
                 </div>
                 <div class="flex justify-end printHide">
-                    <x-general.button.icon href="#" target="" label="Print" livewire="" color="indigo" >
+                    <x-general.button.icon href="#" target="" label="Print" livewire="" color="yellow" >
                         <x-heroicon-o-printer class="-ml-0.5 mr-2 h-4 w-4" />
                     </x-general.button.icon>
                 </div>
@@ -30,8 +30,8 @@
                         <x-slot name="thead">
                             <x-general.table-header class="text-left" value="Description" sort="" livewire="" />
                             <x-general.table-header class="text-right" value="Total Member" sort="" livewire="" />
-                            <x-general.table-header class="text-right" value="Total Contribution (RM)" sort="" livewire="" />
-                            <x-general.table-header class="text-right" value="Total Share (RM)" sort="" livewire="" />
+                            <x-general.table-header class="text-right" value="Total Sales Transactions (RM)" sort="" livewire="" />
+                            <x-general.table-header class="text-right" value="Total Commission Rewards (RM)" sort="" livewire="" />
                         </x-slot>
 
                         <x-slot name="tbody">
@@ -76,7 +76,7 @@
                                 </x-general.table-body>
 
                                 <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
-                                    <p class="text-xs">4,040</p>
+                                    <p class="text-xs">4,017</p>
                                 </x-general.table-body>
 
                                 <x-general.table-body colspan="" class="text-right font-medium text-gray-900">
@@ -106,7 +106,7 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg="" title="Contribution & Share Projection" />
+        <x-general.header bgimg="" title="Dealers Summary" />
     </div>
 
 </div>

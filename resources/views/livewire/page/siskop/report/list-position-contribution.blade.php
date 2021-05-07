@@ -13,11 +13,11 @@
                             </div>
                         </div>
                         <div class="mt-4">
-                            <x-general.button.icon href="#" target="" label="Excel" color="indigo" livewire="">
+                            <x-general.button.icon href="#" target="" label="Excel" color="yellow" livewire="">
                                 <x-heroicon-o-document-text class="-ml-0.5 mr-2 h-4 w-4" />
                             </x-general.button.icon>
 
-                            <x-general.button.icon href="#" target="_blank" label="PDF" color="indigo" livewire="">
+                            <x-general.button.icon href="#" target="_blank" label="PDF" color="yellow" livewire="">
                                 <x-heroicon-o-document-report class="-ml-0.5 mr-2 h-4 w-4" />
                             </x-general.button.icon>
                         </div>
