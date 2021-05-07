@@ -13,14 +13,14 @@
         <div class="text-yellow-400">
             <div class="flex p-2">
                 <div class="flex py-3 px-2">
-                    <p class="ml-2 font-semibold italic">Kasih Gold</p>
+                    <img src="{{ asset('img/kasih-gold-logo.png') }}" class="w-auto"/>
                 </div>
             </div>
             <div>
                 <ul class="mt-6 leading-10">
 
                     <!-- Siskop nav item Start -->
-                        <x-sidebar.nav-item title="Kasih Gold" route="{{route('siskop.index')}}" uri="">
+                        <x-sidebar.nav-item title="Dashboard" route="{{route('siskop.index')}}" uri="">
                             <x-heroicon-o-chart-square-bar class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
