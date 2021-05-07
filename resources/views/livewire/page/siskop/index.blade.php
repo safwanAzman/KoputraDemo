@@ -7,7 +7,7 @@
                     <div class="flex  text-white bg-pink-500 py-4 px-4 rounded-t-md">
                         <x-heroicon-o-user-group class="w-7 h-7 mr-2" />
                         <p class="font-semibold text-xl">
-                            Members
+                            Dealer
                         </p>
                     </div>
                     <div class="p-4">
@@ -354,22 +354,6 @@
                     </div>
                 </div>
                 <!-- End c Financing card -->
-            </div>
-        </x-general.grid>
-        <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="col-span-6 bg-white rounded-lg p-6 mt-2">
-            <div class="my-6 mt-0 border-b-2">
-                <div class="my-3">
-                    <div class="w-full">
-                        <div class="leading-6">
-                            <p class="mb-2 text-xl font-semibold text-yellow-400">Welcome to Kasih Gold Web</p>
-                            <p class="text-sm text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum ultricies felis feugiat malesuada. Nulla nulla urna, pharetra et tincidunt ut, mollis interdum metus. In accumsan imperdiet dui, ut aliquam quam euismod non. Fusce pulvinar, elit et ultrices vestibulum, ex tellus consectetur augue, in faucibus augue nunc sed magna. Praesent eget fermentum magna. Morbi velit elit, posuere ultrices vehicula at, cursus sit amet mi. Aliquam erat volutpat. Maecenas pretium ornare lobortis. Nulla sed sagittis elit.</p>
-                        </div>
-                    </div>
-                    <div class="mt-2 flex text-yellow-400">
-                        <x-heroicon-o-calendar class="w-5 h-5 mr-2 " />
-                        <p class="text-sm font-semibold ">24th Feb 2021 04:40 PM</p>
-                    </div>
-                </div>
             </div>
         </x-general.grid>
     </div>
