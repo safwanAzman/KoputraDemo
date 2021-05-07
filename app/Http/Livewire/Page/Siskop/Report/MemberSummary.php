@@ -8,6 +8,7 @@ class MemberSummary extends Component
 {
 
     public $type  = 'chart';
+    public $table  = '1';
     public $data  = '';
 
     public function render()

@@ -33,10 +33,10 @@
                                         <a href="{{route('siskop.report.contributionshare_projection')}}"
                                             class="text-sm text-gray-500 font-semibold py-2 px-4 inline-flex items-center w-full hover:text-yellow-400">
                                                 <x-heroicon-o-chart-pie  class=" w-4 h-4 mr-2" />
-                                        <span>Sales Transaction and Commission Rewards Projection</span>
+                                        <span>Sales Transactions & Commission Rewards Projection</span>
                                         </a>
                                         <a href="{{route('siskop.report.member_summary')}}"
-                                            class="text-sm text-gray-500 font-semibold py-2 px-4 inline-flex items-center w-full hover:text-yellow-400"">
+                                            class="text-sm text-gray-500 font-semibold py-2 px-4 inline-flex items-center w-full hover:text-yellow-400">
                                                 <x-heroicon-o-chart-pie  class=" w-4 h-4 mr-2" />
                                         <span>Dealers Summary</span>
                                         </a>
