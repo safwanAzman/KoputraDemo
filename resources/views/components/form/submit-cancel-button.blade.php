@@ -6,7 +6,7 @@
             </a>
         </span>
         <span class="ml-3 inline-flex rounded-md shadow-sm">
-            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out" wire:loading.class.remove="bg-indigo-600" wire:loading.class="bg-indigo-500" wire:target="submit">
+            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-400 focus:outline-none focus:border-yellow-600 focus:shadow-outline-yellow active:bg-yellow-600 transition duration-150 ease-in-out" wire:loading.class.remove="bg-yellow-500" wire:loading.class="bg-yellow-400" wire:target="submit">
                 {{ $submit }}
                 <img class="ml-2 h-5 w-5" src="{{ asset('img/spin_loading.gif') }}" wire:loading wire:target="submit">
             </button>

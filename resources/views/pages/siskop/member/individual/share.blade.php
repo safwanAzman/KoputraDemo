@@ -3,7 +3,7 @@
     <x-general.card class="bg-white shadow-lg p-4">
             <div class="flex justify-between mb-4">
                 <div>
-                    <h1 class="font-semibold text-indigo-500">Commission Statements</h1>
+                    <h1 class="font-semibold text-yellow-400">Commission Statements</h1>
                 </div>
                 <div>
                     {{-- <x-general.button.icon href="{{route('user.cif.individual.shareExcel',$customer->uuid)}}" target="" label="Excel" color="indigo" livewire="">

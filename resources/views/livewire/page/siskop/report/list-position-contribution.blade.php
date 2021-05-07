@@ -28,10 +28,10 @@
                             <x-general.table-header class="text-left" value="Name" sort="yes" />
                             <x-general.table-header class="text-center" value="Type" sort="yes" />
                             <x-general.table-header class="text-center" value="Status" sort="yes" />
-                            <x-general.table-header class="text-center" value="Last Payment Date" sort="yes" />
-                            <x-general.table-header class="text-right" value="Last Payment Amount" sort="yes" />
-                            <x-general.table-header class="text-center" value="Last Withdraw Date" sort="yes" />
-                            <x-general.table-header class="text-right" value="Last Withdraw Amount" sort="yes" />
+                            <x-general.table-header class="text-center" value="Last Sales Date" sort="yes" />
+                            <x-general.table-header class="text-right" value="Last Sales Amount " sort="yes" />
+                            <x-general.table-header class="text-center" value="Last Credited Date" sort="yes" />
+                            <x-general.table-header class="text-right" value="Last Credited Amount" sort="yes" />
                             <x-general.table-header class="text-right" value="Total" sort="yes" />
                         </x-slot>
 
@@ -428,7 +428,7 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg="" title="LIST OF CURRENT POSITION CONTRIBUTION" />
+        <x-general.header bgimg="" title="LIST OF CURRENT POSITION SALES TRANSACTIONS" />
     </div>
 
 </div>

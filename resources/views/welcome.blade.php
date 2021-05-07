@@ -54,14 +54,14 @@
                     <div class="space-y-10">
                         <div class="px-6 py-4">
                             <div class="space-y-5">
-                                <div class="font-bold text-2xl mb-2 text-white">SISKOP</div>
+                                <div class="font-bold text-2xl mb-2 text-white">Kasih Gold</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </a>
 
-           
+
 
         </div>
     </div>

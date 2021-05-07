@@ -26,31 +26,31 @@
                             <div class="flex overflow-x-auto">
                                 <x-hovertab.title name="0">
                                     <x-heroicon-o-user-circle class="w-6 h-6 mr-2"/>
-                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Details</span>
+                                    <span class="text-sm tooltip-text bg-yellow-400 border rounded border-yellow-400 text-white -mt-14">Details</span>
                                 </x-hovertab.title>
                                 <x-hovertab.title name="1">
                                     <x-heroicon-o-home class="w-6 h-6 mr-2"/>
-                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Address</span>
+                                    <span class="text-sm tooltip-text bg-yellow-400 border rounded border-yellow-400 text-white -mt-14">Address</span>
                                 </x-hovertab.title>
                                 <x-hovertab.title name="2">
                                     <x-heroicon-o-user-group class="w-6 h-6 mr-2"/>
-                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Family</span>
+                                    <span class="text-sm tooltip-text bg-yellow-400 border rounded border-yellow-400 text-white -mt-14">Family</span>
                                 </x-hovertab.title>
                                 <x-hovertab.title name="3">
                                     <x-heroicon-o-cash class="w-6 h-6 mr-2"/>
-                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Sales Transactions</span>
+                                    <span class="text-sm tooltip-text bg-yellow-400 border rounded border-yellow-400 text-white -mt-14">Sales Transactions</span>
                                 </x-hovertab.title>
                                 <x-hovertab.title name="4">
                                     <x-heroicon-o-presentation-chart-line class="w-6 h-6 mr-2"/>
-                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Commission Statements</span>
+                                    <span class="text-sm tooltip-text bg-yellow-400 border rounded border-yellow-400 text-white -mt-14">Commission Statements</span>
                                 </x-hovertab.title>
                                 {{-- <x-hovertab.title name="7">
                                     <x-heroicon-o-currency-dollar class="w-6 h-6 mr-2"/>
-                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Finance</span>
+                                    <span class="text-sm tooltip-text bg-yellow-400 border rounded border-yellow-400 text-white -mt-14">Finance</span>
                                 </x-hovertab.title> --}}
                                 <x-hovertab.title name="8">
                                     <x-heroicon-o-shield-check class="w-6 h-6 mr-2"/>
-                                    <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Customer Orders</span>
+                                    <span class="text-sm tooltip-text bg-yellow-400 border rounded border-yellow-400 text-white -mt-14">Customer Orders</span>
                                 </x-hovertab.title>
                                 {{-- <x-tab.title name="3"><x-heroicon-o-user-group class="w-6 h-6 mr-2"/>Welfare</x-tab.title> --}}
                             </div>

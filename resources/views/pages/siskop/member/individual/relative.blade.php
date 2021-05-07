@@ -10,7 +10,7 @@
                     <div>
                         <div class="flex justify-between">
                             <div>
-                                <h1 class="font-semibold text-indigo-500">Family Information
+                                <h1 class="font-semibold text-yellow-400">Family Information
                                     {{ $loop->iteration }}
                                 </h1>
                             </div>

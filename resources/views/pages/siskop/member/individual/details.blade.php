@@ -4,7 +4,7 @@
             <div class="">
                 <!-- Start: Membership information Information-->
                 <x-general.card class="bg-white shadow-lg p-4">
-                    <h1 class="font-semibold text-indigo-500">Dealership Information</h1>
+                    <h1 class="font-semibold text-yellow-400">Dealership Information</h1>
                     <x-general.grid mobile="1" gap="3" sm="1" md="1" lg="1" xl="3" class="mt-5">
                         <div class="mb-4">
                             <x-form.input label="Dealership No" value="{{$customer->ref_no}}" />
@@ -43,7 +43,7 @@
 
                 <!-- Start: Customer Information-->
                 <x-general.card class="bg-white shadow-lg p-4 mt-5">
-                    <h1 class="font-semibold text-indigo-500">Dealer Information</h1>
+                    <h1 class="font-semibold text-yellow-400">Dealer Information</h1>
                     <x-general.grid mobile="1" gap="3" sm="1" md="1" lg="1" xl="2" class="mt-5">
                         <div class="mb-4">
                             <x-form.dropdown label="Title" value="customer.title_id" default="no">
@@ -142,7 +142,7 @@
             <div class="">
                 <!-- Start: Contribution Information-->
                 <x-general.card class="bg-white shadow-lg p-4 mt-5">
-                    <h1 class="font-semibold text-indigo-500">Sales Transactions</h1>
+                    <h1 class="font-semibold text-yellow-400">Sales Transactions</h1>
                     <x-general.grid mobile="1" gap="3" sm="1" md="1" lg="1" xl="3" class="mt-5">
                         <div class="mb-4">
                             <x-form.input  label="Total" value="{{number_format($customer->total_contribution,2,'.',',')}}" />
@@ -173,7 +173,7 @@
 
                 <!-- Start: Share Information-->
                 <x-general.card class="bg-white shadow-lg p-4 mt-5">
-                    <h1 class="font-semibold text-indigo-500">Commission Information</h1>
+                    <h1 class="font-semibold text-yellow-400">Commission Information</h1>
                     <x-general.grid mobile="1" gap="3" sm="1" md="1" lg="1" xl="3" class="mt-5">
                         <div class="mb-4">
                             <x-form.input label="Total" value="{{number_format($customer->total_share,2,'.',',')}}" />

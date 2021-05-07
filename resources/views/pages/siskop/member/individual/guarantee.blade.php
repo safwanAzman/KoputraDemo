@@ -1,7 +1,7 @@
 <div>
     <!-- Start: Address Information-->
     <div class="">
-        <h1 class="font-semibold text-indigo-500">Customer Orders
+        <h1 class="font-semibold text-yellow-400">Customer Orders
         </h1>
         <x-general.card class="bg-white shadow-lg p-4">
             <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="mt-5">

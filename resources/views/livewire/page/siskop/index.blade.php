@@ -361,11 +361,11 @@
                 <div class="my-3">
                     <div class="w-full">
                         <div class="leading-6">
-                            <p class="mb-2 text-xl font-semibold text-indigo-600">Welcome to SISKOP Web</p>
+                            <p class="mb-2 text-xl font-semibold text-yellow-400">Welcome to Kasih Gold Web</p>
                             <p class="text-sm text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum ultricies felis feugiat malesuada. Nulla nulla urna, pharetra et tincidunt ut, mollis interdum metus. In accumsan imperdiet dui, ut aliquam quam euismod non. Fusce pulvinar, elit et ultrices vestibulum, ex tellus consectetur augue, in faucibus augue nunc sed magna. Praesent eget fermentum magna. Morbi velit elit, posuere ultrices vehicula at, cursus sit amet mi. Aliquam erat volutpat. Maecenas pretium ornare lobortis. Nulla sed sagittis elit.</p>
                         </div>
                     </div>
-                    <div class="mt-2 flex text-indigo-600">
+                    <div class="mt-2 flex text-yellow-400">
                         <x-heroicon-o-calendar class="w-5 h-5 mr-2 " />
                         <p class="text-sm font-semibold ">24th Feb 2021 04:40 PM</p>
                     </div>
@@ -376,7 +376,7 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg="" title="Siskop" />
+        <x-general.header bgimg="" title="Kasih Gold" />
     </div>
 
 </div>

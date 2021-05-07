@@ -1,4 +1,4 @@
-<header class="py-4 bg-indigo-600 ">
+<header class="py-4 bg-yellow-400 ">
     <div class="flex items-center justify-between h-8 px-6 mx-auto">
             <!-- Mobile hamburger -->
             <button class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
@@ -27,7 +27,7 @@
                 @endif
                 <!-- Notifications menu -->
                 <li class="relative">
-                    <button class="p-2 bg-white text-indigo-600 align-middle shadow-xl rounded-full  focus:outline-none "
+                    <button class="p-2 bg-white text-yellow-400 align-middle shadow-xl rounded-full  focus:outline-none "
                         @click="toggleNotificationsMenu" @keydown.escape="closeNotificationsMenu"
                         aria-label="Notifications" aria-haspopup="true">
                         <div class="flex">
@@ -59,7 +59,7 @@
                 <!-- Profile menu -->
                 <li class="relative">
                     <button
-                        class="p-2 bg-white text-indigo-600 align-middle shadow-xl rounded-full focus:outline-none "
+                        class="p-2 bg-white text-yellow-400 align-middle shadow-xl rounded-full focus:outline-none "
                         @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account"
                         aria-haspopup="true">
                         <div class="flex">
@@ -96,6 +96,6 @@
                     </template>
                 </li>
             </ul>
-        
+
     </div>
 </header>

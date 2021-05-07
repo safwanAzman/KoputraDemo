@@ -25,7 +25,7 @@
                                     <x-form.input name="search" label="" value=""  livewire="wire:model=search"/>
                                 </div>
                                 <div class="float-right align-middle">
-                                    <x-btn.icon href="" target="" label="Create" color="indigo" livewire="">
+                                    <x-btn.icon href="" target="" label="Create" color="yellow" livewire="">
                                         <x-heroicon-o-user-add class="-ml-0.5 mr-2 h-4 w-4"/>
                                     </x-btn.icon>
                                 </div>
@@ -54,7 +54,7 @@
                                             <p>{{isset($item->updated_at)||$item->updated_at != '1900-01-01 00:00:00.000' ? date('d/m/Y',strtotime($item->updated_at)) : ''}}</p>
                                         </x-table.table-body>
                                         <x-table.table-body colspan="" class="text-center text-gray-500">
-                                            <x-btn.icon href="{{ route('siskop.member.individual.show', $item->uuid) }}" target="" label="View" color="indigo" livewire="">
+                                            <x-btn.icon href="{{ route('siskop.member.individual.show', $item->uuid) }}" target="" label="View" color="yellow" livewire="">
                                                 <x-heroicon-o-eye class="-ml-0.5 mr-2 h-4 w-4"/>
                                             </x-btn.icon>
                                         </x-table.table-body>

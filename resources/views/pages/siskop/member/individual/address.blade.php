@@ -4,7 +4,7 @@
         <div class="">
             <x-general.card class="bg-white shadow-lg p-4">
                 <div class="flex">
-                    <x-btn.icon href="#" target="" label="Add New" color="indigo" livewire="wire:click=newAddress()" >
+                    <x-btn.icon href="#" target="" label="Add New" color="yellow" livewire="wire:click=newAddress()" >
                         <x-heroicon-o-plus class="-ml-0.5 mr-2 h-4 w-4"/>
                     </x-btn.icon>
                 </div>
@@ -19,7 +19,7 @@
                         >
                         <div>
                             <div class="flex justify-between w-full">
-                                <h1 class="inline-block align-middle font-semibold text-indigo-500">Address Detail {{ $loop->iteration }}</h1>
+                                <h1 class="inline-block align-middle font-semibold text-yellow-400">Address Detail {{ $loop->iteration }}</h1>
                                 <div class="float-right align-middle">
                                     <x-btn.icon href="#" target="" label="Delete" color="red" livewire="" onclick="deleteAddress({{ $key }})" class="">
                                         <x-heroicon-o-trash class="-ml-0.5 mr-2 h-4 w-4"/>
