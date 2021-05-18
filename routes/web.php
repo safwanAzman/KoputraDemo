@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 
 use App\Http\Controllers\MembersController;
+use App\Http\Controllers\NonMemberController;
 use App\Http\Controllers\AdminKoputraController;
 use App\Http\Controllers\SiskopController;
 use App\Http\Controllers\AlkController;
@@ -35,6 +36,14 @@ use App\Http\Controllers\cukai\TaxInvoiceController;
 Route::view('/', 'welcome')->name('wellcome');
 
 Route::middleware('guest')->group(function () {
+
+    //NON-MEMBER
+    Route::get('nonmembers', [NonMemberController::class, 'index'])->name('non-member');
+    Route::get('nonmembers/MohonAhli', [NonMemberController::class, 'mohon'])->name('mohon');
+    Route::get('nonmembers/salinanIC', [NonMemberController::class, 'salinanIc'])->name('salinanIc');
+    Route::get('nonmembers/suratLantikan', [NonMemberController::class, 'suratTawaran'])->name('suratTawaran');
+
+
     //MEMBER
     Route::get('adminkoputra/members', [MembersController::class, 'index'])->name('adminkoputra-members');
     Route::get('members/create', [MembersController::class, 'create'])->name('members-create');

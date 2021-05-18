@@ -26,6 +26,10 @@
             @include('include.sidebar.adminkoputra.desktop')
         @endif
 
+        @if(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
+            @include('include.sidebar.nonmember.desktop')
+        @endif
+
         {{--
             <x-sidebar.dropdown-nav-item active="open" title="PERFORMANCE" uri="stock/*">
                 <x-slot name="icon">

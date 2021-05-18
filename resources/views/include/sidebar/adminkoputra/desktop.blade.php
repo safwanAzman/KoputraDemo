@@ -21,9 +21,9 @@
                             <x-heroicon-o-cog class="w-7 h-7" />
                         </x-sidebar.nav-item>
 
-                        <x-sidebar.nav-item title="Senarai Keahlian" route="{{route('adminkoputra-members')}}" uri="">
+                        {{-- <x-sidebar.nav-item title="Senarai Keahlian" route="{{route('adminkoputra-members')}}" uri="">
                             <x-heroicon-o-user-group class="w-7 h-7" />
-                        </x-sidebar.nav-item>
+                        </x-sidebar.nav-item> --}}
                     <!-- AdminKoputra nav item End -->
                 </ul>
             </div>

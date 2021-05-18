@@ -13,13 +13,13 @@
                 <x-form.basic-form>
                     <x-slot name="content">
                         <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">
-                            <x-form.input label="Nama"  value="MOHD AIZUDDIN BIN MOHD YUSOFF" readonly/>
-                            <x-form.input label="No. Kad Pengenalan"  value="850409035147" readonly/>
+                            <x-form.input label="Nama"  value="RASMIZAM BIN MOHAMAD" readonly/>
+                            <x-form.input label="No. Kad Pengenalan"  value="960211103167" readonly/>
                             <div>
                                 <span class="block text-sm font-semibold leading-5 text-gray-700">Jantina</span>
                                 <div class="mt-2">
                                     <label class="inline-flex items-center">
-                                        <input type="radio" class="form-radio" name="name" value="l" checked>
+                                        <input type="radio" class="form-radio" name="name" value="l">
                                         <span class="ml-2 text-sm text-gray-700">Lelaki</span>
                                     </label>
                                     <label class="inline-flex items-center ml-6">
@@ -30,15 +30,14 @@
                                 </div>
                             </div>
                             <x-form.dropdown label="Status Pemohon" default="yes" value="" >
-                                <option value="1" selected>Kakitangan BMMB / CIMB.</option>
+                                <option value="1">Kakitangan BMMB / CIMB.</option>
                                 <option value="2">Kakitangan tetap Koperasi yang telah disahkan jawatannya</option>
                                 <option value="3">Bekas kakitangan BBMB dan BMMB.</option>
                                 <option value="4">Suami atau isteri Anggota.</option>
                                 <option value="5">Anak-anak Anggota.</option>
                             </x-form.dropdown>
-                            <x-form.input label="No. Pendaftaran Member"  value="178179" disabled/>
                             <x-form.dropdown label="Kaum" default="yes" value="" >
-                                <option value="1" selected>MELAYU</option>
+                                <option value="1" >MELAYU</option>
                                 <option value="2">CINA</option>
                                 <option value="3">INDIA</option>
                                 <option value="4">SIAM</option>
@@ -54,14 +53,14 @@
                                 <option value="14">LAIN - LAIN</option>
                             </x-form.dropdown>
                             <x-form.dropdown label="Agama" default="yes" value="" >
-                                <option value="1" selected="">ISLAM</option>
+                                <option value="1">ISLAM</option>
                                 <option value="2">KRISTIAN</option>
                                 <option value="3">BUDDHA</option>
                                 <option value="4">HINDU</option>
                                 <option value="5">LAIN - LAIN</option>
                             </x-form.dropdown>
                             <x-form.dropdown label="Warganegara" default="yes" value="" >
-                                <option value="1" selected="">MALAYSIA</option>
+                                <option value="1">MALAYSIA</option>
                                 <option value="2">INDONESIA</option>
                                 <option value="3">SINGAPURA</option>
                                 <option value="4">THAILAND</option>
@@ -72,34 +71,34 @@
                                 <option value="9">MYANMAR</option>
                             </x-form.dropdown>
                             <x-form.dropdown label="Taraf Perkahwinan" default="yes" value="" >
-                                <option value="" selected>BUJANG</option>
+                                <option value="">BUJANG</option>
                                 <option value="">BERKAHWIN</option>
                             </x-form.dropdown>
                             <x-form.dropdown label="Jenis Kediaman" default="yes" value="" >
-                                <option value="" selected>SENDIRI</option>
+                                <option value="" >SENDIRI</option>
                                 <option value="">KELUARGA</option>
                                 <option value="">SEWA</option>
                                 <option value="">KAIN-LAIN</option>
                             </x-form.dropdown>
-                            <x-form.input label="Jumlah Tanggungan"  value="1" />
+                            <x-form.input label="Jumlah Tanggungan"  value="" />
                             <x-form.input label="No. Telefon Bimbit"  value="0183546808" />
                             <x-form.input label="No. Telefon Rumah"  value="" />
-                            <x-form.input label="No. Akaun Bank"  value="8700954277" />
-                            <x-form.input label="Emel Persendirian"  value="aizuddin.yusoff@ymail.com" />
+                            <x-form.input label="No. Akaun Bank"  value="" />
+                            <x-form.input label="Emel Persendirian"  value="rasmizam@ymail.com" />
                             <x-form.input label="Emel Kerja"  value="" />
                         </x-general.grid>
                         <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">
                             <x-form.input type="file" label="Salinan IC"  value="" />
                             <x-form.input type="file" label="Surat lantikan tetap/Surat pengesahan jawatan"  value="" />
                         </x-general.grid>
-                        <x-form2.address class="" label="Alamat" value1="Lot 900, Jalan 2G," value2="Kg. Baru Lanjut," value3="" value4="Sepang" value5="43650"
+                        <x-form.address class="" label="Alamat" value1="" value2="" value3="" value4="" value5=""
                             value6="" condition="state" />
 
                         <div class="flex justify-center mt-8">
                             <a onclick="save()" href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
                                 <div class="flex items-center space-x-2">
                                     <x-heroicon-o-save class="w-4 h-4" /> 
-                                    <p>Simpan</p>
+                                    <p>Mohon</p>
                                 </div>
                             </a>
                         </div>
@@ -111,19 +110,18 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg="" title="Maklumat Keahlian" height="8rem"/>
+        <x-general.header bgimg="" title="Daftar Permohonan" height="8rem"/>
     </div>
 </div>
 
 @push('js')
 <script>
     function save() {
-        Swal.fire({
-            icon: 'success',
-            title: 'Berjaya Simpan',
-            showConfirmButton: false,
-            timer: 1500
-        })
+        Swal.fire(
+        'Permohonan Berjaya Dihantar',
+        'No Rujukan: 2021052100123',
+        'success'
+        )
     }
 </script>
 @endpush
