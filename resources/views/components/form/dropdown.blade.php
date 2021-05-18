@@ -7,9 +7,9 @@
 
     <div class="mt-1 rounded-md shadow-sm">
         <select name="{{ $value }}"
-            @if ($value != "")
+            {{-- @if ($value != "")
                 wire:model.lazy="{{ $value }}"
-            @endif
+            @endif --}}
             class="block w-full transition duration-150 ease-in-out form-select sm:text-sm sm:leading-5 {{ ($errors->has($value)) ? 'border-red-300 bg-red-50 text-red-900' : ''}}"
             {{ $attributes }}>
             @if($default == 'yes')
