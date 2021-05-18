@@ -36,6 +36,30 @@
                         <x-heroicon-o-shield-check class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
+                    <x-sidebar.nav-item title="Meluluskan Permohonan" route="{{route('alk')}}" uri="">
+                        <x-heroicon-o-chart-square-bar class="w-7 h-7 text-yellow-500" />
+                    </x-sidebar.nav-item>
+
+                    <x-sidebar.nav-item title="Permohonan/Konfigurasi" route="{{route('permohonan')}}" uri="">
+                        <x-heroicon-o-presentation-chart-line class="w-7 h-7 text-green-500" />
+                    </x-sidebar.nav-item>
+
+                    <x-sidebar.nav-item title="Siskop" route="{{route('siskop.index')}}" uri="">
+                        <x-heroicon-o-chart-bar class="w-7 h-7 text-pink-500" />
+                    </x-sidebar.nav-item>
+
+                    {{-- <x-sidebar.dropdown-nav-item active="open" title="Permohonan/Konfigurasi" uri="stock/*">
+                        <x-slot name="icon">
+                            <x-heroicon-o-archive class="w-7 h-7" />
+                        </x-slot>
+                        <div class="leading-5">
+                            <x-sidebar.dropdown-item title="PRESTASI KESELURUHAN" href="#" uri="#">
+                                <x-slot name="icon">
+                                    <x-heroicon-o-cube class="w-5 h-5" />
+                                </x-slot>
+                            </x-sidebar.dropdown-item>
+                    </x-sidebar.dropdown-nav-item> --}}
+
                 <!-- members nav item End -->
 
             </ul>

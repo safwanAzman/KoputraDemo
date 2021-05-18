@@ -1,5 +1,5 @@
 
-<x-general.modal-permohonan modalActive="Open" title="Permohonan" modalSize="3xl" route="#">
+<x-general.modal-permohonan modalActive="Open5" title="Permohonan" modalSize="2xl" route="#">
     <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="col-span-6 ">
         <div class=" p-4" x-data="app()" x-cloak>
 
