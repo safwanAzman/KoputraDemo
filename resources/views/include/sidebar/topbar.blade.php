@@ -103,8 +103,8 @@
                             <li class="flex">
                                 <a class=" text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
                                     href="{{route('wellcome')}}">
-                                    <x-heroicon-o-home class="w-5 h-5 mr-2" />
-                                    <span>Main Page</span>
+                                    <x-heroicon-o-logout class="w-5 h-5 mr-2" />
+                                    <span>Logout</span>
                                 </a>
                             </li>
                         </ul>
@@ -118,8 +118,8 @@
                             <li class="flex">
                                 <a class=" text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
                                     href="{{route('wellcome')}}">
-                                    <x-heroicon-o-home class="w-5 h-5 mr-2" />
-                                    <span>Main Page</span>
+                                    <x-heroicon-o-logoutclass="w-5 h-5 mr-2" />
+                                    <span>Logout</span>
                                 </a>
                             </li>
                         </ul>
