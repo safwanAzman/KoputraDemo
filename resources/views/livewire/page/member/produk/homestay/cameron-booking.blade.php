@@ -133,13 +133,64 @@
 @push('js')
 <script>
     function save() {
-        
+            var text="<strong>Ref. No : 2021051800001</strong>. <br>1. Date book valid for 3 days. <br>2. Payment should be done within these 3 days. <br>3. None payment will cause the booking date will be released. <br>";
+            var price="<strong>RM 400 - Member</strong>" + "<br><strong>RM350 - Non-Member</strong>"
             Swal.fire({
             icon: 'success',
-            title: 'Booking Success!',
-            showConfirmButton: false,
+            title: 'Booking Success!', 
+            html: text + price,
+            showConfirmButton: true,
+            showDenyButton: true,
+            confirmButtonText: 'Pay',
+            confirmButtonColor: '#77db42',
+            denyButtonText: 'OK',
+            denyButtonColor: '#2586cc',
+            }).then((result) => {
+                if (result.isConfirmed)
+                {
+                    var inputOptions = new Promise(function(resolve) {
+                        resolve({
+                        'Financing': 'Financing', 
+                        'Cash (iPay88)': 'Cash (via iPay88)',
+                        });
+                    });
+                    Swal.fire({
+                        title: 'Select a payment method',
+                        input: 'radio',
+                        inputOptions: inputOptions,
+                        inputValidator: function(payment) {
+                            return new Promise(function(resolve, reject) 
+                            {
+                                if (payment) 
+                                {
+                                    resolve();
+                                } 
+                                else 
+                                {
+                                    reject('You need to select one payment method');
+                                }
+                            });
+                        }
+                    }).then(function(payment) 
+                    {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Payment Selected',
+                            html: 'You selected: ' + payment
+                        });
+                    })
+
+                    $("input[name='Swal-radio']").on("click", function() {
+                        var id = $('input[name=Swal-radio]:checked').val();
+                        console.log('id: ' + id);
+                    });
+                }
+                else if(result.isDenied)
+                {
+                    location.href = '{{route('members-produk2')}}';
+                }
             })
-            setTimeout("location.href = '{{route('members-produk2')}}';", 2500);
+            //setTimeout(, 2500);
     }
 </script>
 
