@@ -235,8 +235,8 @@
 
                                 </x-table.table-body>
 
-                                <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                    <p>12,000.00</p>
+                                <x-table.table-body colspan="" class="text-center text-sm font-medium text-gray-700">
+                                    <p>-</p>
                                 </x-table.table-body>
 
                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">

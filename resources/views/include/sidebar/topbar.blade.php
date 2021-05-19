@@ -65,6 +65,15 @@
                             class="absolute top-0 right-0 inline-block w-3 h-3 transform translate-x-1 -translate-y-1 bg-red-600 border-2 border-white rounded-full dark:border-gray-800"></span>
                     </button>
                     <template x-if="isNotificationsMenuOpen">
+                        @if(Route::current()->uri == "adminkoputra" || \Request::is("adminkoputra/*") )
+                        <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                            x-transition:leave-end="opacity-0" @click.away="closeNotificationsMenu"
+                            @keydown.escape="closeNotificationsMenu"
+                            class="absolute right-0 w-80 p-2 mt-2 space-y-2 text-gray-600 bg-white rounded-md shadow-md z-50 text-sm">
+                            <p>1.Permohonan 2021052200123 diterima</p>
+                            <p>2.Permohonan 2021052200126 sedang diproses</p>
+                        </ul>
+                        @else
                         <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
                             x-transition:leave-end="opacity-0" @click.away="closeNotificationsMenu"
                             @keydown.escape="closeNotificationsMenu"
@@ -80,6 +89,7 @@
                                 </a>
                             </li>
                         </ul>
+                        @endif
                     </template>
                 </li>
 

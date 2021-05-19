@@ -25,4 +25,9 @@ class AdminKoputraController extends Controller
     {
         return view ('pages.adminkoputra.done-permohonan');
     }
+
+    public function donepermohonan2()
+    {
+        return view ('pages.adminkoputra.done-permohonan2');
+    }
 }
