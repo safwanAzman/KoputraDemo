@@ -38,13 +38,6 @@
                                             
                                         </div>
                                     </div>
-                                    <x-form.dropdown label="Status Pemohon" default="yes" value="" >
-                                        <option value="1" selected>Kakitangan BMMB / CIMB.</option>
-                                        <option value="2">Kakitangan tetap Koperasi yang telah disahkan jawatannya</option>
-                                        <option value="3">Bekas kakitangan BBMB dan BMMB.</option>
-                                        <option value="4">Suami atau isteri Anggota.</option>
-                                        <option value="5">Anak-anak Anggota.</option>
-                                    </x-form.dropdown>
                                     <x-form.input label="No. Pendaftaran Member"  value="178179" disabled/>
                                     <x-form.dropdown label="Kaum" default="yes" value="" >
                                         <option value="1" selected>MELAYU</option>
@@ -95,23 +88,18 @@
                                     <x-form.input label="No. Telefon Rumah"  value="" />
                                     <x-form.input label="No. Akaun Bank"  value="8700954277" />
                                     <x-form.input label="Emel Persendirian"  value="aizuddin.yusoff@ymail.com" />
-                                    <x-form.input label="Emel Kerja"  value="" />
+                                    <x-form.input type="file" label="Salinan IC"  value="" />
                                 </x-general.grid>
                                 <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">
-                                    <x-form.input type="file" label="Salinan IC"  value="" />
-                                    <x-form.input type="file" label="Surat lantikan tetap/Surat pengesahan jawatan"  value="" />
+                                    <x-form.input label="Nama Pasangan"  value="" />
+                                    <x-form.input label="No.K/p Pasangan"  value="" />
+                                    <x-form.input label="Nama Ibu"  value="" />
+                                    <x-form.input label="No.K/p Ibu"  value="" />
+                                    <x-form.input label="Nama Bapa"  value="" />
+                                    <x-form.input label="No.K/p Bapa"  value="" />
                                 </x-general.grid>
                                 <x-form2.address class="" label="Alamat" value1="Lot 900, Jalan 2G," value2="Kg. Baru Lanjut," value3="" value4="Sepang" value5="43650"
                                     value6="" condition="state" />
-
-                                <div class="flex justify-center mt-8">
-                                    <a onclick="save()" href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
-                                        <div class="flex items-center space-x-2">
-                                            <x-heroicon-o-save class="w-4 h-4" /> 
-                                            <p>Simpan</p>
-                                        </div>
-                                    </a>
-                                </div>
                             </x-slot>
                         </x-form.basic-form>
                     </div>
@@ -123,11 +111,26 @@
                             <x-slot name="content">
                                 <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">
                                     <x-form.input label="No. Gaji / No. Pekerja"  value="C12345" />
+                                    <x-form.input label="No.Kakitangan"  value="" />
                                     <x-form.input label="Gaji Pokok (RM)"  value="5000.00"/>
                                     <x-form.input label="Jumlah Elaun Tetap (RM)"  value="0.00"/>
-                                    <x-form.input label="Nama Kementerian/Suruhanjaya/Syarikat"  value="SWASTA"/>
+                                    <x-form.input label="Tarikh Masuk kerja"  value="" type="date"/>
                                     <x-form.input label="Jumlah Potongan Bulanan (Seperti penyata gaji)"  value="0.00"/>
                                     <x-form.input label="Nama Jabatan/Bahagian/Unit *"  value="TEKNOLOGI MAKLUMAT"/>
+                                    <x-form.dropdown label="Sila pilih" default="yes" value="" >
+                                        <option value="1">Bank Muamalat Malaysia</option>
+                                        <option value="1">CIMB Bank/CIMB Invesment</option>
+                                        <option value="2">Kakitangan tetap Koperasi yang telah disahkan jawatannya</option>
+                                        <option value="3">Bekas kakitangan BBMB dan BMMB.</option>
+                                        <option value="4">Suami atau isteri Anggota.</option>
+                                        <option value="5">Anak-anak Anggota.</option>
+                                    </x-form.dropdown>
+                                    <x-form.dropdown label="Status Pekerjaan" default="yes" value="" >
+                                        <option value="1">Tetap</option>
+                                        <option value="1">Kontrak</option>
+                                    </x-form.dropdown>
+                                    <x-form.input label="Emel Kerja"  value="" />
+                                    <x-form.input type="file" label="Surat lantikan tetap/Surat pengesahan jawatan"  value="" />
                                 </x-general.grid>
                                 <x-form2.address class="" label="Alamat Majikan" value1="No. 11 Jalan 9/6," value2="Taman IKS Seksyen 9," value3="" value4="Bangi" value5="43650"
                                     value6="" condition="state" />
