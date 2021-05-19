@@ -88,11 +88,11 @@
                                     Log masuk
 
                                     <a href="{{route('members-produk')}}" class="absolute left-0 text-indigo-800">
-                                        hahahahah
+                                        TestTestTestTestTest
                                     </a>
 
-                                    <a href="{{route('non-member')}}" class="absolute rigth-0 text-indigo-800">
-                                        hahahahah
+                                    <a href="{{route('non-member')}}" class="absolute right-0 text-indigo-800">
+                                        TestTestTestTestTest
                                     </a>
                                 </div>
                             </span>
