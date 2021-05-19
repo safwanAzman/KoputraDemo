@@ -114,6 +114,11 @@
                                 title  : 'Kursus Jati Diri',
                                 start  : '2021-04-28',
                                 end    : '2021-05-02'
+                            },
+                            {
+                                title  : 'Booking',
+                                start  : '2021-05-03',
+                                end    : '2021-05-06'
                             }
                         ],
                         color: 'green',     // an option!
@@ -148,42 +153,69 @@
             }).then((result) => {
                 if (result.isConfirmed)
                 {
-                    var inputOptions = new Promise(function(resolve) {
-                        resolve({
-                        'Financing': 'Financing', 
-                        'Cash (iPay88)': 'Cash (via iPay88)',
-                        });
-                    });
                     Swal.fire({
-                        title: 'Select a payment method',
-                        input: 'radio',
-                        inputOptions: inputOptions,
-                        inputValidator: function(payment) {
-                            return new Promise(function(resolve, reject) 
-                            {
-                                if (payment) 
-                                {
-                                    resolve();
-                                } 
-                                else 
-                                {
-                                    reject('You need to select one payment method');
+                    title: 'Payment method',
+                    input: 'select',
+                    inputOptions: {
+                        financing: 'Financing',
+                        cash: 'Payment Gateway (via iPay88)',
+                    },
+                    inputPlaceholder: 'Select a payment method',
+                    showCancelButton: true,
+                    inputValidator: (value) => {
+                        return new Promise((resolve) => {
+                        if (value === 'financing') {
+                            Swal.fire({
+                                title: 'Ref. No : 2021051800001',
+                                showConfirmButton: true,
+                                showCancelButton: true,
+                                confirmButtonColor: '#77db42',
+                                cancelButtonColor: '#d33',
+                                confirmButtonText: 'Pay'
+                            }).then((result) => {
+                                    if (result.isConfirmed) {
+                                        Swal.fire(
+                                        'success',
+                                        'Payment Successful',
+                                        
+                                        )
+                                        Swal.fire({
+                                            icon: 'success',
+                                            title: 'Payment Successful',
+                                            showConfirmButton: false,
+                                        })
                                 }
-                            });
+                                })
+                        } else if( value === 'cash') {
+                            Swal.fire({
+                                imageUrl: `{{asset('img/ipay88.png')}}`,
+                                imageWidth: 550,
+                                imageHeight: 550,
+                                imageAlt: 'Custom image',
+                                showCancelButton: true,
+                                confirmButtonColor: '#77db42',
+                                cancelButtonColor: '#d33',
+                                confirmButtonText: 'Pay'
+                            }).then((result) => {
+                                    if (result.isConfirmed) {
+                                        Swal.fire(
+                                        'success',
+                                        'Payment Successful',
+                                        
+                                        )
+                                        Swal.fire({
+                                            icon: 'success',
+                                            title: 'Payment Successful',
+                                            showConfirmButton: false,
+                                        })
+                                }
+                                })
+                        }else{
+                            resolve('You need to payment method')
                         }
-                    }).then(function(payment) 
-                    {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Payment Selected',
-                            html: 'You selected: ' + payment
-                        });
-                    })
-
-                    $("input[name='Swal-radio']").on("click", function() {
-                        var id = $('input[name=Swal-radio]:checked').val();
-                        console.log('id: ' + id);
-                    });
+                        })
+                    }
+            })
                 }
                 else if(result.isDenied)
                 {
