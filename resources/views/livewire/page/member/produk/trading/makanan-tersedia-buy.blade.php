@@ -172,9 +172,9 @@
                                                             <x-heroicon-o-credit-card class="w-auto text-gray-400 h-28" />
                                                         </a>
                                                         <x-general.modal modalActive="open" title="Payment" modalSize="lg">
-                                                            <div class="flex flex-col gap-3">
-                                                                <div class="overflow-y-auto h-96">
-                                                                    <img src="{{ asset('img/member/senangPay-demo.png') }}" />
+                                                            <div class="flex flex-col gap-3 p-4">
+                                                                <div class="overflow-y-auto h-full">
+                                                                    <img src="{{asset('img/ipay882.png')}}" />
                                                                 </div>
                                                                 <a x-on:click="open = false"
                                                                     class="items-center px-4 py-2 text-sm text-center text-white bg-green-500 rounded cursor-pointer hover:bg-green-600 focus:outline-none" >

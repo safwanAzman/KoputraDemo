@@ -74,7 +74,7 @@
                             </div>
 
                             <div class="text-sm leading-5">
-                                <a href="{{ route('password.request') }}"
+                                <a href="#"
                                     class="text-sm font-semibold text-gray-700 hover:text-indigo-800 focus:text-indigo-800">
                                     Lupa kata laluan?
                                 </a>
