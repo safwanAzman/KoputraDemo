@@ -274,12 +274,118 @@
                                         </x-table.table-body>
 
                                         <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                            <p>MENUNGGU KELULUSAN ALK</p>
+                                            <p>PERMOHONAN DITERIMA</p>
                                         </x-table.table-body>
 
                                         <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                            <div>
-                                                <x-heroicon-o-check-circle class="w-6 h-6 text-green-500" />
+                                            <div x-data="{Open : false}">
+                                                <div class="flex space-x-2">
+                                                    <x-heroicon-s-play class="w-8 h-8 text-indigo-600 hover:text-indigo-700 tooltipbtn focus:outline-none" 
+                                                    x-on:click="Open = true"  data-title="Maklumat Permohonan" data-placement="top"/>
+                                                </div>
+                                                <x-general.modal modalActive="Open" title="Information" modalSize="2xl">
+                                                    <div class="px-4 py-4  overflow-y-auto">
+                                                        <x-general.grid mobile="1" gap="1" sm="3" md="3" lg="3" xl="3"
+                                                            class="col-span-6 leading-8">
+                                                            <div>
+                                                                <p class="text-sm">Nama</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">NUR
+                                                                    HANI BALQIS BINTI AZMI</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">No. Kad Pengenalan Baru</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    000603036446</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Jantina</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    PEREMPUAN</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Kaum</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    MELAYU</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Agama</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    ISLAM</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Warganegara</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    MALAYSIA</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Status Perkahwinan</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    BUJANG</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Jenis Kediaman</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">IBU
+                                                                    BAPA</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Jumlah Tanggungan</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    TIADA</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">No. Telefon Bimbit</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    0199283489</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="ttext-sm">No. Telefon Rumah</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    037459128</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">No. Akaun Bank</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    365711899</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Emel Peribadi</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    balqismai00@gmail.com</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Emel Kerja</p>
+                                                                <p class="text-sm font-semibold text-gray-400 uppercase">
+                                                                    Tiada</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Salinan IC</p>
+                                                                <a href="{{route('salinanIc')}}" target="_blank"
+                                                                    class="text-sm font-semibold text-indigo-400 uppercase hover:text-indigo-600">
+                                                                    ic.jpeg
+                                                                </a>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-sm">Surat lantikan tetap</p>
+                                                                <a href="{{route('suratTawaran')}}" target="_blank"
+                                                                    class="text-sm font-semibold text-indigo-400 uppercase hover:text-indigo-600">
+                                                                    confirm letter.jpeg
+                                                                </a>
+                                                            </div>
+                                                        </x-general.grid>
+                                                        <div>
+                                                            <p class="text-sm">Alamat</p>
+                                                            <p class="text-sm font-semibold text-gray-400 uppercase">No. 34,
+                                                                Kg. Api-Api, 45700 Kuala Selangor, Selangor.</p>
+                                                        </div>
+
+                                                        <div class="flex justify-center mt-4 ">
+                                                            <a href="#" onclick="save2()"
+                                                                class="flex items-center text-xs px-5 py-2 text-center text-white bg-indigo-600  rounded-lg shadow-sm focus:outline-none hover:bg-indigo-700">
+                                                                KELULUSAN ALK
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </x-general.modal>
                                             </div>
                                         </x-table.table-body>
                                     </tr>
@@ -331,3 +437,14 @@
     <div class="absolute top-0 left-0 right-0 z-0">
         <x-general.header bgimg="" title="PERMOHONAN" height="8rem" />
     </div>
+
+    <script>
+        function save2() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Permohonan Dihantar Kepada ALK Dengan Jayanya!',
+                showConfirmButton: false,
+            })
+            setTimeout("location.href = '{{route('donepermohonan2')}}';", 2500);
+        }
+    </script>

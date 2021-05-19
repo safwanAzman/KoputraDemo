@@ -6,16 +6,16 @@
                     <span class="px-2 py-2 bg-green-400 rounded-full">
                         <x-heroicon-o-information-circle class="text-white w-7 h-7" />
                     </span>
-                    <p class="text-2xl text-gray-400">Status Terkini</p>
+                    <p class="text-2xl text-gray-400">Status Pembiayaan Terkini</p>
                 </div>
                 <x-general.grid mobile="1" gap="5" sm="2" md="2" lg="2" xl="2" class="items-center col-span-6 mt-4">
                     <div>
-                        <p class="text-lg">NAMA KOPERASI</p>
-                        <p class="text-lg text-gray-400 uppercase">KOPERASI PELABURAN KAKITANGAN BANK MUAMALAT MALAYSIA BERHAD</p>
+                        <p class="text-lg">NAMA PRODUK</p>
+                        <p class="text-lg text-gray-400 uppercase">-</p>
                     </div>
                     <div>
                         <p class="text-lg">NO. PERMOHONAN</p>
-                        <p class="text-lg text-gray-400 uppercase">002002210069</p>
+                        <p class="text-lg text-gray-400 uppercase">-</p>
                     </div>
                     <div>
                         <p class="text-lg">STATUS PERMOHONAN</p>
@@ -23,7 +23,7 @@
                     </div>
                     <div>
                         <p class="text-lg">TARIKH PERMOHONAN</p>
-                        <p class="text-lg text-gray-400 uppercase">23-04-2021</p>
+                        <p class="text-lg text-gray-400 uppercase">-</p>
                     </div>
                 </x-general.grid>
                 <div class="flex mt-4 space-x-2">
@@ -52,11 +52,11 @@
                     <div>
                         <div>
                             <p class="text-lg text-gray-400 ">Anggaran Pembiayaan Maksimum</p>
-                            <p class="text-lg font-semibold uppercase">RM 141,000.00</p>
+                            <p class="text-lg font-semibold uppercase">RM 210,000.00</p>
                         </div>
                         <div class="mt-4">
                             <p class="text-lg text-gray-400 ">Anggaran Ansuran Bulanan</p>
-                            <p class="text-lg font-semibold uppercase">RM 1,820.03</p>
+                            <p class="text-lg font-semibold uppercase">RM 2,720.12</p>
                         </div>
                     </div>
                     <div class="flex justify-center w-full">
@@ -189,7 +189,7 @@ var gauge =new JustGage({
 
 
     id: "gauge",
-    value:20,
+    value:7.7,
     label: "%",
     min: 0,
     max: 100,

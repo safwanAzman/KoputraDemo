@@ -384,7 +384,7 @@
                                                         </div>
 
                                                         <div class="flex justify-center mt-4 ">
-                                                            <a href="#" onclick="save()"
+                                                            <a href="#" onclick="save2()"
                                                                 class="flex items-center text-xs px-5 py-2 text-center text-white bg-indigo-600  rounded-lg shadow-sm focus:outline-none hover:bg-indigo-700">
                                                                 KELULUSAN ALK
                                                             </a>
@@ -465,6 +465,15 @@
             showConfirmButton: false,
         })
         setTimeout("location.href = '{{route('donepermohonan')}}';", 2500);
+    }
+
+    function save2() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Permohonan Dihantar Kepada ALK Dengan Jayanya!',
+            showConfirmButton: false,
+        })
+        setTimeout("location.href = '{{route('donepermohonan2')}}';", 2500);
     }
 </script>
 @endpush
