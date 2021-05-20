@@ -53,7 +53,7 @@
 
                     <x-tab2.nav-content2 name="1">
                         <x-page.member.dashboard-grid>
-                            <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN CASH-i PLUS" description="5.00% p.a" img="cash-i.png"/>
+                            <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN CASH-i PLUS"  description="5.00% p.a" img="cash-i.png"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN KENDERAAN (PERODUA)" description="3.90% p.a" img="kereta_perodua.png"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN KENDERAAN (PROTON)" description="4.90% p.a" img="kereta_proton.png"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN BERCAGARKAN EMAS" description="5.00% p.a" img="emas.png"/>
@@ -127,6 +127,14 @@ var gauge =new JustGage({
 
 });
 
+    save10(){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
 </script>
 
 @endpush
