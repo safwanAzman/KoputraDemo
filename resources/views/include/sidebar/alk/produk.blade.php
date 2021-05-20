@@ -35,6 +35,8 @@
                     <x-sidebar.nav-item title="Firasat" route="{{route('members-firasat')}}" uri="">
                         <x-heroicon-o-desktop-computer class="w-7 h-7" />
                     </x-sidebar.nav-item>
+                    
+                    <div class="border-t-2 border-gray-300 my-2"></div>
 
                     <x-sidebar.nav-item title="Meluluskan Permohonan" route="{{route('alk')}}" uri="">
                         <x-heroicon-o-chart-square-bar class="w-7 h-7 text-yellow-500" />
