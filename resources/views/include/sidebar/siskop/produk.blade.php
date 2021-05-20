@@ -36,7 +36,9 @@
                         <x-heroicon-o-desktop-computer class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
-                    <x-sidebar.nav-item title="Siskop" route="{{route('siskop.index')}}" uri="">
+                    <div class="border-t-2 border-gray-300 my-2"></div>
+
+                    <x-sidebar.nav-item title="Siskop" route="http://cscapps.net.my/kfm/dashboard" uri="">
                         <x-heroicon-o-chart-bar class="w-7 h-7 text-pink-500" />
                     </x-sidebar.nav-item>
 
