@@ -88,11 +88,23 @@
                                     Log masuk
 
                                     <a href="{{route('members-produk')}}" class="absolute left-0 text-indigo-800">
-                                        TestTestTestTestTest
+                                        Test
                                     </a>
 
-                                    <a href="{{route('non-member')}}" class="absolute right-0 text-indigo-800">
-                                        TestTestTestTestTest
+                                    <a href="{{route('non-member')}}" class="absolute left-12 text-indigo-800">
+                                        Test
+                                    </a>
+
+                                    <a href="{{route('adminkoputra.members-produk')}}" class="absolute left-24 text-indigo-800">
+                                        Test
+                                    </a>
+
+                                    <a href="{{route('alk.members-produk')}}" class="absolute left-36 text-indigo-800">
+                                        Test
+                                    </a>
+
+                                    <a href="{{route('siskop.members-produk')}}" class="absolute right-0 text-indigo-800">
+                                        Test
                                     </a>
                                 </div>
                             </span>

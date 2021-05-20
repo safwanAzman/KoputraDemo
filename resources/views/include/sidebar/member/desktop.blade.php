@@ -40,17 +40,20 @@
                         <x-heroicon-o-desktop-computer class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
-                    <x-sidebar.nav-item title="Meluluskan Permohonan" route="{{route('alk')}}" uri="">
-                        <x-heroicon-o-chart-square-bar class="w-7 h-7 text-yellow-500" />
-                    </x-sidebar.nav-item>
-
-                    <x-sidebar.nav-item title="Permohonan/Konfigurasi" route="{{route('permohonan')}}" uri="">
-                        <x-heroicon-o-presentation-chart-line class="w-7 h-7 text-green-500" />
-                    </x-sidebar.nav-item>
-
-                    <x-sidebar.nav-item title="Siskop" route="{{route('siskop.index')}}" uri="">
-                        <x-heroicon-o-chart-bar class="w-7 h-7 text-pink-500" />
-                    </x-sidebar.nav-item>
+{{--                     
+                    @if(Route::current()->uri == "adminkoputra" || \Request::is("adminkoputra/*") )
+                        <x-sidebar.nav-item title="Permohonan/Konfigurasi" route="{{route('permohonan')}}" uri="">
+                            <x-heroicon-o-presentation-chart-line class="w-7 h-7 text-green-500" />
+                        </x-sidebar.nav-item>
+                    @elseif(Route::current()->uri == "alk" || \Request::is("alk/*") )
+                        <x-sidebar.nav-item title="Meluluskan Permohonan" route="{{route('alk')}}" uri="">
+                            <x-heroicon-o-chart-square-bar class="w-7 h-7 text-yellow-500" />
+                        </x-sidebar.nav-item>
+                    @elseif(substr(Route::current()->uri,0,6) == "siskop")
+                        <x-sidebar.nav-item title="Siskop" route="{{route('siskop.index')}}" uri="">
+                            <x-heroicon-o-chart-bar class="w-7 h-7 text-pink-500" />
+                        </x-sidebar.nav-item>
+                    @endif --}}
 
                     {{-- <x-sidebar.dropdown-nav-item active="open" title="Permohonan/Konfigurasi" uri="stock/*">
                         <x-slot name="icon">

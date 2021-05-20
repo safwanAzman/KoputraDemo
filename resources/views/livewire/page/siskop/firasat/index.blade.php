@@ -23,7 +23,7 @@
                 </div>
                 <div class="w-full">
                     <div class="grid grid-cols-12 gap-6">
-                        <div class="flex flex-col-reverse col-span-12 lg:col-span-6 xxl:col-span-6 lg:block">
+                        <div class="{{$page == "member" || $page == "nonmem" ? 'flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block' : 'flex flex-col-reverse col-span-12 lg:col-span-6 xxl:col-span-6 lg:block'}}">
                             <x-general.card class="bg-white shadow-lg p-4">
                                 {{-- Start Financing Calculator --}}
                                 <div class="pt-2">
@@ -71,13 +71,13 @@
                                                 </x-form.basic-form>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> 
                                 </div>
                                 {{-- End Financing Calculator  --}}
 
                                 {{-- Start Include Sinking Fund --}}
-                                <div class="pt-2">
-                                    <div x-data="{ isOpen3: true}">
+                                <div class="pt-2 {{$page == "member" || $page == "nonmem" ? 'hidden' : ''}}">
+                                    <div x-data="{ isOpen3: false}">
                                         <button
                                             class="text-indigo-500 flex items-center justify-between w-full py-3 font-semibold border-b border-gray-400 focus:outline-none"
                                             @click="isOpen3 = !isOpen3">
@@ -112,8 +112,8 @@
                             </x-general.card>
                         </div>
 
-
-                        <div class="col-span-12 lg:col-span-6 xxl:col-span-6">
+                        
+                        <div class="col-span-12 lg:col-span-6 xxl:col-span-6 {{$page == "member" || $page == "nonmem" ? 'hidden' : ''}}">
                             {{-- Start Step-Up Instalment  --}}
                             <div class="">
                                 <x-general.card class="bg-white shadow-lg p-4">
@@ -253,7 +253,6 @@
                         </div>
                     </div>
                 </div>
-                @dump($page)
                 @if($show_schedule)
                     <x-general.modal modalActive="Open" title="Repayment Schedule" modalSize="4xl">
                         @if($page == "siskop")

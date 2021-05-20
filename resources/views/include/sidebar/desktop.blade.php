@@ -18,12 +18,24 @@
             @include('include.sidebar.alk.desktop')
         @endif
 
+        @if(Route::current()->uri == "alk1/produk" || \Request::is("alk1/produk/*") )
+            @include('include.sidebar.alk.produk')
+        @endif
+
         @if(substr(Route::current()->uri,0,6) == "siskop")
             @include('include.sidebar.siskop.desktop')
         @endif
 
+        @if(Route::current()->uri == "cscorp/produk" || \Request::is("cscorp/produk/*") )
+            @include('include.sidebar.siskop.produk')
+        @endif
+
         @if(Route::current()->uri == "adminkoputra" || \Request::is("adminkoputra/*") )
             @include('include.sidebar.adminkoputra.desktop')
+        @endif
+
+        @if(Route::current()->uri == "adminkoputra1/produk" || \Request::is("adminkoputra1/produk/*") )
+            @include('include.sidebar.adminkoputra.produk')
         @endif
 
         @if(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )

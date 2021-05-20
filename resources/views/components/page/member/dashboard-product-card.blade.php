@@ -32,11 +32,20 @@
         </dl>
     </div>
     <div>
-        <div class="flex -mt-px divide-x divide-gray-200 ">
-            <div class="flex flex-1 w-0 rounded-bl-lg hover:bg-green-400 group" x-data="{Open : false}">
-                <a x-on:click="Open = true" href="{{ $route }}" class="relative inline-flex items-center justify-center flex-1 w-0 py-4 -mr-px text-sm font-medium text-gray-700 border border-transparent rounded-bl-lg cursor-pointer hover:text-gray-500">
+        <div class="flex -mt-px divide-x divide-gray-200 " >
+            <div class="flex flex-1 w-0 rounded-bl-lg hover:bg-green-400 group" x-data="{Open : false}" >
+                <a x-on:click="Open = {{Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*")  ? false : true }}" href="{{ $route }}" 
+                class="relative inline-flex items-center 
+                        justify-center flex-1 w-0 py-4 -mr-px 
+                        text-sm font-medium text-gray-700 
+                        border border-transparent rounded-bl-lg 
+                        cursor-pointer hover:text-gray-500"
+                        @if($type == 'financing' && Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*"))
+                            onclick=save10()
+                        @endif
+                        >
                     @if ($type == 'financing')
-                        <x-heroicon-s-pencil-alt class="w-5 h-5 text-gray-400 group-hover:text-white"/>
+                        <x-heroicon-s-pencil-alt class="w-5 h-5 text-gray-400 group-hover:text-white" />
                         <span class="ml-3 group-hover:text-white">Apply Now</span>
                     @elseif  ($type == 'trading')
                         <x-heroicon-s-shopping-bag class="w-5 h-5 text-gray-400 group-hover:text-white"/>
@@ -92,3 +101,23 @@
         </div>
     </div>
 </li>
+<script>
+    function save10(){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'MAAF!',
+            showConfirmButton: false,
+            html:`
+            <div class="flex justify-center mb-4">
+                <p>Kemudahan Hanya Untuk Anggota Berdaftar. Sila Daftar Diri Anda Sekarang</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="{{route('mohon')}}" class="bg-blue-400 py-2 px-4 flex items-center rounded-lg  text-white font-semibold hover:bg-blue-500">
+                    OK
+                </a>
+            </div>
+            `
+        })
+    }
+</script>

@@ -37,6 +37,11 @@ Route::view('/', 'welcome')->name('wellcome');
 
 Route::middleware('guest')->group(function () {
 
+    Route::get('adminkoputra1/produk', [MembersController::class, 'produk'])->name('adminkoputra.members-produk');
+    Route::get('alk1/produk', [MembersController::class, 'produk'])->name('alk.members-produk');
+    Route::get('cscorp/produk', [MembersController::class, 'produk'])->name('siskop.members-produk');
+
+
     //NON-MEMBER
     Route::get('nonmembers', [NonMemberController::class, 'index'])->name('non-member');
     Route::get('nonmembers/MohonAhli', [NonMemberController::class, 'mohon'])->name('mohon');

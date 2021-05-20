@@ -46,7 +46,13 @@
                 @if(Route::current()->uri == "alk" || \Request::is("alk/*") )
                     <h1 class="text-white">NASIR</h1>
                 @endif
+                @if(Route::current()->uri == "alk1/produk" || \Request::is("alk1/produk/*") )
+                    <h1 class="text-white">NASIR</h1>
+                @endif
                 @if(Route::current()->uri == "adminkoputra" || \Request::is("adminkoputra/*") )
+                    <h1 class="text-white">SAFWAN</h1>
+                @endif
+                @if(Route::current()->uri == "adminkoputra1/produk" || \Request::is("adminkoputra1/produk/*") )
                     <h1 class="text-white">SAFWAN</h1>
                 @endif
                 @if(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
@@ -149,9 +155,9 @@
                             aria-label="submenu">
                             <li class="flex">
                                 <a class=" text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
-                                    href="{{route('members-produk')}}">
+                                    href="{{route('wellcome')}}">
                                     <x-heroicon-o-home class="w-5 h-5 mr-2" />
-                                    <span>Members</span>
+                                    <span>Logout</span>
                                 </a>
                             </li>
                         </ul>
@@ -164,9 +170,9 @@
                             aria-label="submenu">
                             <li class="flex">
                                 <a class=" text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
-                                    href="{{route('members-produk')}}">
+                                    href="{{route('wellcome')}}">
                                     <x-heroicon-o-home class="w-5 h-5 mr-2" />
-                                    <span>Members</span>
+                                    <span>Logout</span>
                                 </a>
                             </li>
                         </ul>
@@ -179,9 +185,54 @@
                             aria-label="submenu">
                             <li class="flex">
                                 <a class=" text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
-                                    href="{{route('members-produk')}}">
+                                    href="{{route('wellcome')}}">
                                     <x-heroicon-o-home class="w-5 h-5 mr-2" />
-                                    <span>Members</span>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                        @endif
+                        @if(Route::current()->uri == "alk1/produk" || \Request::is("alk1/produk/*") )
+                        <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                            x-transition:leave-end="opacity-0" @click.away="closeProfileMenu"
+                            @keydown.escape="closeProfileMenu"
+                            class="z-50 absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border rounded-md shadow-md"
+                            aria-label="submenu">
+                            <li class="flex">
+                                <a class=" text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
+                                    href="{{route('wellcome')}}">
+                                    <x-heroicon-o-home class="w-5 h-5 mr-2" />
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                        @endif
+                        @if(Route::current()->uri == "adminkoputra1/produk" || \Request::is("adminkoputra1/produk/*") )
+                        <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                            x-transition:leave-end="opacity-0" @click.away="closeProfileMenu"
+                            @keydown.escape="closeProfileMenu"
+                            class="z-50 absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border rounded-md shadow-md"
+                            aria-label="submenu">
+                            <li class="flex">
+                                <a class=" text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
+                                    href="{{route('wellcome')}}">
+                                    <x-heroicon-o-home class="w-5 h-5 mr-2" />
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                        @endif
+                        @if(Route::current()->uri == "cscorp/produk" || \Request::is("cscorp/produk/*") )
+                        <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                            x-transition:leave-end="opacity-0" @click.away="closeProfileMenu"
+                            @keydown.escape="closeProfileMenu"
+                            class="z-50 absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border rounded-md shadow-md"
+                            aria-label="submenu">
+                            <li class="flex">
+                                <a class=" text-gray-500 inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100"
+                                    href="{{route('wellcome')}}">
+                                    <x-heroicon-o-home class="w-5 h-5 mr-2" />
+                                    <span>Logout</span>
                                 </a>
                             </li>
                         </ul>
