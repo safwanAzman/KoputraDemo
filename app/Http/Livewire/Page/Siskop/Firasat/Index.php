@@ -3,7 +3,7 @@
 namespace App\Http\Livewire\Page\Siskop\Firasat;
 
 use Livewire\Component;
-
+use Illuminate\Support\Facades\Route;
 class Index extends Component
 {
     public  $uuid,                  $customer,              $products,              $concepts;
@@ -11,9 +11,10 @@ class Index extends Component
     public  $product_id,            $concept_id,            $calculation_method;
     public  $approved_date,         $financing_amount,      $profit_rate,           $duration,
             $selling_price,         $total_profit_amount,   $instal_amount,         $grace_period,
-            $account_no,            $show_schedule,         $schedules;
+            $account_no,            $show_schedule,         $schedules,             $page;
 
     public function mount(){
+        $this->page                = substr(Route::current()->uri,0,6);
         $this->product_id          = null;
         $this->concept_id          = null;
         $this->account_no          = 'XXXXXXXXXX';

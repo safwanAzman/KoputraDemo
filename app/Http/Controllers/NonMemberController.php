@@ -25,4 +25,9 @@ class NonMemberController extends Controller
     {
         return view ('pages.nonmember.salinan.suratLantikan');
     }
+
+    public function firasat()
+    {
+        return view('pages.member.firasat.index');
+    }
 }

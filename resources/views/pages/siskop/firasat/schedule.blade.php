@@ -1,3 +1,4 @@
+
 <div class="p-4 h-96 overflow-y-auto overflow-x-hidden">
     <x-general.table>
         <x-slot name="thead">
@@ -8,6 +9,8 @@
             <x-general.table-header class="text-left" value="Principal Outs" sort="" livewire=""/>
             <x-general.table-header class="text-left" value="Profit" sort="" livewire=""/>
             <x-general.table-header class="text-left" value="UEI Outs" sort="" livewire=""/>
+            
+
         </x-slot>
         <x-slot name="tbody">
             @forelse ($schedules as $item)
@@ -40,3 +43,7 @@
         {{-- {{ $list->links('pagination::tailwind') }} --}}
     </x-general.table>
 </div>
+
+
+
+

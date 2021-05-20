@@ -252,11 +252,17 @@
                             class=" px-4 py-4 text-center text-white bg-indigo-600 rounded-full shadow-sm focus:outline-none hover:bg-indigo-700">
                             <x-heroicon-o-arrow-right class="w-5 h-5" />
                         </button>
-
+                        @if(Route::current()->uri == "members" || \Request::is("members/*") )
                         <button x-show="step === 2" onclick="save()"
                             class=" px-5 py-2 text-center text-white bg-indigo-600  rounded-lg shadow-sm focus:outline-none hover:bg-indigo-700">
                             Hantar Permohonan
                         </button>
+                        @elseif (Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*"))
+                        <button x-show="step === 2" onclick="save2()"
+                            class=" px-5 py-2 text-center text-white bg-indigo-600  rounded-lg shadow-sm focus:outline-none hover:bg-indigo-700">
+                            Hantar Permohonan
+                        </button>
+                        @endif
                     </div>
                 </div>
                 <!-- End Button -->
@@ -282,6 +288,15 @@
             showConfirmButton: false,
         })
         setTimeout("location.href = '{{route('members-produk2')}}';", 2500);
+    }
+
+    function save2() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Permohonan dikemukakan dengan jayanya!',
+            showConfirmButton: false,
+        })
+        setTimeout("location.href = '{{route('non-member')}}';", 2500);
     }
 </script>
 @endpush

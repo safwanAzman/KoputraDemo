@@ -16,7 +16,7 @@
                             Schedule
                         </a>
                         <a href="#" class="bg-indigo-500 hover:bg-indigo-700 text-white text-sm py-1 px-4 rounded  flex items-center"
-                            wire:click="calculate()">
+                            wire:click="calculate">
                             Calculate
                         </a>
                     </div>
@@ -253,10 +253,15 @@
                         </div>
                     </div>
                 </div>
+                @dump($page)
                 @if($show_schedule)
-                <x-general.modal modalActive="Open" title="Repayment Schedule" modalSize="4xl">
-                        @include('pages.siskop.firasat.schedule')
-                </x-general.modal>
+                    <x-general.modal modalActive="Open" title="Repayment Schedule" modalSize="4xl">
+                        @if($page == "siskop")
+                            @include('pages.siskop.firasat.schedule')
+                        @elseif($page == "member" || $page == "nonmem")
+                            @include('pages.siskop.firasat.schedule2')
+                        @endif
+                    </x-general.modal>
                 @endif
             </x-general.card>
         </div>
@@ -268,5 +273,6 @@
     window.addEventListener('swal',function(e){Swal.fire(e.detail);});
 </script>
 @endpush
+
 
 

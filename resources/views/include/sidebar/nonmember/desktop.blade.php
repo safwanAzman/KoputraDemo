@@ -20,6 +20,10 @@
                         <x-heroicon-o-user-group class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
+                    <x-sidebar.nav-item title="Firasat" route="{{route('nonmembers-firasat')}}" uri="">
+                        <x-heroicon-o-desktop-computer class="w-7 h-7" />
+                    </x-sidebar.nav-item>
+
                 <!-- members nav item End -->
 
             </ul>

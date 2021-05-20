@@ -73,6 +73,13 @@
                             <p>1.Permohonan 2021052200123 diterima</p>
                             <p>2.Permohonan 2021052200126 sedang diproses</p>
                         </ul>
+                        @elseif(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
+                        <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+                            x-transition:leave-end="opacity-0" @click.away="closeNotificationsMenu"
+                            @keydown.escape="closeNotificationsMenu"
+                            class="absolute right-0 w-64 p-2 mt-2 space-y-2 text-gray-600 bg-white rounded-md shadow-md z-50 text-sm">
+                            <p>Permohonan sedang diproses</p>
+                        </ul>
                         @else
                         <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
                             x-transition:leave-end="opacity-0" @click.away="closeNotificationsMenu"
