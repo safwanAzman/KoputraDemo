@@ -53,14 +53,28 @@ Route::middleware('guest')->group(function () {
     Route::get('members/saham', [MembersController::class, 'saham'])->name('members-saham');
     Route::get('members/jaminan', [MembersController::class, 'jaminan'])->name('members-jaminan');
     Route::get('members/pembiayaan', [MembersController::class, 'pembiayaan'])->name('members-pembiayaan');
-    //Details Trading
+
+    //member Details Trading
     Route::get('members/produk/trading/makananTersedia', [MembersController::class, 'tradingMakananTersedia'])->name('members.product.trading.makananTersedia');
-    //Buy Trading
+    //member Buy Trading
     Route::get('members/produk/trading/makananTersedia/buy', [MembersController::class, 'tradingMakananTersediaBuy'])->name('members.product.trading.makananTersedia.buy');
-    //Details Homestay
+    //member Details Homestay
     Route::get('members/produk/homestay/cameron', [MembersController::class, 'homestayCameron'])->name('members.product.homestay.cameron');
-    //Book Homestay
+    //member Book Homestay
     Route::get('members/produk/homestay/cameron/booking', [MembersController::class, 'homestayCameronBooking'])->name('members.product.homestay.cameron.booking');
+    //member Book Services
+    Route::get('members/produk/services/booking', [MembersController::class, 'servicesBooking'])->name('servicesBooking');
+
+    //non-member Details Trading
+    Route::get('nonmembers/produk/trading/makananTersedia', [MembersController::class, 'tradingMakananTersedia'])->name('nonmembers.product.trading.makananTersedia');
+    //non-member Buy Trading
+    Route::get('nonmembers/produk/trading/makananTersedia/buy', [MembersController::class, 'tradingMakananTersediaBuy'])->name('nonmembers.product.trading.makananTersedia.buy');
+    //non-member Details Homestay
+    Route::get('nonmembers/produk/homestay/cameron', [MembersController::class, 'homestayCameron'])->name('nonmembers.product.homestay.cameron');
+    //non-member Book Homestay
+    Route::get('nonmembers/produk/homestay/cameron/booking', [MembersController::class, 'homestayCameronBooking'])->name('nonmembers.product.homestay.cameron.booking');
+    //non-member Book Services
+    Route::get('nonmembers/produk/services/booking', [MembersController::class, 'servicesBooking'])->name('nonservicesBooking');
 
     //ADMIN
     Route::get('adminkoputra', [AdminKoputraController::class, 'index'])->name('adminkoputra');
