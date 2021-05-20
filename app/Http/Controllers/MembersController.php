@@ -70,4 +70,9 @@ class MembersController extends Controller
     {
         return view('pages.member.pembiayaan');
     }
+
+    public function firasat()
+    {
+        return view('pages.member.firasat.index');
+    }
 }
