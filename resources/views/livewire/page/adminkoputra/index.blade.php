@@ -379,6 +379,7 @@
                                     <option value="3">Fashion</option>
                                     <option value="4">Electronic</option>
                                 </x-form.dropdown>
+                                <x-form.input label="Nama Produk"  value="" type=""/>
                                 <x-form.input label="Fail Brosur (Risalah ini hendaklah dalam format berikut JPEG, JPG, PNG)"  value="" type="file"/>
                                 <x-form.input label="Harga Awam"  value="" type=""/>
                                 <x-form.input label="Harga Ahli"  value="" type=""/>
@@ -410,6 +411,7 @@
                                     <option value="2">Banglo</option>
                                     <option value="3">Teres</option>
                                 </x-form.dropdown>
+                                <x-form.input label="Nama Produk"  value="" type=""/>
                                 <x-form.input label="Fail Brosur (Risalah ini hendaklah dalam format berikut JPEG, JPG, PNG)"  value="" type="file"/>
                                 <x-form.input label="Harga Awam"  value="" type=""/>
                                 <x-form.input label="Harga Ahli"  value="" type=""/>
@@ -440,12 +442,13 @@
                             </div>
                             <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
                                 <x-form.dropdown label="Perkhidmatan" default="yes" value="" >
-                                    <option value="1" >KPC Property Care</option>
+                                    <option value="1" selected>KPC Property Care</option>
                                     <option value="2">Takaful Koputra</option>
                                     <option value="2">Takaful Kenderaan</option>
                                     <option value="2">Takaful Kebakaran</option>
                                 </x-form.dropdown>
                                 <x-form.dropdown label="Jenis" default="yes" value="" >
+                                    <option value="1" >Perkhidmatan Pembasmian Virus.</option>
                                     <option value="1" >Cucian dan Pembersihan Bangunan / Pejabat / Kediaman.</option>
                                     <option value="2">Membersihkan kawasan dan pemotongan rumput.</option>
                                     <option value="1">Penyelenggaraan bangunan / taman / lanskap.</option>

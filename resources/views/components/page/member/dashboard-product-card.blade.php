@@ -1,7 +1,7 @@
 <li class="flex flex-col col-span-1 text-center bg-white divide-y divide-gray-200 rounded-lg shadow" x-data="{ cartOpen: false  }">
     <div class="flex flex-col flex-1 p-8">
         <img class="flex-shrink-0 w-64 h-64 mx-auto bg-black rounded-full" src="{{ url('/img/member/'.$img) }}" alt="">
-        <h3 class="mt-6 text-xl font-bold text-gray-900">{{ $title }}</h3>
+        <h3 class="mt-6 text-xl font-bold text-gray-900 uppercase">{{ $title }}</h3>
         <dl class="flex flex-col justify-between flex-grow mt-1">
 
             @if ($type == 'financing')
@@ -10,6 +10,10 @@
                     <div class="font-semibold text-red-700 text-md">{{ $description }}</div>
                 </div>
             @elseif ($type == 'trading')
+                <div class="flex justify-center">
+                    <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                </div>
+            @elseif ($type == 'services')
                 <div class="flex justify-center">
                     <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
                 </div>
@@ -38,6 +42,9 @@
                         <x-heroicon-s-shopping-bag class="w-5 h-5 text-gray-400 group-hover:text-white"/>
                         <span class="ml-3 group-hover:text-white">Buy Now</span>
                     @elseif  ($type == 'homestay')
+                        <x-heroicon-s-key class="w-5 h-5 text-gray-400 group-hover:text-white"/>
+                        <span class="ml-3 group-hover:text-white">Book Now</span>
+                    @elseif  ($type == 'services')
                         <x-heroicon-s-key class="w-5 h-5 text-gray-400 group-hover:text-white"/>
                         <span class="ml-3 group-hover:text-white">Book Now</span>
                     @endif

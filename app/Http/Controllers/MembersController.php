@@ -46,6 +46,11 @@ class MembersController extends Controller
         return view('pages.member.produk.homestay.cameronBooking');
     }
 
+    public function servicesBooking()
+    {
+        return view('pages.member.produk.services.services');
+    }
+
     public function jaminan()
     {
         return view('pages.member.jaminan');

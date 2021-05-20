@@ -159,7 +159,7 @@
                                                 <div class="px-2 py-2 mr-auto text-lg font-medium text-white bg-white ">
                                                     <div class="flex justify-between">
                                                         <div>
-                                                            <img src="{{ asset('img/member/ipay88.png') }}"  class="w-auto h-10"/>
+                                                            <img src="{{ asset('img/member/senangPay.png') }}"  class="w-auto h-10"/>
                                                         </div>
                                                         <div>
                                                             <img src="{{ asset('img/member/visa-mastercard-.jpg') }}"  class="w-auto h-10"/>
@@ -173,8 +173,8 @@
                                                         </a>
                                                         <x-general.modal modalActive="open" title="Payment" modalSize="lg">
                                                             <div class="flex flex-col gap-3 p-4">
-                                                                <div class="overflow-y-auto h-full">
-                                                                    <img src="{{asset('img/ipay882.png')}}" />
+                                                                <div class="overflow-y-auto h-96">
+                                                                    <img src="{{asset('img/Makanan.png')}}" />
                                                                 </div>
                                                                 <a x-on:click="open = false"
                                                                     class="items-center px-4 py-2 text-sm text-center text-white bg-green-500 rounded cursor-pointer hover:bg-green-600 focus:outline-none" >

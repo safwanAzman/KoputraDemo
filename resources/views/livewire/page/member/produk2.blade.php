@@ -107,6 +107,11 @@
                                 <x-heroicon-o-home class="w-6 h-6 mr-2"/>
                                 Homestay
                         </x-tab2.nav-tab2>
+                        <x-tab2.nav-tab2 name="4" livewire="">
+                            <div class="flex text-sm font-medium">
+                                <x-heroicon-o-truck class="w-6 h-6 mr-2"/>
+                                Services
+                        </x-tab2.nav-tab2>
                     </div>
                 </div>
                 <div class="px-5 py-5 mt-2 bg-white rounded-lg shadow-xl">
@@ -155,6 +160,14 @@
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY WHITE ROSE, SERI KEMBANGAN" description="250" description2="150" img="white_rose_seri_kembangan.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="THE HERITAGE, SERI KEMBANGAN" description="350" description2="300" img="the_heritage.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY LARKIN" description="400" description2="320" img="homestay_larkin.jpg"/>
+                        </x-page.member.dashboard-grid>
+                    </x-tab2.nav-content2>
+
+                    <x-tab2.nav-content2 name="4">
+                        <x-page.member.dashboard-grid>
+                            <x-page.member.dashboard-product-card type="services" title="CUCIAN RUMAH DAN BAGUNAN" description="200" img="kpc2.jpg" route="{{route('servicesBooking')}}" routeDetails="#"/>
+                            <x-page.member.dashboard-product-card type="services" title="Sanitasi dalaman dan luaran bangunan" description="200" img="kpc1.jpg" route="#" routeDetails="#"/>
+                            <x-page.member.dashboard-product-card type="services" title="Perkhidmatan Pembasmian Virus" description="499" img="kpc3.jpg" route="#" routeDetails="#"/> 
                         </x-page.member.dashboard-grid>
                     </x-tab2.nav-content2>
                 </div>
