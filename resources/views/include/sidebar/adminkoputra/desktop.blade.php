@@ -18,13 +18,13 @@
                         <x-heroicon-o-archive class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
-                    <x-sidebar.nav-item title="Gen. Setup" route="{{route('cifadmin')}}" uri="">
+                    <x-sidebar.nav-item title="Tetapan Am" route="{{route('cifadmin')}}" uri="">
                         <x-heroicon-o-library class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
-                    <x-sidebar.nav-item title="Tetapan" route="{{route('tetapan')}}" uri="">
+                    {{-- <x-sidebar.nav-item title="Tetapan" route="{{route('tetapan')}}" uri="">
                         <x-heroicon-o-cog class="w-7 h-7" />
-                    </x-sidebar.nav-item>
+                    </x-sidebar.nav-item> --}}
 
                         {{-- <x-sidebar.nav-item title="Senarai Keahlian" route="{{route('adminkoputra-members')}}" uri="">
                             <x-heroicon-o-user-group class="w-7 h-7" />
