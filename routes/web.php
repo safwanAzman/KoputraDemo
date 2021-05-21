@@ -34,6 +34,7 @@ use App\Http\Controllers\cukai\TaxInvoiceController;
 */
 
 Route::view('/', 'welcome')->name('wellcome');
+Route::view('/Daftar-Akaun', 'register')->name('daftar');
 
 Route::middleware('guest')->group(function () {
 

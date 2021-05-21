@@ -58,6 +58,9 @@
                 @if(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
                     <h1 class="text-white">RASMIZAM</h1>
                 @endif
+                @if(Route::current()->uri == "cscorp/produk" || \Request::is("cscorp/produk/*") )
+                    <h1 class="text-white">ANIS</h1>
+                @endif
                 <!-- Notifications menu -->
                 <li class="relative">
                     <button class="p-2 bg-white text-indigo-600 align-middle shadow-xl rounded-full  focus:outline-none "
