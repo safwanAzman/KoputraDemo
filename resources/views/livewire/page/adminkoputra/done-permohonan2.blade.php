@@ -257,24 +257,22 @@
                                                 </x-table.table-body>
 
                                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-
                                                     <div x-data="{Open : false}">
-                                                        <a href="#" class="flex items-center space-x-1">
+                                                        <a href="#" class="flex items-center space-x-1" x-on:click="Open = true">
                                                             <x-heroicon-s-information-circle
                                                                 class="h-5 w-5 text-indigo-700 tooltipbtn focus:outline-none"
                                                                 data-title="Maklumat Permohonan" data-placement="top" />
-                                                            <p>002203432567</p>
+                                                            <p>02202323451</p>
                                                         </a>
                                                     </div>
-
                                                 </x-table.table-body>
 
                                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                                    <p>NUR HANI BALQIS BINTI AZMI</p>
+                                                    <p>RASMIZAM BIN MOHAMAD</p>
                                                 </x-table.table-body>
 
                                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                                    <p>000603036446</p>
+                                                    <p>960211103167</p>
                                                 </x-table.table-body>
 
                                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
@@ -294,22 +292,24 @@
                                                 </x-table.table-body>
 
                                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+
                                                     <div x-data="{Open : false}">
-                                                        <a href="#" class="flex items-center space-x-1" x-on:click="Open = true">
+                                                        <a href="#" class="flex items-center space-x-1">
                                                             <x-heroicon-s-information-circle
                                                                 class="h-5 w-5 text-indigo-700 tooltipbtn focus:outline-none"
                                                                 data-title="Maklumat Permohonan" data-placement="top" />
-                                                            <p>02202323451</p>
+                                                            <p>002203432567</p>
                                                         </a>
                                                     </div>
+
                                                 </x-table.table-body>
 
                                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                                    <p>RASMIZAM BIN MOHAMAD</p>
+                                                    <p>NUR HANI BALQIS BINTI AZMI</p>
                                                 </x-table.table-body>
 
                                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
-                                                    <p>960211103167</p>
+                                                    <p>000603036446</p>
                                                 </x-table.table-body>
 
                                                 <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
