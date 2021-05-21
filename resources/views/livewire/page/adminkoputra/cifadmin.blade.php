@@ -242,89 +242,230 @@
                     <x-slot name="content">
                         <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
                             <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md">
-                                <p>Brances</p>
+                                <p>Transaction Codes and Descriptions</p>
                             </div>
-                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
-                                <x-form.dropdown label="Branches List" default="yes" value="" >
-                                    <option value="1" selected>MWANAKWEREKWE</option>
-                                    <option value="2">KARIAKOO</option>
-                                    <option value="2">CHAKECHAKE</option>
-                                    <option value="2">SUNGAI BESI</option>
-                                </x-form.dropdown>
-                                <x-form.input label="Branch Code"  value="51" type="" disabled/>
-                                <x-form.input label="Branch Name"  value="MWANAKWEREKWE" type="" disabled/>
-                                <x-form.input label="Short Name"  value="MWIB" type="" disabled/>
-                                <x-form.input label="Area Code"  value="A02" type="" disabled/>
-                            </x-general.grid>
+                            <table width="30%" class="mt-4">
+                                <tbody>
+                                    <tr wire:click="t1">
+                                        <td >
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">1.</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">0009</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <div class="flex space-x-4 w-full">
+                                                <label class="inline-flex items-center">
+                                                    <span class="ml-2 text-sm text-gray-700">Opening of Branch</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr wire:click="t2">
+                                        <td >
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">2.</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">0010</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <div class="flex space-x-4 w-full">
+                                                <label class="inline-flex items-center">
+                                                    <span class="ml-2 text-sm text-gray-700">Enter Opening Cash</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr wire:click="t3">
+                                        <td >
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">3.</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">0011</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <div class="flex space-x-4 w-full">
+                                                <label class="inline-flex items-center">
+                                                    <span class="ml-2 text-sm text-gray-700">Teller Totals Inquiry</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr wire:click="t4">
+                                        <td >
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">4.</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">0012</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <div class="flex space-x-4 w-full">
+                                                <label class="inline-flex items-center">
+                                                    <span class="ml-2 text-sm text-gray-700">Branch Totals Inquiry</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr wire:click="t5">
+                                        <td >
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">5.</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">0013</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <div class="flex space-x-4 w-full">
+                                                <label class="inline-flex items-center">
+                                                    <span class="ml-2 text-sm text-gray-700">Clear Teller Totals</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr wire:click="t6">
+                                        <td >
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">6.</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">0014</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <div class="flex space-x-4 w-full">
+                                                <label class="inline-flex items-center">
+                                                    <span class="ml-2 text-sm text-gray-700">Receive Cash From Vault</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr wire:click="t7">
+                                        <td >
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">7.</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="inline-flex items-center">
+                                                <span class="ml-2 text-sm text-gray-700">0015</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <div class="flex space-x-4 w-full">
+                                                <label class="inline-flex items-center">
+                                                    <span class="ml-2 text-sm text-gray-700">Transfer Cash To Vault</span>
+                                                </label>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                
+                                </tbody>
+                            </table>
 
                             <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md mt-8">
-                                <p>Branch Details</p>
+                                <p>Transaction Code Details</p>
                             </div>
-                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Branch Code"  value="51" />
-                                </div>
 
-                                <x-form.input label="Branch Name"  value="MWANAKWEREKWE" />
+                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="3" xl="4" class="col-span-6 mt-6">
+                                <x-form.input label="Transaction Code"  value="0009" />
 
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Short Name"  value="MWIB" />
-                                </div>
+                                <x-form.input label="Transaction Description"  value="Opening of Branch" />
 
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Area Code"  value="A02" />
-                                </div>
+                                <x-form.input label="Transaction Type"  value="Internal" />
+
+                                <x-form.input label="Product"  value="System Used" />
                             </x-general.grid>
 
-                                <x-form.address class="" label="Address" value1="" value2="" value3="" value4="" value5=""
-                                value6="" condition="state" />
+                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="3" xl="4" class="col-span-6 mt-6">
+                                <x-form.input label="Inter Branch Flag"  value="Not Allowed" />
+                            
+                                <x-form.input label="Override Flag"  value="Supervisor 5" />
 
-                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Operating Code"  value="HW52" />
-                                </div>
-                                
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Telephone No"  value="+51 324 2314" />
-                                </div>
+                                <x-form.input label="Offline Flag"  value="No" />
 
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="GL Acct. Number"  value="510101" />
-                                </div>
+                                <x-form.input label="Cash Transaction"  value="Non Cash" />
 
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="ATM Interbranch GL"  value="113454" />
-                                </div>
+                                <x-form.input label="Teller Totals Flag"  value="No" />
 
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Work Date"  value="17-02-2013" />
-                                </div>
+                                <x-form.input label="Bucket"  value="None" />
 
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Report Work Date"  value="23-12-2011" />
-                                </div>
+                                <x-form.input label="Input Format"  value="0" />
 
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Last Sequence No"  value="235" />
-                                </div>
+                                <x-form.input label="Output Format"  value="1" />
 
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="InterBranch GL Number"  value="113461" />
-                                </div>
+                                <x-form.input label="Mnemonic Code"  value="" />
+
+                                <x-form.input label="Transaction Category"  value="System Transaction" />
+
+                                <x-form.input label="Floating Flag"  value="No" />
+
+                                <x-form.input label="Floating Day(s)"  value="0" />
+
+                                <x-form.input label="Precede By Txn Code"  value="" />
+
+                                <x-form.input label="Authority Level"  value="2048" />
+
+                                <x-form.input label="Reversal Allowed?"  value="No" />
+
                             </x-general.grid>
 
                             <div class="font-semibold text-lg text-black py-1 px-1 mt-4">
-                                <p>Teller & Batch Processing Setting</p>
+                                <p>GL Entries [Local Currency]</p>
                             </div>
 
                             <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
 
                                 <div class="flex space-x-2 w-full">
-                                    <x-form.input label="End of Day Flag"  value="Active" />
+                                    <x-form.input label="Debit GL Account"  value="" />
+                                    <x-form.input label="Credit GL Account"  value="" />
                                 </div>
+                                
+                            </x-general.grid>
+
+                            <div class="font-semibold text-lg text-black py-1 px-1 mt-4">
+                                <p>GL Entries [Foreign Currency]</p>
+                            </div>
+
+                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
 
                                 <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Batch Flag"  value="Not yet run" />
+                                    <x-form.input label="Debit GL Account"  value="" />
+                                    <x-form.input label="Credit GL Account"  value="" />
                                 </div>
                                 
                             </x-general.grid>
@@ -366,39 +507,268 @@
                     <x-slot name="content">
                         <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
                             <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md">
-                                <p>Maklumat Services</p>
+                                <p>Fee/Tariff Codes</p>
                             </div>
-                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
-                                <x-form.dropdown label="Perkhidmatan" default="yes" value="" >
-                                    <option value="1" selected>KPC Property Care</option>
-                                    <option value="2">Takaful Koputra</option>
-                                    <option value="2">Takaful Kenderaan</option>
-                                    <option value="2">Takaful Kebakaran</option>
-                                </x-form.dropdown>
-                                <x-form.dropdown label="Jenis" default="yes" value="" >
-                                    <option value="1" >Perkhidmatan Pembasmian Virus.</option>
-                                    <option value="1" >Cucian dan Pembersihan Bangunan / Pejabat / Kediaman.</option>
-                                    <option value="2">Membersihkan kawasan dan pemotongan rumput.</option>
-                                    <option value="1">Penyelenggaraan bangunan / taman / lanskap.</option>
-                                    <option value="2">Kawalan serangga perosak.</option>
-                                    <option value="2">Perkhidmatan dobi.</option>
-                                    <option value="2">Mengecat rumah dan bangunan.</option>
-                                    <option value="2">Cucian rumah dan bangunan.</option>
-                                    <option value="2">Sanitasi dalaman dan luaran bangunan.</option>
-                                </x-form.dropdown>
-                                <x-form.input label="Fail Brosur (Risalah ini hendaklah dalam format berikut JPEG, JPG, PNG)"  value="" type="file"/>
-                                <x-form.input label="Harga Awam"  value="" type=""/>
-                                <x-form.input label="Harga Ahli"  value="" type=""/>
-                            </x-general.grid>
+                            <x-table.table>
+                                <x-slot name="thead">
+                                    <x-table.table-header class="text-left" value="GROUP ID" sort="" />
+                                    <x-table.table-header class="text-left" value="SEQUENCE NUMBER" sort="" />
+                                    <x-table.table-header class="text-left" value="CODE" sort="" />
+                                    <x-table.table-header class="text-left" value="CODE DESCRIPTION" sort="" />
+                                    <x-table.table-header class="text-left" value="GL ACCOUNT CODE" sort="" />
+                                </x-slot>
+                                <x-slot name="tbody">
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>7</p>
+                                        </x-table.table-body>
 
-                            <div class="flex justify-center mt-8">
-                                <a onclick="save()" href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
-                                    <div class="flex items-center space-x-2">
-                                        <x-heroicon-o-save class="w-4 h-4" /> 
-                                        <p>Simpan</p>
-                                    </div>
-                                </a>
-                            </div>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>1</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>CDF</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>CASH DEPOSIT FEE</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <x-form.dropdown label="" value="">
+                                                <option value="0"></option>
+                                                <option value="01">Bank Commission</option>
+                                                <option value="1">ATM Commission</option>
+                                                <option value="2">Ledger Fee</option>
+                                                <option value="3">Commission on Guarantee</option>
+                                                <option value="4">Sales of Cheque Book</option>
+                                                <option value="5">Authorisation Fee</option>
+                                                <option value="6">Service Charge</option>
+                                            </x-form.dropdown>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>7</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>2</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>CWF</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>Cash Withdrawal Fee</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <x-form.dropdown label="" value="">
+                                                <option value="0"></option>
+                                                <option value="01">Bank Commission</option>
+                                                <option value="1">ATM Commission</option>
+                                                <option value="2">Ledger Fee</option>
+                                                <option value="3">Commission on Guarantee</option>
+                                                <option value="4">Sales of Cheque Book</option>
+                                                <option value="5">Authorisation Fee</option>
+                                                <option value="6">Service Charge</option>
+                                            </x-form.dropdown>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>7</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>3</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>OCC</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>Outstation Cheque Clearing Fee</p>
+                                        </x-table.table-body>
+                                        
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <x-form.dropdown label="" value="">
+                                                <option value="0"></option>
+                                                <option value="01">Bank Commission</option>
+                                                <option value="1">ATM Commission</option>
+                                                <option value="2">Ledger Fee</option>
+                                                <option value="3">Commission on Guarantee</option>
+                                                <option value="4">Sales of Cheque Book</option>
+                                                <option value="5">Authorisation Fee</option>
+                                                <option value="6">Service Charge</option>
+                                            </x-form.dropdown>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>7</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>4</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>SCC</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>Special Cheque  Clearing Fee</p>
+                                        </x-table.table-body>
+                                        
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <x-form.dropdown label="" value="">
+                                                <option value="0"></option>
+                                                <option value="01">Bank Commission</option>
+                                                <option value="1">ATM Commission</option>
+                                                <option value="2">Ledger Fee</option>
+                                                <option value="3">Commission on Guarantee</option>
+                                                <option value="4">Sales of Cheque Book</option>
+                                                <option value="5">Authorisation Fee</option>
+                                                <option value="6">Service Charge</option>
+                                            </x-form.dropdown>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>7</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>5</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>CHR</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>Cheque Returned Fee</p>
+                                        </x-table.table-body>
+                                        
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <x-form.dropdown label="" value="">
+                                                <option value="0"></option>
+                                                <option value="01">Bank Commission</option>
+                                                <option value="1">ATM Commission</option>
+                                                <option value="2">Ledger Fee</option>
+                                                <option value="3">Commission on Guarantee</option>
+                                                <option value="4">Sales of Cheque Book</option>
+                                                <option value="5">Authorisation Fee</option>
+                                                <option value="6">Service Charge</option>
+                                            </x-form.dropdown>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>6</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>1</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>ITX</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>Internal Transfer Fee</p>
+                                        </x-table.table-body>
+                                        
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <x-form.dropdown label="" value="">
+                                                <option value="0"></option>
+                                                <option value="01">Bank Commission</option>
+                                                <option value="1">ATM Commission</option>
+                                                <option value="2">Ledger Fee</option>
+                                                <option value="3">Commission on Guarantee</option>
+                                                <option value="4">Sales of Cheque Book</option>
+                                                <option value="5">Authorisation Fee</option>
+                                                <option value="6">Service Charge</option>
+                                            </x-form.dropdown>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>7</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>7</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>LTX</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>In-bank Transfer Fee</p>
+                                        </x-table.table-body>
+                                        
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <x-form.dropdown label="" value="">
+                                                <option value="0"></option>
+                                                <option value="01">Bank Commission</option>
+                                                <option value="1">ATM Commission</option>
+                                                <option value="2">Ledger Fee</option>
+                                                <option value="3">Commission on Guarantee</option>
+                                                <option value="4">Sales of Cheque Book</option>
+                                                <option value="5">Authorisation Fee</option>
+                                                <option value="6">Service Charge</option>
+                                            </x-form.dropdown>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>7</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>8</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>MMF</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>Monthly Maintenance Fee</p>
+                                        </x-table.table-body>
+                                        
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <x-form.dropdown label="" value="">
+                                                <option value="0"></option>
+                                                <option value="01">Bank Commission</option>
+                                                <option value="1">ATM Commission</option>
+                                                <option value="2">Ledger Fee</option>
+                                                <option value="3">Commission on Guarantee</option>
+                                                <option value="4">Sales of Cheque Book</option>
+                                                <option value="5">Authorisation Fee</option>
+                                                <option value="6">Service Charge</option>
+                                            </x-form.dropdown>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                </x-slot>
+                            </x-table.table>
+
                         </div>
                     </x-slot>
                 </x-form.basic-form>
