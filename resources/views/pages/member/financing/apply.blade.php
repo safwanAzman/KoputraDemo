@@ -63,8 +63,8 @@
                                             <option value="">TENTERA</option>
                                         </x-form.dropdown>
                                         <x-form.input label="No.K/P Lama :"  value="" />
-                                        <x-form.input label="Tarikh Lahir :"  value="" />
-                                        <x-form.input label="Umur :"  value="" />
+                                        <x-form.input label="Tarikh Lahir :"  value="09 APRIL 1985" />
+                                        <x-form.input label="Umur :"  value="35" />
 
                                         <div>
                                             <span class="block text-sm font-semibold leading-5 text-gray-700">Jantina
@@ -123,7 +123,7 @@
                                             value6="" condition="state" />
                                     </x-general.grid>
                                     <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-3">
-                                        <x-form.input label="No.Tel Bimbit :"  value="" />
+                                        <x-form.input label="No.Tel Bimbit :"  value="0183546808" />
                                         <div>
                                             <span class="block text-sm font-semibold leading-5 text-gray-700">Taraf
                                                 Perkahwinan :</span>
@@ -161,24 +161,24 @@
                                             <option value="18">18</option>
                                             <option value="19">19</option>
                                         </x-form.dropdown>
-                                        <x-form.input label="Alamat e-Mel :" value="" />
+                                        <x-form.input label="Alamat e-Mel :" value="aizuddin.yusoff@ymail.com" />
                                     </x-general.grid>
                                     <div
                                         class="font-semibold text-lg text-indigo-600 border-b-4 border-indigo-600 py-2 mt-6">
                                         <p>MAKLUMAT PASANGAN SUAMI/ISTERI</p>
                                     </div>
                                     <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-3">
-                                        <x-form.input label="Nama Pasangan :"  value="" />
-                                        <x-form.input label="No.K/P Baru Pasangan :"  value="" />
+                                        <x-form.input label="Nama Pasangan :"  value="SITI HAMIMI" />
+                                        <x-form.input label="No.K/P Baru Pasangan :"  value="871209-10-5166" />
                                         <x-form.input label="No.K/P Lama Pasangan :"  value="" />
-                                        <x-form.input label="No.Tel Bimbit Pasangan :"  value="" />
+                                        <x-form.input label="No.Tel Bimbit Pasangan :"  value="017-35889898" />
                                     </x-general.grid>
                                     <div
                                         class="font-semibold text-lg text-indigo-600 border-b-4 border-indigo-600 py-2 mt-6">
                                         <p>MAKLUMAT IBU BAPA</p>
                                     </div>
                                     <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-3">
-                                        <x-form.input label="Nama Ibu/Bapa :"  value="" />
+                                        <x-form.input label="Nama Ibu/Bapa :"  value="ROKIAH" />
                                         <x-form.input label="No K/P Ibu/Bapa :"  value="" />
                                         <x-form.input label="No K/P Lama Ibu/Bapa :"  value="" />
                                         <x-form.input label="No.Tel Bimbit Ibu/Bapa :"  value="" />
@@ -188,16 +188,16 @@
                                         <p>MAKLUMAT PEKERJAAN</p>
                                     </div>
                                     <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="col-span-6 mt-3">
-                                        <x-form.input label="Nama Jabatan/Bahagian/Unit :"  value="" />
-                                        <x-form2.address class="" label="Alamat Pejabat/Majikan :"  value1="" value2="" value3="" value4="" value5=""
+                                        <x-form.input label="Nama Jabatan/Bahagian/Unit :"  value="BAHAGIAN UNIT KECEMASAN IT" />
+                                        <x-form2.address class="" label="Alamat Pejabat/Majikan :"  value1="11, Jalan 9/6," value2="Taman IKS Seksyen 9" value3="" value4="Bandar Baru Bangi" value5="43650"
                                             value6="" condition="state" />
                                     </x-general.grid>
                                     <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="2" xl="2" class="col-span-6 mt-3">
-                                        <x-form.input label="No.Tel Pejabat :"  value="" />
+                                        <x-form.input label="No.Tel Pejabat :"  value="123-1233333" />
                                         <x-form.input label="No.Fax Pejabat :"  value="" />
-                                        <x-form.input label="Jawatan :"  value="" />
+                                        <x-form.input label="Jawatan :"  value="JAWATAN SEMASA" />
                                         <x-form.input label="Gaji Pokok :"  value="" />
-                                        <x-form.dropdown label="Jenis Kediaman :" default="no" value="" >
+                                        <x-form.dropdown label="Taraf Jawatan :" default="no" value="" >
                                             <option value="tetap" selected>Tetap</option>
                                             <option value="kontrak">Kontrak</option>
                                             <option value="sementara">Sementara</option>
@@ -205,7 +205,7 @@
                                         </x-form.dropdown>
                                         <x-form.input type="date" label="Tarikh Mula Bekerja: "  value="" />
                                         <x-form.input type="date" label="Tarikh Sah Jawatan :"  value="" />
-                                        <x-form.input label="No. Gaji / No. Pekerja :"  value="" />
+                                        <x-form.input label="No. Gaji / No. Pekerja :"  value="AG234" />
                                     </x-general.grid>
                                 </x-slot>
                             </x-form.basic-form>
