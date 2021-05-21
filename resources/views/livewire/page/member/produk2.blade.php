@@ -52,11 +52,11 @@
                     <div>
                         <div>
                             <p class="text-lg text-gray-400 ">Anggaran Pembiayaan Maksimum</p>
-                            <p class="text-lg font-semibold uppercase">RM 210,000.00</p>
+                            <p class="text-lg font-semibold uppercase">RM 77,000.00</p>
                         </div>
                         <div class="mt-4">
                             <p class="text-lg text-gray-400 ">Anggaran Ansuran Bulanan</p>
-                            <p class="text-lg font-semibold uppercase">RM 2,720.12</p>
+                            <p class="text-lg font-semibold uppercase">RM 1,000.00</p>
                         </div>
                     </div>
                     <div class="flex justify-center w-full">

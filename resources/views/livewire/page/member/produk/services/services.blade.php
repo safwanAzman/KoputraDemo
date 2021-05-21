@@ -139,7 +139,7 @@
                         } else if( value === 'cash') {
                             Swal.fire({
                                 html: `<div>
-                                <img src="{{asset('img/cucian.png')}}" class="w-auto "/>
+                                <img src="{{asset('img/iPay883.png')}}" class="w-auto "/>
                                 </div>`,
                                 showCancelButton: true,
                                 confirmButtonColor: '#77db42',

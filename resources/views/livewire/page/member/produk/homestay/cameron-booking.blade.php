@@ -193,7 +193,7 @@
                                 // imageHeight: 550,
                                 // imageAlt: 'Custom image',
                                 html: `<div>
-                                <img src="{{asset('img/apartment.png')}}" class="w-auto"/>
+                                <img src="{{asset('img/ipay88.png')}}" class="w-auto"/>
                                 </div>`,
                                 showCancelButton: true,
                                 confirmButtonColor: '#77db42',
