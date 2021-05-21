@@ -214,7 +214,7 @@
                                 }
                                 })
                         }else{
-                            resolve('You need to payment method')
+                            resolve('You need to choose one payment method')
                         }
                         })
                     }

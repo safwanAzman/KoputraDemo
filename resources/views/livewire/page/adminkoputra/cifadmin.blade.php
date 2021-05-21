@@ -1206,6 +1206,248 @@
                                             </div>
                                         </x-table.table-body>
                                     </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Individual</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Company</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Address</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Relationship</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Shareholders</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Directors</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Exposure</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Legal Action</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Image</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Account Master</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Position</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox">
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Provision</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox">
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Sinking Fund</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>PDA Checklist</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>PD Cheque</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>PDA Checklist Details</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Funds Utilisation</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Sinking Fund Details</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Collateral</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Deposit</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox" checked>
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Accounts</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox">
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
+
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                                <p>Others Action</p>
+                                        </x-table.table-body>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
+                                            <div class="flex justify-center">
+                                                <input type="checkbox" class="form-checkbox">
+                                            </div>
+                                        </x-table.table-body>
+                                    </tr>
                                 </x-slot>
                             </x-table.table>
                         </div>
