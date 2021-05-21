@@ -87,11 +87,11 @@
                                     class=" relative text-center w-full block bg-indigo-800  focus:bg-indigo-800 text-white font-semibold rounded-lg px-4 py-3 mt-6">
                                     Log masuk
 
-                                    <a href="{{route('members-produk')}}" class="absolute left-0 text-indigo-800">
+                                    <a href="{{route('non-member')}}" class="absolute left-0 text-indigo-800">
                                         Test
                                     </a>
 
-                                    <a href="{{route('non-member')}}" class="absolute left-12 text-indigo-800">
+                                    <a href="{{route('members-produk')}} " class="absolute left-12 text-indigo-800">
                                         Test
                                     </a>
 

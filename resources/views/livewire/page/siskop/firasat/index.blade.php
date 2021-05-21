@@ -46,9 +46,9 @@
                                                 <x-form.basic-form action="">
                                                     <x-slot name="content">
                                                         <div class="grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
-                                                            <x-form.input label="Financing Amount"  value="" livewire="wire:model=financing_amount"/>
-                                                            <x-form.input label="Profit Rate"       value="" livewire="wire:model=profit_rate"/>
-                                                            <x-form.input label="Duration (Months)" value="" livewire="wire:model=duration"/>
+                                                            <x-form.input label="Financing Amount *"  value="" livewire="wire:model=financing_amount"/>
+                                                            <x-form.input label="Profit Rate  *"       value="" livewire="wire:model=profit_rate"/>
+                                                            <x-form.input label="Duration (Months) *" value="" livewire="wire:model=duration"/>
                                                             {{-- <x-form.input label="Grace period (Months)" value="" livewire="" /> --}}
                                                             <x-form.dropdown label="Profit Calculation Mode" value="calculation_method">
                                                                 <option value="Flat Rate">Flat Rate</option>
