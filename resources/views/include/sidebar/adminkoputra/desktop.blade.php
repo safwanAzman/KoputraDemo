@@ -18,6 +18,10 @@
                         <x-heroicon-o-archive class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
+                    <x-sidebar.nav-item title="CIF Admin" route="{{route('cifadmin')}}" uri="">
+                        <x-heroicon-o-library class="w-7 h-7" />
+                    </x-sidebar.nav-item>
+
                     <x-sidebar.nav-item title="Tetapan" route="{{route('tetapan')}}" uri="">
                         <x-heroicon-o-cog class="w-7 h-7" />
                     </x-sidebar.nav-item>

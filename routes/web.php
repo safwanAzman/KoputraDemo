@@ -89,6 +89,7 @@ Route::middleware('guest')->group(function () {
     Route::get('adminkoputra/permohonan', [AdminKoputraController::class, 'permohonan'])->name('permohonan');
     Route::get('adminkoputra/permohonan1', [AdminKoputraController::class, 'donepermohonan'])->name('donepermohonan');
     Route::get('adminkoputra/permohonan2', [AdminKoputraController::class, 'donepermohonan2'])->name('donepermohonan2');
+    Route::get('adminkoputra/cifadmin', [AdminKoputraController::class, 'cifadmin'])->name('cifadmin');
 
     //ALK
     Route::get('alk', [AlkController::class, 'index'])->name('alk');
@@ -99,17 +100,17 @@ Route::middleware('guest')->group(function () {
     Route::group([
         'prefix'        => 'siskop',
         'as'            => 'siskop.',
-    ], function (){
+    ], function () {
         Route::get('/', [SiskopController::class, 'index'])->name('index');
         Route::group([
             'prefix'        => 'member',
             'as'            => 'member.',
-        ], function (){
+        ], function () {
             Route::get('/', [SiskopController::class, 'member_index'])->name('index');
             Route::group([
                 'prefix'        => 'individual',
                 'as'            => 'individual.',
-            ], function (){
+            ], function () {
                 Route::get('{uuid}', [SiskopController::class, 'member_show'])->name('show');
             });
         });
@@ -117,7 +118,7 @@ Route::middleware('guest')->group(function () {
         Route::group([
             'prefix'        => 'finance',
             'as'            => 'finance.',
-        ], function (){
+        ], function () {
             Route::get('/', [SiskopController::class, 'finance_index'])->name('index');
             Route::get('{uuid}', [SiskopController::class, 'finance_show'])->name('show');
         });
@@ -126,7 +127,7 @@ Route::middleware('guest')->group(function () {
         Route::group([
             'prefix'        => 'teller',
             'as'            => 'teller.',
-        ], function (){
+        ], function () {
             // Route::get('/', [SiskopController::class, 'teller_index'])->name('index');
             Route::get('/', [SenaraiKutipanController::class, 'index'])->name('index');
         });
@@ -134,7 +135,7 @@ Route::middleware('guest')->group(function () {
         Route::group([
             'prefix'        => 'report',
             'as'            => 'report.',
-        ], function (){
+        ], function () {
             Route::get('/', [SiskopController::class, 'report_index'])->name('index');
             Route::get('list-position-contribution', [SiskopController::class, 'listPositionContribution_report'])->name('listPositionContribution_report');
             Route::get('contributionshare-projection', [SiskopController::class, 'contributionshare_projection'])->name('contributionshare_projection');
@@ -152,10 +153,9 @@ Route::middleware('guest')->group(function () {
 
     // Route::get('home', [DashboardController::class, 'index'])->name('home');
     // Route::get('home2', [DashboardController::class, 'index2'])->name('home2');
-    Route::get('login', Login::class) ->name('login');
+    Route::get('login', Login::class)->name('login');
 
     Route::get('register', Register::class)->name('register');
-
 });
 
 Route::get('password/reset', Email::class)->name('password.request');
