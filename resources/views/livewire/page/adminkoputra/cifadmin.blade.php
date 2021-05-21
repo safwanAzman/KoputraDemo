@@ -61,28 +61,24 @@
                                 <p>Control Button</p>
                             </div>
 
-                            <div class="flex justify-center mt-8">
-                                <button onclick="" href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-gray-600  rounded">
+                            <div class="flex justify-center mt-2">
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
                                     <div class="flex items-center space-x-2">
-                                        <x-heroicon-o-save class="w-4 h-4" /> 
                                         <p>New</p>
                                     </div>
                                 </button>
-                                <button onclick="" href="#" class="flex px-4 py-1 ml-2 text-sm font-bold text-white bg-gray-600 rounded">
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
                                     <div class="flex items-center space-x-2">
-                                        <x-heroicon-o-save class="w-4 h-4" /> 
                                         <p>Delete</p>
                                     </div>
                                 </button>
-                                <button onclick="" href="#" class="flex px-4 py-1 ml-2 text-sm font-bold text-white bg-gray-600 rounded disabled:opacity-50" disabled>
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
                                     <div class="flex items-center space-x-2">
-                                        <x-heroicon-o-save class="w-4 h-4" /> 
                                         <p>Save</p>
                                     </div>
                                 </button>
-                                <button onclick="" href="#" class="flex px-4 py-1 ml-2 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
                                     <div class="flex items-center space-x-2">
-                                        <x-heroicon-o-save class="w-4 h-4" /> 
                                         <p>Close</p>
                                     </div>
                                 </button>
@@ -118,6 +114,114 @@
                                 <p>Branch Details</p>
                             </div>
                             <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Branch Code"  value="51" />
+                                </div>
+
+                                <x-form.input label="Branch Name"  value="MWANAKWEREKWE" />
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Short Name"  value="MWIB" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Area Code"  value="A02" />
+                                </div>
+                            </x-general.grid>
+
+                                <x-form.address class="" label="Address" value1="" value2="" value3="" value4="" value5=""
+                                value6="" condition="state" />
+
+                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Operating Code"  value="HW52" />
+                                </div>
+                                
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Telephone No"  value="+51 324 2314" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="GL Acct. Number"  value="510101" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="ATM Interbranch GL"  value="113454" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Work Date"  value="17-02-2013" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Report Work Date"  value="23-12-2011" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Last Sequence No"  value="235" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="InterBranch GL Number"  value="113461" />
+                                </div>
+                            </x-general.grid>
+
+                            <div class="font-semibold text-lg text-black py-1 px-1 mt-4">
+                                <p>Teller & Batch Processing Setting</p>
+                            </div>
+
+                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="End of Day Flag"  value="Active" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Batch Flag"  value="Not yet run" />
+                                </div>
+                                
+                            </x-general.grid>
+
+                            <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md mt-8">
+                                <p>Control Button</p>
+                            </div>
+                            
+                            <div class="flex justify-center mt-2">
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
+                                    <div class="flex items-center space-x-2">
+                                        <p>New</p>
+                                    </div>
+                                </button>
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
+                                    <div class="flex items-center space-x-2">
+                                        <p>Delete</p>
+                                    </div>
+                                </button>
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
+                                    <div class="flex items-center space-x-2">
+                                        <p>Save</p>
+                                    </div>
+                                </button>
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
+                                    <div class="flex items-center space-x-2">
+                                        <p>Close</p>
+                                    </div>
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </x-slot>
+                </x-form.basic-form>
+            </x-tab.nav-content>
+
+            <x-tab.nav-content name="2">
+                <x-form.basic-form>
+                    <x-slot name="content">
+                        <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
+                            <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md">
+                                <p>Brances</p>
+                            </div>
+                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
                                 <x-form.dropdown label="Branches List" default="yes" value="" >
                                     <option value="1" selected>MWANAKWEREKWE</option>
                                     <option value="2">KARIAKOO</option>
@@ -130,20 +234,111 @@
                                 <x-form.input label="Area Code"  value="A02" type="" disabled/>
                             </x-general.grid>
 
-                            <div class="flex justify-center mt-8">
-                                <a onclick="save()" href="#" class="flex px-4 py-1 text-sm font-bold text-white bg-green-600  hover:bg-green-700 rounded">
-                                    <div class="flex items-center space-x-2">
-                                        <x-heroicon-o-save class="w-4 h-4" /> 
-                                        <p>Simpan</p>
-                                    </div>
-                                </a>
+                            <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md mt-8">
+                                <p>Branch Details</p>
                             </div>
+                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Branch Code"  value="51" />
+                                </div>
+
+                                <x-form.input label="Branch Name"  value="MWANAKWEREKWE" />
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Short Name"  value="MWIB" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Area Code"  value="A02" />
+                                </div>
+                            </x-general.grid>
+
+                                <x-form.address class="" label="Address" value1="" value2="" value3="" value4="" value5=""
+                                value6="" condition="state" />
+
+                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Operating Code"  value="HW52" />
+                                </div>
+                                
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Telephone No"  value="+51 324 2314" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="GL Acct. Number"  value="510101" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="ATM Interbranch GL"  value="113454" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Work Date"  value="17-02-2013" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Report Work Date"  value="23-12-2011" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Last Sequence No"  value="235" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="InterBranch GL Number"  value="113461" />
+                                </div>
+                            </x-general.grid>
+
+                            <div class="font-semibold text-lg text-black py-1 px-1 mt-4">
+                                <p>Teller & Batch Processing Setting</p>
+                            </div>
+
+                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="End of Day Flag"  value="Active" />
+                                </div>
+
+                                <div class="flex space-x-2 w-full">
+                                    <x-form.input label="Batch Flag"  value="Not yet run" />
+                                </div>
+                                
+                            </x-general.grid>
+
+                            <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md mt-8">
+                                <p>Control Button</p>
+                            </div>
+                            
+                            <div class="flex justify-center mt-2">
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
+                                    <div class="flex items-center space-x-2">
+                                        <p>New</p>
+                                    </div>
+                                </button>
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
+                                    <div class="flex items-center space-x-2">
+                                        <p>Delete</p>
+                                    </div>
+                                </button>
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
+                                    <div class="flex items-center space-x-2">
+                                        <p>Save</p>
+                                    </div>
+                                </button>
+                                <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
+                                    <div class="flex items-center space-x-2">
+                                        <p>Close</p>
+                                    </div>
+                                </button>
+                            </div>
+                            
                         </div>
                     </x-slot>
                 </x-form.basic-form>
             </x-tab.nav-content>
 
-            <x-tab.nav-content name="2">
+            {{-- <x-tab.nav-content name="2">
                 <x-form.basic-form>
                     <x-slot name="content">
                         <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
@@ -176,7 +371,7 @@
                         </div>
                     </x-slot>
                 </x-form.basic-form>
-            </x-tab.nav-content>
+            </x-tab.nav-content> --}}
 
             <x-tab.nav-content name="3">
                 <x-form.basic-form>
