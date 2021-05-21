@@ -158,7 +158,7 @@
                     input: 'select',
                     inputOptions: {
                         financing: 'Financing',
-                        cash: 'Payment Gateway (via senangPay)',
+                        cash: 'Payment Gateway (via ipay88)',
                     },
                     inputPlaceholder: 'Select a payment method',
                     showCancelButton: true,
