@@ -82,7 +82,7 @@
 
                     <x-tab2.nav-content2 name="4">
                         <x-page.member.dashboard-grid>
-                            <x-page.member.dashboard-product-card type="services" title="CUCIAN RUMAH DAN BAGUNAN" description="200" img="kpc2.jpg" route="{{route('nonservicesBooking')}}" routeDetails="#"/>
+                            <x-page.member.dashboard-product-card type="services" title="CUCIAN RUMAH DAN bangunan" description="200" img="kpc2.jpg" route="{{route('nonservicesBooking')}}" routeDetails="#"/>
                             <x-page.member.dashboard-product-card type="services" title="Sanitasi dalaman dan luaran bangunan" description="200" img="kpc1.jpg" route="#" routeDetails="#"/>
                             <x-page.member.dashboard-product-card type="services" title="Perkhidmatan Pembasmian Virus" description="499" img="kpc3.jpg" route="#" routeDetails="#"/> 
                         </x-page.member.dashboard-grid>

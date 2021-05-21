@@ -22,7 +22,12 @@
                     <div class="font-semibold text-red-700 text-md">Orang Awam - RM {{ $description }}</div>
                     <div class="font-semibold text-red-700 text-md">Anggota KOPUTRA - RM {{ $description2 }}</div>
                 </div>
+                
             @endif
+
+
+
+
 
             @if ($type == 'financing')
                 <div class="mt-3">
@@ -30,8 +35,11 @@
                 </div>
             @endif
         </dl>
+        
     </div>
+
     <div>
+
         <div class="flex -mt-px divide-x divide-gray-200 " >
             <div class="flex flex-1 w-0 rounded-bl-lg hover:bg-green-400 group" x-data="{Open : false}" >
                 <a x-on:click="Open = {{Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*")  ? false : true }}" href="{{ $route }}" 
