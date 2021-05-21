@@ -8,26 +8,31 @@ class AdminKoputraController extends Controller
 {
     public function index()
     {
-        return view ('pages.adminkoputra.index');
+        return view('pages.adminkoputra.index');
     }
 
     public function tetapan()
     {
-        return view ('pages.adminkoputra.tetapan');
+        return view('pages.adminkoputra.tetapan');
     }
 
     public function permohonan()
     {
-        return view ('pages.adminkoputra.permohonan');
+        return view('pages.adminkoputra.permohonan');
     }
 
     public function donepermohonan()
     {
-        return view ('pages.adminkoputra.done-permohonan');
+        return view('pages.adminkoputra.done-permohonan');
     }
 
     public function donepermohonan2()
     {
-        return view ('pages.adminkoputra.done-permohonan2');
+        return view('pages.adminkoputra.done-permohonan2');
+    }
+
+    public function cifadmin()
+    {
+        return view('pages.adminkoputra.cifadmin');
     }
 }
