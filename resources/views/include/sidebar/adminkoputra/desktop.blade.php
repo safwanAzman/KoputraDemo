@@ -18,7 +18,7 @@
                         <x-heroicon-o-archive class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
-                    <x-sidebar.nav-item title="CIF Admin" route="{{route('cifadmin')}}" uri="">
+                    <x-sidebar.nav-item title="Gen. Setup" route="{{route('cifadmin')}}" uri="">
                         <x-heroicon-o-library class="w-7 h-7" />
                     </x-sidebar.nav-item>
 

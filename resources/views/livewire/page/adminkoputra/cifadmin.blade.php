@@ -29,19 +29,25 @@
                     </x-hovertab.title>
 
                     <x-hovertab.title name="4" livewire="">
+                        <x-heroicon-o-light-bulb class="w-6 h-6 mr-2" />
+                        <span
+                            class="tooltip-text bg-indigo-600 border rounded border-indigo-600 text-white -mt-14">Hibah Codes</span>
+                    </x-hovertab.title>
+
+                    <x-hovertab.title name="5" livewire="">
                         <x-heroicon-o-cog class="w-6 h-6 mr-2" />
                         <span
                             class="tooltip-text bg-indigo-600 border rounded border-indigo-600 text-white -mt-14">Group Maintenance</span>
                     </x-hovertab.title>
 
     
-                    <x-hovertab.title name="5" livewire="">
+                    <x-hovertab.title name="6" livewire="">
                         <x-heroicon-o-user-group class="w-6 h-6 mr-2" />
                         <span
                             class="tooltip-text bg-indigo-600 border rounded border-indigo-600 text-white -mt-14">User Maintenance</span>
                     </x-hovertab.title>
 
-                    <x-hovertab.title name="6" livewire="">
+                    <x-hovertab.title name="7" livewire="">
                         <x-heroicon-o-desktop-computer class="w-6 h-6 mr-2" />
                         <span
                             class="tooltip-text bg-indigo-600 border rounded border-indigo-600 text-white -mt-14">Screen Access</span>
@@ -59,27 +65,16 @@
                             </div>
                             <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
                                 <x-form.dropdown label="Organisation Name" default="yes" value="" >
-                                    <option value="1" selected>People's Bank of Zanzibar</option>
-                                    <option value="2">Bank Malayan</option>
-                                    <option value="2">Bank Islam</option>
-                                    <option value="2">Bank Muamalat</option>
+                                    <option value="1" selected>KOPUTRA</option>
                                 </x-form.dropdown>
                                 <x-form.input label="Group ID"  value="1" type="" disabled/>
                                 <x-form.input label="Seq. Number"  value="1" type="" disabled/>
-                                <x-form.input label="Code"  value="CAX137" type="" disabled/>
-                                <x-form.input label="Code Description"  value="People's Bank of Zanzibar" type="" disabled/>
+                                <x-form.input label="Code"  value="KOOP88" type="" disabled/>
+                                <x-form.input label="Code Description"  
+                                value="KOPERASI PELABURAN KAKITANGAN BANK MUAMALAT MALAYSIA BERHAD" type="" disabled/>
                             </x-general.grid>
 
-                            <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md mt-8">
-                                <p>Organisation Info</p>
-                            </div>
-
-                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
-                                <x-form.input label="Seq. Number"  value="1" disabled/>
-                                <x-form.input label="Code"  value="CAX137" disabled/>
-                                <x-form.input label="Code Description"  value="People's Bank of Zanzibar" disabled/>
-                            </x-general.grid>
-
+                            
                             <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md mt-8">
                                 <p>Control Button</p>
                             </div>
@@ -118,18 +113,20 @@
                     <x-slot name="content">
                         <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
                             <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md">
-                                <p>Brances</p>
+                                <p>Branch</p>
                             </div>
                             <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
                                 <x-form.dropdown label="Branches List" default="yes" value="" >
-                                    <option value="1" selected>MWANAKWEREKWE</option>
-                                    <option value="2">KARIAKOO</option>
-                                    <option value="2">CHAKECHAKE</option>
-                                    <option value="2">SUNGAI BESI</option>
+                                    <option value="1" selected>R-Balakong</option>
+                                    <option value="2">R-Bangi</option>
+                                    <option value="2">R-HQ</option>
+                                    <option value="2">HQ-ACCOUNT</option>
+                                    <option value="2">HQ-Koperasi</option>
+                                    <option value="2">KPC HQ</option>
                                 </x-form.dropdown>
                                 <x-form.input label="Branch Code"  value="51" type="" disabled/>
-                                <x-form.input label="Branch Name"  value="MWANAKWEREKWE" type="" disabled/>
-                                <x-form.input label="Short Name"  value="MWIB" type="" disabled/>
+                                <x-form.input label="Branch Name"  value="Ar-Rahnu KOPUTRA Balakong" type="" disabled/>
+                                <x-form.input label="Short Name"  value="ARKB" type="" disabled/>
                                 <x-form.input label="Area Code"  value="A02" type="" disabled/>
                             </x-general.grid>
 
@@ -141,10 +138,10 @@
                                     <x-form.input label="Branch Code"  value="51" />
                                 </div>
 
-                                <x-form.input label="Branch Name"  value="MWANAKWEREKWE" />
+                                <x-form.input label="Branch Name"  value="Ar-Rahnu KOPUTRA Balakong" />
 
                                 <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Short Name"  value="MWIB" />
+                                    <x-form.input label="Short Name"  value="ARKB" />
                                 </div>
 
                                 <div class="flex space-x-2 w-full">
@@ -152,7 +149,12 @@
                                 </div>
                             </x-general.grid>
 
-                                <x-form.address class="" label="Address" value1="" value2="" value3="" value4="" value5=""
+                                <x-form2.address class="" label="Address" 
+                                value1="BALAKONG No.27-3," 
+                                value2="Jalan Taming Permai 1, Taman Taming Jaya," 
+                                value3="" 
+                                value4="" 
+                                value5="Seri Kembangan"
                                 value6="" condition="state" />
 
                             <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
@@ -161,7 +163,7 @@
                                 </div>
                                 
                                 <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Telephone No"  value="+51 324 2314" />
+                                    <x-form.input label="Telephone No"  value="03-89419770" />
                                 </div>
 
                                 <div class="flex space-x-2 w-full">
@@ -173,11 +175,11 @@
                                 </div>
 
                                 <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Work Date"  value="17-02-2013" />
+                                    <x-form.input label="Work Date"  value="17-02-2019" />
                                 </div>
 
                                 <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Report Work Date"  value="23-12-2011" />
+                                    <x-form.input label="Report Work Date"  value="23-12-2019" />
                                 </div>
 
                                 <div class="flex space-x-2 w-full">
@@ -445,7 +447,7 @@
                             </x-general.grid>
 
                             <div class="font-semibold text-lg text-black py-1 px-1 mt-4">
-                                <p>GL Entries [Local Currency]</p>
+                                <p>GL Entries </p>
                             </div>
 
                             <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
@@ -457,18 +459,6 @@
                                 
                             </x-general.grid>
 
-                            <div class="font-semibold text-lg text-black py-1 px-1 mt-4">
-                                <p>GL Entries [Foreign Currency]</p>
-                            </div>
-
-                            <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-6">
-
-                                <div class="flex space-x-2 w-full">
-                                    <x-form.input label="Debit GL Account"  value="" />
-                                    <x-form.input label="Credit GL Account"  value="" />
-                                </div>
-                                
-                            </x-general.grid>
 
                             <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md mt-8">
                                 <p>Control Button</p>
@@ -775,6 +765,58 @@
             </x-hovertab.content>
 
             <x-hovertab.content name="4">
+                <x-form.basic-form>
+                    <x-slot name="content">
+                        <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
+                            <div class="font-semibold text-lg text-white bg-indigo-600 py-2 px-4 rounded-md">
+                                <p>Hibah Codes</p>
+                            </div>
+                            <x-table.table>
+                                <x-slot name="thead">
+                                    <x-table.table-header class="text-left" value="GROUP ID" sort="" />
+                                    <x-table.table-header class="text-left" value="SEQUENCE NUMBER" sort="" />
+                                    <x-table.table-header class="text-left" value="CODE" sort="" />
+                                    <x-table.table-header class="text-left" value="CODE DESCRIPTION" sort="" />
+                                    <x-table.table-header class="text-left" value="GL ACCOUNT CODE" sort="" />
+                                </x-slot>
+                                <x-slot name="tbody">
+                                    <tr>
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>8</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>1</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>HSG</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <p>Hibah-Saving Gold</p>
+                                        </x-table.table-body>
+
+                                        <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700">
+                                            <x-form.dropdown label="" value="">
+                                                <option value="0"></option>
+                                                <option value="01">Hibah Savings</option>
+                                                <option value="1">Hibah Savings 2</option>
+                                                <option value="2">Dividen 1</option>
+                                                <option value="3">Dividen 2</option>
+                                            </x-form.dropdown>
+                                        </x-table.table-body>
+                                    </tr>
+                                </x-slot>
+                            </x-table.table>
+
+                        </div>
+                    </x-slot>
+                </x-form.basic-form>
+            </x-hovertab.content>
+
+
+            <x-hovertab.content name="5">
                 <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
                     <div class="grid grid-cols-12 gap-6">
                         <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 bg-white px-2 py-4 shadow-lg">
@@ -787,7 +829,7 @@
                                     <x-slot name="tbody">
                                         <tr>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>Bank Officers</p>
+                                                    <p>Officers</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
                                                     <p>122</p>
@@ -881,7 +923,7 @@
                                 <h1 class="font-semibold text-indigo-500 border-b-2 border-indigo-600">Group Details</h1>
                             </div>
                             <x-general.grid mobile="1" gap="4" sm="1" md="1" lg="2" xl="2" class="col-span-6">
-                                <x-form.input label="Description"  value="Bank Officers" />
+                                <x-form.input label="Description"  value="Officers" />
                                 <x-form.dropdown label="Edit Level" default="yes" value="" >
                                     <option value="" selected>1</option>
                                 </x-form.dropdown>
@@ -917,7 +959,7 @@
                                 </label>
                                 <label class="inline-flex items-center">
                                     <input type="checkbox" class="form-checkbox" checked>
-                                    <span class="ml-2 text-sm text-gray-700">Bank Wide Inquiry</span>
+                                    <span class="ml-2 text-sm text-gray-700">System Wide Inquiry</span>
                                 </label>
                                 <label class="inline-flex items-center">
                                     <input type="checkbox" class="form-checkbox">
@@ -962,7 +1004,7 @@
                 </div>
             </x-hovertab.content>
 
-            <x-hovertab.content name="5">
+            <x-hovertab.content name="6">
                 <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
                     <div class="grid grid-cols-12 gap-6">
                         <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 bg-white px-2 py-4 shadow-lg">
@@ -975,24 +1017,24 @@
                                     <x-slot name="tbody">
                                         <tr>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>Abdalla jabir abdalla</p>
+                                                    <p>Anis</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>mwjabir</p>
+                                                    <p>MWJABIR</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>mwanakwerekwe</p>
+                                                    <p>R-Balakong</p>
                                             </x-table.table-body>
                                         </tr>
                                         <tr>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>Abdalla jabir</p>
+                                                    <p>Hafiz</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>karjabir</p>
+                                                    <p>KARJABIR</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>kariakoo</p>
+                                                    <p>R-Bangi</p>
                                             </x-table.table-body>
                                         </tr>
                                         <tr>
@@ -1003,84 +1045,84 @@
                                                     <p>asari</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>hq1</p>
+                                                    <p>R-HQ</p>
                                             </x-table.table-body>
                                         </tr>
                                         <tr>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>C_CSA</p>
+                                                    <p>Irfan</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
                                                     <p>CHK03</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>chakechake</p>
+                                                    <p>KPC HQ </p>
                                             </x-table.table-body>
                                         </tr>
                                         <tr>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>C_SPVR5</p>
+                                                    <p>faisol</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
                                                     <p>CHK04</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>chakechake</p>
+                                                    <p>HQ-account</p>
                                             </x-table.table-body>
                                         </tr>
                                         <tr>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>C_Teller 1</p>
+                                                    <p>Farhan</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
                                                     <p>CHK01</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>chakechake</p>
+                                                    <p>HQ-koperasi</p>
                                             </x-table.table-body>
                                         </tr>
                                         <tr>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>C_Teller 2</p>
+                                                    <p>Aizzuddin</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
                                                     <p>CHK02</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>chakechake</p>
+                                                    <p>HQ-Pembiayaan</p>
                                             </x-table.table-body>
                                         </tr>
                                         <tr>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>CSA01</p>
+                                                    <p>Aiman</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
                                                     <p>CSA01</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>chakechake</p>
+                                                    <p>R Belakong</p>
                                             </x-table.table-body>
                                         </tr>
                                         <tr>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>DAR CSA</p>
+                                                    <p>Sharinaz</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
                                                     <p>KAR03</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>KARIAKOO</p>
+                                                    <p>R-Bangi</p>
                                             </x-table.table-body>
                                         </tr>
                                         <tr>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>DAR SPVR5</p>
+                                                    <p>Adham</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
                                                     <p>KAR04</p>
                                             </x-table.table-body>
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
-                                                    <p>KARIAKOO</p>
+                                                    <p>KPC HQ</p>
                                             </x-table.table-body>
                                         </tr>
                                     </x-slot>
@@ -1093,7 +1135,7 @@
                             </div>
                             <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">
                                 <x-form.input label="User ID" value="MWJABIR" livewire="" />
-                                <x-form.input label="Officer Name" value="ABDALLA JABIR ABDALLA" livewire="" />
+                                <x-form.input label="Officer Name" value="Anis" livewire="" />
                                 <x-form.dropdown label="ID Satus" default="yes" value="" >
                                     <option value="" selected>ACTIVE</option>
                                     <option value="">EXPIRED</option>
@@ -1101,17 +1143,16 @@
                                     <option value="">OFF DUTY / ON LEAVE</option>
                                 </x-form.dropdown>
                                 <x-form.dropdown label="Branch" default="yes" value="" >
-                                    <option value="" selected>MWANAKWEREKWE</option>
-                                    <option value="">KARIAKOO</option>
-                                    <option value="">CHAKECHAKE</option>
-                                    <option value="">SUNGAI BESI</option>
-                                    <option value="">TAZARA</option>
-                                    <option value="">MTWARA</option>
-                                    <option value="">IRFAN HOLLAND</option>
+                                    <option value="" selected>R-Balakong</option>
+                                    <option value="">R-Bangi</option>
+                                    <option value="">R-HQ</option>
+                                    <option value="">KPC HQ</option>
+                                    <option value="">HQ Account</option>
+                                    <option value="">HQ Koperasi</option>
                                 </x-form.dropdown>
                                 <x-form.input label="Password Status" value="Must Change Password" livewire="" readonly/>
                                 <x-form.input label="Position Held" value="SYSTEM ADMINISTRATOR" livewire="" />
-                                <x-form.input label="ID Expriy Date" value="0000-00-00" livewire="" />
+                                <x-form.input label="ID Expriy Date" value="2021-10-22" livewire="" />
 
                                 <x-form.dropdown label="Group" default="yes" value="" >
                                     <option value="">Teller Level 1</option>
@@ -1122,7 +1163,7 @@
                                     <option value="">CUSTOMER SERVICE</option>
                                 </x-form.dropdown>
 
-                                <x-form.input label="ID Creation Date" value="00- -000 00:00:00 AM" livewire="" readonly/>
+                                <x-form.input label="ID Creation Date" value="2021-04-23 09:15:45 AM" livewire="" readonly/>
                                 <x-form.input label="Edit Level" value="1" livewire=""/>
                                 <x-form.input label="Role" value="8190" livewire=""/>
                                 
@@ -1173,12 +1214,12 @@
                 </div>
             </x-hovertab.content>
 
-            <x-hovertab.content name="6">
+            <x-hovertab.content name="7">
                 <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
                     <div class="flex items-center">
                         <span class="mr-2 text-base text-gray-500">Group : </span>
                         <x-form.dropdown label="" default="yes" value="" >
-                            <option value="" selected>Bank Officers</option>
+                            <option value="" selected>Officers</option>
                             <option value="" >CUSTOMER SERVICE</option>
                             <option value="" >RELIEF GROUP </option>
                             <option value="" >RELIEF GROUP 2 </option>
@@ -1474,7 +1515,7 @@
 
     <!-- header -->
     <div class="absolute top-0 left-0 right-0 z-0">
-        <x-general.header bgimg=""  title="CIF Admin" height="8rem"/>
+        <x-general.header bgimg=""  title="Gen. Setup" height="8rem"/>
     </div>
 
 </div>
