@@ -1189,7 +1189,7 @@
                         </x-form.dropdown>
                     </div>
                     <div class="flex justify-center mt-4 mx-auto">
-                        <div class="bg-white py-4 px-4 rounded-lg shadow-lg  w-full">
+                        <div class="bg-white py-4 px-4 rounded-lg shadow-lg w-full h-64 overflow-y-auto">
                             <x-table.table>
                                 <x-slot name="thead">
                                     <x-table.table-header class="text-left" value="Screen" sort="" />
