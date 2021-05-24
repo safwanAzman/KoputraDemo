@@ -11,16 +11,36 @@
                 </div>
             @elseif ($type == 'trading')
                 <div class="flex justify-center">
-                    <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                    @if(Route::current()->uri == "members" || \Request::is("members/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                    @elseif(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
+                        <div>
+                            <div class="font-semibold text-red-700 text-md">Orang Awam - RM {{ $description2}} </div>
+                            <div class="font-semibold text-red-700 text-md">Anggota KOPUTRA - RM {{ $description }}</div>
+                        </div>
+                    @endif
                 </div>
             @elseif ($type == 'services')
                 <div class="flex justify-center">
-                    <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                    @if(Route::current()->uri == "members" || \Request::is("members/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                    @elseif(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
+                        <div>
+                            <div class="font-semibold text-red-700 text-md">Orang Awam - RM {{ $description2 }}</div>
+                            <div class="font-semibold text-red-700 text-md">Anggota KOPUTRA - RM {{ $description }} </div>
+                        </div>
+                    @endif
                 </div>
             @elseif ($type == 'homestay')
-                <div>
-                    <div class="font-semibold text-red-700 text-md">Orang Awam - RM {{ $description }}</div>
-                    <div class="font-semibold text-red-700 text-md">Anggota KOPUTRA - RM {{ $description2 }}</div>
+                <div class="flex justify-center">
+                    @if(Route::current()->uri == "members" || \Request::is("members/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description2 }}</div>
+                    @elseif(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
+                        <div>
+                            <div class="font-semibold text-red-700 text-md">Orang Awam - RM {{ $description }}</div>
+                            <div class="font-semibold text-red-700 text-md">Anggota KOPUTRA - RM {{ $description2 }}</div>
+                        </div>
+                    @endif
                 </div>
                 
             @endif

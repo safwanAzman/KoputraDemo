@@ -89,7 +89,7 @@
 <script>
     function save() {
             var text="<strong>Ref. No : 2021052200001</strong>. <br>1. Date book valid for 3 days. <br>2. Payment should be done within these 3 days. <br>3. None payment will cause the booking date will be released. <br>";
-            var price="<strong>RM 200</strong>"
+            var price="<strong>Orang Awam - RM 250</strong>" + "<br><strong>Anggota KOPUTRA - RM 200</strong>"
             Swal.fire({
             icon: 'success',
             title: 'Booking Success!', 
@@ -168,7 +168,11 @@
                 }
                 else if(result.isDenied)
                 {
-                    location.href = '{{route('members-produk2')}}';
+                    @if(Route::current()->uri == "members" || \Request::is("members/*") )
+                        location.href = '{{route('members-produk2')}}';
+                    @elseif(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
+                        location.href = '{{route('non-member')}}';
+                    @endif
                 }
             })
             //setTimeout(, 2500);
