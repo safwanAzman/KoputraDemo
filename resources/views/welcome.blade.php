@@ -49,17 +49,17 @@
                     <div class="flex justify-center">
                         <h1 class="text-xl md:text-2xl font-bold leading-tight mt-4">Log masuk akaun</h1>
                     </div>
-                    <form class="mt-6">
+                    <form class="mt-6" name="myForm"  onsubmit="return validateForm()">
                         <div>
                             <div class="mt-1 rounded-md shadow-sm">
-                                <input id="email" name="email" type="email" placeholder="Alamat Emel" required autofocus
+                                <input name="fname" placeholder="Alamat Emel" autofocus
                                     class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-indigo-800 focus:bg-white focus:outline-none " />
                             </div>
                         </div>
 
                         <div class="mt-6">
                             <div class="mt-1 rounded-md shadow-sm">
-                                <input wid="password" type="password" placeholder="Kata Laluan" required
+                                <input type="password" name="password" id="password" placeholder="Kata Laluan" 
                                     class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-indigo-800 focus:bg-white focus:outline-none " />
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <span class="block w-full rounded-md shadow-sm">
+                            {{-- <span class="block w-full rounded-md shadow-sm">
                                 <div
                                     class=" relative text-center w-full block bg-indigo-800  focus:bg-indigo-800 text-white font-semibold rounded-lg px-4 py-3 mt-6">
                                     Log masuk
@@ -107,7 +107,12 @@
                                         Test
                                     </a>
                                 </div>
-                            </span>
+                            </span> --}}
+
+                                <input type="submit" value="Log masuk" 
+                                class=" relative text-center w-full block bg-indigo-800  hover:bg-indigo-900 focus:bg-indigo-800 text-white font-semibold rounded-lg px-4 py-3 mt-6">
+                                
+                                
 
                             <hr class="my-6 border-gray-300 w-full">
 
@@ -130,6 +135,34 @@
             offset: 400,
             duration: 1000
         });
+    </script>
+    <script>
+        function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == "rasmizam@gmail.com") {
+            location.href = '{{route('non-member')}}';
+            return false;
+        }
+        else if ((x == "aizuddin@csc.net.my")){
+            location.href = '{{route('members-produk')}}';
+            return false;
+        }
+        else if ((x == "safwanazman017@gmail.com")){
+            location.href = '{{route('adminkoputra.members-produk')}}';
+            return false;
+        }
+        else if ((x == "nasirjalil@csc.net.my")){
+            location.href = '{{route('alk.members-produk')}}';
+            return false;
+        }
+        else if ((x == "anis@csc.net.my")){
+            location.href = '{{route('siskop.members-produk')}}';
+            return false;
+        }
+        else{
+            alert("Login tidak wujud. Sila daftar masuk ke sistem.");
+        }
+        }
     </script>
 </body>
 
