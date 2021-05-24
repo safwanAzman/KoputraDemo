@@ -35,14 +35,14 @@
                     <x-tab2.nav-content2 name="0">
                         <x-page.member.dashboard-grid>
                             <x-page.member.dashboard-product-card type="homestay" title="APARTMENT WHITE ROSE, CAMERON HIGHLAND" description="400" description2="350" img="white_rose_cameron.jpg" route="{{ route('nonmembers.product.homestay.cameron.booking') }}" routeDetails="{{ route('nonmembers.product.homestay.cameron') }}"/>
-                            <x-page.member.dashboard-product-card type="trading" title="BANANA ROYALE" description="15.00" img="banana_royale.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="BANANA ROYALE" description="15.00" description2="16.00" img="banana_royale.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY LARKIN" description="400" description2="320" img="homestay_larkin.jpg"/>
                             <x-page.member.dashboard-product-card type="homestay" title="HOMESTAY WHITE ROSE, SERI KEMBANGAN" description="250" description2="150" img="white_rose_seri_kembangan.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="KEREPEK" description="20.00" img="kerepek.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="KURMA ABYAR" description="9.50" img="kurma.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="KUIH BANGKIT CHEESE" description="18.99" img="bangkit_cheese.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="KUIH TART" description="23.00" img="tart.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" img="masakan_segera.jpg" route="{{ route('nonmembers.product.trading.makananTersedia.buy') }}" routeDetails="{{ route('nonmembers.product.trading.makananTersedia') }}"/>
+                            <x-page.member.dashboard-product-card type="trading" title="KEREPEK" description="20.00" description2="21.00" img="kerepek.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="KURMA ABYAR" description="9.50" description2="10.50" img="kurma.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="KUIH BANGKIT CHEESE" description="18.99" description2="19.99" img="bangkit_cheese.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="KUIH TART" description="23.00"  description2="24.00" img="tart.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" description2="9.50" img="masakan_segera.jpg" route="{{ route('nonmembers.product.trading.makananTersedia.buy') }}" routeDetails="{{ route('nonmembers.product.trading.makananTersedia') }}"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN BERCAGARKAN EMAS" description="5.00% p.a" img="emas.png"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN CASH-i PLUS" description="5.00% p.a" img="cash-i.png"/>
                             <x-page.member.dashboard-product-card type="financing" title="PEMBIAYAAN KENDERAAN (PERODUA)" description="3.90% p.a" img="kereta_perodua.png"/>
@@ -62,12 +62,12 @@
 
                     <x-tab2.nav-content2 name="2">
                         <x-page.member.dashboard-grid>
-                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" img="masakan_segera.jpg" route="{{ route('nonmembers.product.trading.makananTersedia.buy') }}" routeDetails="{{ route('nonmembers.product.trading.makananTersedia') }}"/>
-                            <x-page.member.dashboard-product-card type="trading" title="KURMA ABYAR" description="9.50" img="kurma.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="KUIH BANGKIT CHEESE" description="18.99" img="bangkit_cheese.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="KUIH TART" description="23.00" img="tart.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="BANANA ROYALE" description="15.00" img="banana_royale.jpg"/>
-                            <x-page.member.dashboard-product-card type="trading" title="KEREPEK" description="20.00" img="kerepek.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="MAKANAN SEDIA DIHIDANG" description="8.50" description2="9.50" img="masakan_segera.jpg" route="{{ route('nonmembers.product.trading.makananTersedia.buy') }}" routeDetails="{{ route('nonmembers.product.trading.makananTersedia') }}"/>
+                            <x-page.member.dashboard-product-card type="trading" title="KURMA ABYAR" description="9.50" description2="10.50" img="kurma.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="KUIH BANGKIT CHEESE" description="18.99" description2="19.99" img="bangkit_cheese.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="KUIH TART" description="23.00" description2="24.00" img="tart.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="BANANA ROYALE" description="15.00" description2="16.00" img="banana_royale.jpg"/>
+                            <x-page.member.dashboard-product-card type="trading" title="KEREPEK" description="20.00" description2="21.00" img="kerepek.jpg"/>
                         </x-page.member.dashboard-grid>
                     </x-tab2.nav-content2>
 
@@ -82,9 +82,9 @@
 
                     <x-tab2.nav-content2 name="4">
                         <x-page.member.dashboard-grid>
-                            <x-page.member.dashboard-product-card type="services" title="CUCIAN RUMAH DAN bangunan" description="200" img="kpc2.jpg" route="{{route('nonservicesBooking')}}" routeDetails="#"/>
-                            <x-page.member.dashboard-product-card type="services" title="Sanitasi dalaman dan luaran bangunan" description="200" img="kpc1.jpg" route="#" routeDetails="#"/>
-                            <x-page.member.dashboard-product-card type="services" title="Perkhidmatan Pembasmian Virus" description="499" img="kpc3.jpg" route="#" routeDetails="#"/> 
+                            <x-page.member.dashboard-product-card type="services" title="CUCIAN RUMAH DAN bangunan" description="200" description2="250" img="kpc2.jpg" route="{{route('nonservicesBooking')}}" routeDetails="#"/>
+                            <x-page.member.dashboard-product-card type="services" title="Sanitasi dalaman dan luaran bangunan" description="200" description2="250"  img="kpc1.jpg" route="#" routeDetails="#"/>
+                            <x-page.member.dashboard-product-card type="services" title="Perkhidmatan Pembasmian Virus" description="499" description2="549"  img="kpc3.jpg" route="#" routeDetails="#"/> 
                         </x-page.member.dashboard-grid>
                     </x-tab2.nav-content2>
                 </div>
