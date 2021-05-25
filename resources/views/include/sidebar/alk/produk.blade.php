@@ -8,31 +8,31 @@
             </div>
             <div>
                 <ul class="mt-6 leading-10">
-                    <x-sidebar.nav-item title="Dashboard" route="{{route('members-produk')}}" uri="">
+                    <x-sidebar.nav-item title="Dashboard" route="#" uri="">
                         <x-heroicon-o-chart-pie class="w-7 h-7" />
                     </x-sidebar.nav-item> 
 
-                    <x-sidebar.nav-item title="Maklumat Keahlian" route="{{route('members-create')}}" uri="">
+                    <x-sidebar.nav-item title="Maklumat Keahlian" route="#" uri="">
                         <x-heroicon-o-user-group class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
-                    <x-sidebar.nav-item title="Yuran" route="{{route('members-yuran')}}" uri="">
+                    <x-sidebar.nav-item title="Yuran" route="#" uri="">
                         <x-heroicon-o-cash class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
-                    <x-sidebar.nav-item title="Saham" route="{{route('members-saham')}}" uri="">
+                    <x-sidebar.nav-item title="Saham" route="#" uri="">
                         <x-heroicon-o-presentation-chart-line class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
-                    <x-sidebar.nav-item title="Rekod Pembiayaan" route="{{route('members-pembiayaan')}}" uri="">
+                    <x-sidebar.nav-item title="Rekod Pembiayaan" route="#" uri="">
                         <x-heroicon-o-currency-dollar class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
-                    <x-sidebar.nav-item title="Jaminan" route="{{route('members-jaminan')}}" uri="">
+                    <x-sidebar.nav-item title="Jaminan" route="#" uri="">
                         <x-heroicon-o-shield-check class="w-7 h-7" />
                     </x-sidebar.nav-item>
 
-                    <x-sidebar.nav-item title="Firasat" route="{{route('members-firasat')}}" uri="">
+                    <x-sidebar.nav-item title="Firasat" route="#" uri="">
                         <x-heroicon-o-desktop-computer class="w-7 h-7" />
                     </x-sidebar.nav-item>
                     

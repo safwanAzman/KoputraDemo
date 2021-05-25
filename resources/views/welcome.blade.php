@@ -8,11 +8,11 @@
 
     <title>@yield('title') - {{ config('app.name') }}</title>
     @else
-    <title>{{ config('app.name') }}</title>
+    <title>Koputra</title>
     @endif
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+    <link rel="shortcut icon" href="{{asset('img/koputra.png')}}">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -27,6 +27,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.4/dist/sweetalert2.min.css">
 
 </head>
 
@@ -41,7 +42,7 @@
                 class="bg-white w-full md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-2/5 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
                 <div class="w-full h-100">
 
-                    <a href="/">
+                    <a href="#">
                         <div class="flex justify-center">
                             <img src="{{asset('img/koputra.png')}}" class="w-auto " />
                         </div>
@@ -49,10 +50,10 @@
                     <div class="flex justify-center">
                         <h1 class="text-xl md:text-2xl font-bold leading-tight mt-4">Log masuk akaun</h1>
                     </div>
-                    <form class="mt-6" name="myForm"  onsubmit="return validateForm()">
+                    <form class="mt-6" name="myForm" onsubmit="return validateForm()">
                         <div>
                             <div class="mt-1 rounded-md shadow-sm">
-                                <input name="fname" placeholder="Alamat Emel" autofocus
+                                <input id="fname" name="fname" placeholder="Alamat Emel" autofocus
                                     class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-indigo-800 focus:bg-white focus:outline-none " />
                             </div>
                         </div>
@@ -109,7 +110,7 @@
                                 </div>
                             </span> --}}
 
-                                <input type="submit" value="Log masuk" 
+                                <input type="submit" value="Log masuk"
                                 class=" relative text-center w-full block bg-indigo-800  hover:bg-indigo-900 focus:bg-indigo-800 text-white font-semibold rounded-lg px-4 py-3 mt-6">
                                 
                                 
@@ -130,6 +131,7 @@
     </div>
     @livewireScripts
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.4/dist/sweetalert2.all.min.js"></script>
     <script>
         AOS.init({
             offset: 400,
@@ -160,8 +162,20 @@
             return false;
         }
         else{
-            alert("Login tidak wujud. Sila daftar masuk ke sistem.");
-        }
+            Swal.fire({
+                icon: 'error',
+                title: 'Maaf!',
+                text: 'Login tidak wujud. Sila daftar masuk ke sistem.',
+                showCancelButton: true,
+                confirmButtonText: `Daftar`,
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+                    location.href = '{{route('daftar')}}';
+                } 
+            })
+            return false;
+            }
         }
     </script>
 </body>
