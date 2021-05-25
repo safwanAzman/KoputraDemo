@@ -8,11 +8,11 @@
 
     <title>@yield('title') - {{ config('app.name') }}</title>
     @else
-    <title>{{ config('app.name') }}</title>
+    <title>Koputra</title>
     @endif
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+    <link rel="shortcut icon" href="{{asset('img/koputra.png')}}">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -43,7 +43,7 @@
                 class="bg-white w-full md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-2/5 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
                 <div class="w-full h-100">
 
-                    <a href="/">
+                    <a href="#">
                         <div class="flex justify-center">
                             <img src="{{asset('img/koputra.png')}}" class="w-auto " />
                         </div>
