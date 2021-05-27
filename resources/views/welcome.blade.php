@@ -83,32 +83,44 @@
                         </div>
 
                         <div class="mt-6">
-                            {{-- <span class="block w-full rounded-md shadow-sm">
-                                <div
+                            <span class="block w-full rounded-md shadow-sm">
+                                {{-- <div
                                     class=" relative text-center w-full block bg-indigo-800  focus:bg-indigo-800 text-white font-semibold rounded-lg px-4 py-3 mt-6">
                                     Log masuk
 
-                                    <a href="{{route('non-member')}}" class="absolute left-0 text-indigo-800">
-                                        Test
-                                    </a>
+                                    @if('email' == "rasmizam@gmail.com")
+                                    {
+                                        <a href="{{route('non-member')}}" class="text-indigo-800">
+                                            
+                                        </a>
+                                    }
 
-                                    <a href="{{route('members-produk')}} " class="absolute left-12 text-indigo-800">
-                                        Test
-                                    </a>
+                                    @elseif ('email' == "aizuddin@csc.net.my")
+                                    {
+                                        <a href="{{route('members-produk')}} " class="text-indigo-800">
+                                            
+                                        </a>
+                                    }
 
-                                    <a href="{{route('adminkoputra.members-produk')}}" class="absolute left-24 text-indigo-800">
-                                        Test
-                                    </a>
+                                    @elseif ('email' == "safwanazman017@gmail.com")
+                                    {
+                                        <a href="{{route('adminkoputra.members-produk')}}" class="text-indigo-800">
+                                            
+                                        </a>
+                                    }
 
-                                    <a href="{{route('alk.members-produk')}}" class="absolute left-36 text-indigo-800">
-                                        Test
-                                    </a>
+                                    @elseif ('email' == "nasirjalil@csc.net.my")
+                                    {
+                                        <a href="{{route('alk.members-produk')}}" class="text-indigo-800">
+                                            
+                                        </a>
+                                    }
 
                                     <a href="{{route('siskop.members-produk')}}" class="absolute right-0 text-indigo-800">
                                         Test
                                     </a>
-                                </div>
-                            </span> --}}
+                                </div> --}}
+                            </span>
 
                                 <input type="submit" value="Log masuk"
                                 class=" relative text-center w-full block bg-indigo-800  hover:bg-indigo-900 focus:bg-indigo-800 text-white font-semibold rounded-lg px-4 py-3 mt-6">
