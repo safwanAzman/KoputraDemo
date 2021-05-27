@@ -11,12 +11,12 @@
                             <x-form.input type="date" label="Check-out Date" value="2021-05-06" />
                             <x-form.dropdown label="Adults" value="adults" default="yes">
                                 @for ($x = 1; $x <= 30; $x++)
-                                    <option value="{{ $x }}" selected>{{ $x }} adult</option>
+                                    <option value="{{ $x }}" >{{ $x }} adult</option>
                                 @endfor
                             </x-form.dropdown>
                             <x-form.dropdown label="Children" value="children" default="yes">
                                 @for ($x = 1; $x <= 15; $x++)
-                                    <option value="{{ $x }}" selected>{{ $x }} children</option>
+                                    <option value="{{ $x }}">{{ $x }} children</option>
                                 @endfor
                             </x-form.dropdown>
                         </x-general.grid>

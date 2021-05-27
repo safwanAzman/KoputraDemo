@@ -83,47 +83,8 @@
                         </div>
 
                         <div class="mt-6">
-                            <span class="block w-full rounded-md shadow-sm">
-                                {{-- <div
-                                    class=" relative text-center w-full block bg-indigo-800  focus:bg-indigo-800 text-white font-semibold rounded-lg px-4 py-3 mt-6">
-                                    Log masuk
-
-                                    @if('email' == "rasmizam@gmail.com")
-                                    {
-                                        <a href="{{route('non-member')}}" class="text-indigo-800">
-                                            
-                                        </a>
-                                    }
-
-                                    @elseif ('email' == "aizuddin@csc.net.my")
-                                    {
-                                        <a href="{{route('members-produk')}} " class="text-indigo-800">
-                                            
-                                        </a>
-                                    }
-
-                                    @elseif ('email' == "safwanazman017@gmail.com")
-                                    {
-                                        <a href="{{route('adminkoputra.members-produk')}}" class="text-indigo-800">
-                                            
-                                        </a>
-                                    }
-
-                                    @elseif ('email' == "nasirjalil@csc.net.my")
-                                    {
-                                        <a href="{{route('alk.members-produk')}}" class="text-indigo-800">
-                                            
-                                        </a>
-                                    }
-
-                                    <a href="{{route('siskop.members-produk')}}" class="absolute right-0 text-indigo-800">
-                                        Test
-                                    </a>
-                                </div> --}}
-                            </span>
-
-                                <input type="submit" value="Log masuk"
-                                class=" relative text-center w-full block bg-indigo-800  hover:bg-indigo-900 focus:bg-indigo-800 text-white font-semibold rounded-lg px-4 py-3 mt-6">
+                            <input type="submit" value="Log masuk"
+                            class=" relative text-center w-full block bg-indigo-800  hover:bg-indigo-900 focus:bg-indigo-800 text-white font-semibold rounded-lg px-4 py-3 mt-6">
                                 
                                 
 
