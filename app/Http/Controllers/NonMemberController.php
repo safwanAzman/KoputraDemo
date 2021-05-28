@@ -11,6 +11,11 @@ class NonMemberController extends Controller
         return view ('pages.nonmember.dashboard');
     }
 
+    public function dashboard2()
+    {
+        return view ('pages.nonmember.dashboard2');
+    }
+
     public function mohon()
     {
         return view ('pages.nonmember.mohon');

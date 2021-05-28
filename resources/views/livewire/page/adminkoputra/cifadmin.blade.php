@@ -248,7 +248,7 @@
                             </div>
                             <table width="30%" class="mt-4">
                                 <tbody>
-                                    <tr wire:click="t1">
+                                    <tr class="bg-green-100 py-4 px-4">
                                         <td >
                                             <label class="inline-flex items-center">
                                                 <span class="ml-2 text-sm text-gray-700">1.</span>
@@ -269,7 +269,7 @@
                                         </td>
                                     </tr>
                                     
-                                    <tr wire:click="t2">
+                                    <tr >
                                         <td >
                                             <label class="inline-flex items-center">
                                                 <span class="ml-2 text-sm text-gray-700">2.</span>
@@ -290,7 +290,7 @@
                                         </td>
                                     </tr>
 
-                                    <tr wire:click="t3">
+                                    <tr >
                                         <td >
                                             <label class="inline-flex items-center">
                                                 <span class="ml-2 text-sm text-gray-700">3.</span>
@@ -311,7 +311,7 @@
                                         </td>
                                     </tr>
 
-                                    <tr wire:click="t4">
+                                    <tr>
                                         <td >
                                             <label class="inline-flex items-center">
                                                 <span class="ml-2 text-sm text-gray-700">4.</span>
@@ -332,7 +332,7 @@
                                         </td>
                                     </tr>
 
-                                    <tr wire:click="t5">
+                                    <tr>
                                         <td >
                                             <label class="inline-flex items-center">
                                                 <span class="ml-2 text-sm text-gray-700">5.</span>
@@ -353,7 +353,7 @@
                                         </td>
                                     </tr>
 
-                                    <tr wire:click="t6">
+                                    <tr>
                                         <td >
                                             <label class="inline-flex items-center">
                                                 <span class="ml-2 text-sm text-gray-700">6.</span>
@@ -374,7 +374,7 @@
                                         </td>
                                     </tr>
 
-                                    <tr wire:click="t7">
+                                    <tr>
                                         <td >
                                             <label class="inline-flex items-center">
                                                 <span class="ml-2 text-sm text-gray-700">7.</span>
@@ -817,9 +817,9 @@
 
 
             <x-hovertab.content name="5">
-                <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
+                <div class="py-4 px-10 rounded-lg">
                     <div class="grid grid-cols-12 gap-6">
-                        <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 bg-white px-2 py-4 shadow-lg">
+                        <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6  px-2 py-4 shadow-lg rounded-lg">
                             <x-table.table>
                                     <x-slot name="thead">
                                         <x-table.table-header class="text-left" value="Description" sort="" />
@@ -827,7 +827,7 @@
                                         <x-table.table-header class="text-left" value="Officer Level" sort="" />
                                     </x-slot>
                                     <x-slot name="tbody">
-                                        <tr>
+                                        <tr class="bg-green-100">
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
                                                     <p>Officers</p>
                                             </x-table.table-body>
@@ -918,7 +918,7 @@
                                     </x-slot>
                             </x-table.table>
                         </div>
-                        <div class="relative col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 bg-white px-2 py-4 shadow-lg">
+                        <div class="relative col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6  px-2 py-4 shadow-lg  rounded-lg">
                             <div class="py-4 ">
                                 <h1 class="font-semibold text-indigo-500 border-b-2 border-indigo-600">Group Details</h1>
                             </div>
@@ -982,7 +982,7 @@
                                     <span class="ml-2 text-sm text-gray-700">Creation</span>
                                 </label>
                             </x-general.grid>
-                            <div class="flex justify-center absolute bottom-0 py-2 px-2 right-0">
+                            <div class="flex justify-center absolute bottom-0 py-4 px-2 right-0">
                                 <button onclick="" href="#" class="flex px-8 py-1 ml-2 text-sm font-bold text-gray-800 hover:bg-gray-100 border border-gray-400 rounded shadow">
                                     <div class="flex items-center space-x-2">
                                         <p>New</p>
@@ -1005,9 +1005,9 @@
             </x-hovertab.content>
 
             <x-hovertab.content name="6">
-                <div class="bg-white py-4 px-10 rounded-lg shadow-lg">
+                <div class="py-4 px-10 rounded-lg">
                     <div class="grid grid-cols-12 gap-6">
-                        <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 bg-white px-2 py-4 shadow-lg">
+                        <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 px-4 py-4 shadow-lg  rounded-lg">
                             <x-table.table>
                                     <x-slot name="thead">
                                         <x-table.table-header class="text-left" value="Name" sort="" />
@@ -1015,7 +1015,7 @@
                                         <x-table.table-header class="text-left" value="Branch" sort="" />
                                     </x-slot>
                                     <x-slot name="tbody">
-                                        <tr>
+                                        <tr class="bg-green-100">
                                             <x-table.table-body colspan="" class=" text-sm font-medium text-gray-700 uppercase">
                                                     <p>Anis</p>
                                             </x-table.table-body>
@@ -1128,14 +1128,14 @@
                                     </x-slot>
                             </x-table.table>
                         </div>
-                        <div class="relative col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 bg-white px-2 py-4 shadow-lg">
+                        <div class="relative col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6  px-4 py-4 shadow-lg  rounded-lg">
                         
                             <div class="py-4">
                                 <h1 class="font-semibold text-indigo-500 border-b-2 border-indigo-600">Officer Details</h1>
                             </div>
                             <x-general.grid mobile="1" gap="4" sm="1" md="2" lg="2" xl="2" class="col-span-6">
                                 <x-form.input label="User ID" value="MWJABIR" livewire="" />
-                                <x-form.input label="Officer Name" value="Anis" livewire="" />
+                                <x-form.input label="Officer Name" value="ANIS" livewire="" />
                                 <x-form.dropdown label="ID Satus" default="yes" value="" >
                                     <option value="" selected>ACTIVE</option>
                                     <option value="">EXPIRED</option>

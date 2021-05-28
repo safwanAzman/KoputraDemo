@@ -2,12 +2,20 @@
     <div class="px-5 py-3">
         <div>
             <div wire:loading >
-                <div class="flex items-center text-white absolute  flex items-center bg-teal-700 p-4 rounded" style="left: 38%; top:55%">
+                <div class="flex items-center text-white absolute  bg-teal-700 p-4 rounded" style="left: 38%; top:55%">
                     <x-heroicon-o-cog class="-ml-0.5 mr-2 h-8 w-8 animate-spin"/>
                     <p class="text-sm">Please waiting<span class="animate-ping">...</span></p>
                 </div>
             </div>
-            <h1 class="font-semibold text-indigo-500">Financing Statements</h1>
+            <div class="flex justify-between">
+                <div class="mt-6">
+                    <h1 class="font-semibold text-indigo-500">Financing Statements</h1>
+                </div>
+                <div class="flex space-x-4 pr-6">
+                    <x-form.input label="Total Paid" value="262.50" livewire=""/>
+                    <x-form.input label="Balance Outstanding" value="15,487.50" livewire=""/>
+                </div>
+            </div>
         <br>
             <x-general.table>
                 <x-slot name="thead">
@@ -16,10 +24,10 @@
                     <x-general.table-header class="text-left" value="Detail" sort="" livewire=""/>
                     <x-general.table-header class="text-left" value="Amount" sort="" livewire=""/>
                     <x-general.table-header class="text-left" value="Bal Outs" sort="" livewire=""/>
-                    <x-general.table-header class="text-left" value="Principal" sort="" livewire=""/>
+                    {{-- <x-general.table-header class="text-left" value="Principal" sort="" livewire=""/>
                     <x-general.table-header class="text-left" value="Principal Outs" sort="" livewire=""/>
                     <x-general.table-header class="text-left" value="Profit" sort="" livewire=""/>
-                    <x-general.table-header class="text-left" value="UEI Outs" sort="" livewire=""/>
+                    <x-general.table-header class="text-left" value="UEI Outs" sort="" livewire=""/> --}}
                     <x-general.table-header class="text-left" value="Adv Payment" sort="" livewire=""/>
                     {{-- <x-general.table-header class="text-left" value="Sec. Dep." sort="" livewire=""/> --}}
 
@@ -36,13 +44,13 @@
                         <x-general.table-body colspan="" class="font-medium text-gray-900">
                             <p>{{$item['txn_details']}}</p>
                         </x-general.table-body>
-                        <x-general.table-body colspan="" class="font-medium text-gray-900">
+                        <x-general.table-body colspan="" class="font-medium text-gray-900 text-right">
                             <p>{{number_format($item['txn_amount'],2,'.',',')}}</p>
                         </x-general.table-body>
-                        <x-general.table-body colspan="" class="font-medium text-gray-900">
+                        <x-general.table-body colspan="" class="font-medium text-gray-900 text-right">
                             <p>{{number_format($item['stmt_balance'],2,'.',',')}}</p>
                         </x-general.table-body>
-                        <x-general.table-body colspan="" class="font-medium text-gray-900">
+                        {{-- <x-general.table-body colspan="" class="font-medium text-gray-900">
                             <p>{{number_format($item['cost'],2,'.',',')}}</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="font-medium text-gray-900">
@@ -53,8 +61,8 @@
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="font-medium text-gray-900">
                             <p>{{number_format($item['unearned_outs'],2,'.',',')}}</p>
-                        </x-general.table-body>
-                        <x-general.table-body colspan="" class="font-medium text-gray-900">
+                        </x-general.table-body> --}}
+                        <x-general.table-body colspan="" class="font-medium text-gray-900 text-right">
                             <p>{{number_format($item['advance_payment'],2,'.',',')}}</p>
                         </x-general.table-body>
                         {{-- <x-general.table-body colspan="" class="font-medium text-gray-900">

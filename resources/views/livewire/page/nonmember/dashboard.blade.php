@@ -1,5 +1,38 @@
 <div>
     <div class="relative z-20 px-0 mx-auto my-1 text-lg font-medium leading-6 text-cool-gray-900">
+        <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-8" >
+            <div class="px-4 py-4 bg-white rounded-lg">
+                <div class="flex items-center space-x-2">
+                    <span class="px-2 py-2 bg-green-400 rounded-full">
+                        <x-heroicon-o-information-circle class="text-white w-7 h-7" />
+                    </span>
+                    <p class="text-2xl text-gray-400">Rekod Aktiviti</p>
+                </div>
+                <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="items-center col-span-6 mt-4">
+                    <div class="flex space-x-4">
+                        <p class="text-lg">1/5/2021</p>
+                        <p class="text-lg">LOGIN TERAKHIR</p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <p class="text-lg">15/4/2021</p>
+                        <p class="text-lg">PEMBELIAN TUNAI</p>
+                    </div>
+                </x-general.grid>
+                <div class="flex mt-4 space-x-2">
+                    <a href="#" class="cursor-not-allowed flex px-4 py-1 text-sm font-bold  text-white bg-gray-400 rounded">
+                        <div class="flex items-center space-x-2 text-xs">
+                            <p>Sambung Permohonan</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="cursor-not-allowed flex px-4 py-1 text-sm font-bold  text-white bg-gray-400 rounded">
+                        <div class="flex items-center space-x-2 text-xs">
+                            <p>Batal Permohonan</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </x-general.grid>
         <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="1" xl="1" class="items-center col-span-6 mt-8" x-data="{ active: 0 }">
             <div class="px-4 py-4 bg-white rounded-lg">
                 <div class="px-2 py-2 bg-white rounded-lg shadow-xl">

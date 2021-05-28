@@ -124,16 +124,35 @@
                                 confirmButtonText: 'Pay'
                             }).then((result) => {
                                     if (result.isConfirmed) {
-                                        Swal.fire(
-                                        'success',
-                                        'Payment Successful',
-                                        
-                                        )
-                                        Swal.fire({
-                                            icon: 'success',
-                                            title: 'Payment Successful',
-                                            showConfirmButton: false,
-                                        })
+                                        @if(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
+                                            Swal.fire({
+                                                icon: 'error',
+                                                title: 'MAAF!',
+                                                showConfirmButton: false,
+                                                html:`
+                                                <div class="flex justify-center mb-4">
+                                                    <p>Kemudahan Hanya Untuk Anggota KOPUTRA Berdaftar. Sila Mohon Keahlian Anda Sekarang.</p>
+                                                </div>
+                                                <div class="flex justify-center">
+                                                    <a href="{{route('mohon')}}" class="bg-blue-400 py-2 px-4 flex items-center rounded-lg  text-white font-semibold hover:bg-blue-500">
+                                                        OK
+                                                    </a>
+                                                </div>
+                                                `
+                                            })
+                                        @elseif(Route::current()->uri == "members" || \Request::is("members/*"))
+                                            Swal.fire({
+                                                customClass: 'swal-wide',
+                                                html: `<div class='h-96 overflow-y-auto'>
+                                                <img src="{{asset('img/Pembiayaan.png')}}" class="w-auto"/>
+                                                </div>`,
+                                                showCancelButton: true,
+                                            }).then((result) => {
+                                                if (result.isConfirmed) {
+                                                        location.href = '{{route('members-produk2')}}';
+                                                    }
+                                                })
+                                        @endif
                                 }
                                 })
                         } else if( value === 'cash') {

@@ -6,7 +6,11 @@
     </div>
     <div class="absolute top-0 left-0 right-0 z-0">
         {{-- header --}}
-        <x-general.header bgimg=""  title="Finance" height="8rem"/>
+        @if(Route::current()->uri == "members" || \Request::is("members/*") )
+            <x-general.header bgimg=""  title="PEMBIAYAAN" height="8rem"/>
+        @else
+            <x-general.header bgimg=""  title="Finance" height="8rem"/>
+        @endif
         {{-- body --}}
         <div class="mx-auto px-0 my-3 text-lg leading-6 font-medium text-cool-gray-900 sm:px-6 lg:px-8">
             <div class="bg-white sm:rounded-lg shadow px-5 py-3">
@@ -23,16 +27,16 @@
                                             <p>Name: <span>MOHD AIZUDDIN BIN MOHD YUSOFF</span></p>
                                             <p>Account: <span>{{$account_no}}</span></p>
                                         </div>
-                                        <a href="{{route('siskop.member.individual.show', 1)}}" >
+                                        {{-- <a href="{{route('siskop.member.individual.show', 1)}}" >
                                             <div class="printHide rounded-full  flex items-center py-2 px-2  text-bold justify-center bg-white">
                                                 <x-heroicon-o-arrow-left class="h-4 w-4 text-indigo-700"/>
                                             </div>
-                                        </a>
+                                        </a> --}}
                                     </div>
                                 </div>
                             </div>
                             <div class="flex overflow-x-auto">
-                                <x-hovertab.title name="0"><x-heroicon-o-clipboard-list class="w-6 h-6 mr-2"/>
+                                {{-- <x-hovertab.title name="0"><x-heroicon-o-clipboard-list class="w-6 h-6 mr-2"/>
                                     <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Account Master</span>
                                 </x-hovertab.title>
                                 <x-hovertab.title name="1"><x-heroicon-o-device-mobile class="w-6 h-6 mr-2"/>
@@ -40,18 +44,18 @@
                                 </x-hovertab.title>
                                 <x-hovertab.title name="5"><x-heroicon-o-play class="w-6 h-6 mr-2"/>
                                     <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Repayment Schedule</span>
-                                </x-hovertab.title>
-                                <x-hovertab.title name="6"><x-heroicon-o-play class="w-6 h-6 mr-2"/>
+                                </x-hovertab.title> --}}
+                                <x-hovertab.title name="0"><x-heroicon-o-play class="w-6 h-6 mr-2"/>
                                     <span class="text-sm tooltip-text bg-indigo-500 border rounded border-indigo-500 text-white -mt-14">Statements</span>
                                 </x-hovertab.title>
                             </div>
                         </x-general.card>
                     </div>
                     <div class="col-span-12 lg:col-span-12 xxl:col-span-12">
-                        <x-hovertab.content name="0">@livewire('page.siskop.finance.master', ['uuid' => $uuid])</x-hovertab.content>
+                        {{-- <x-hovertab.content name="0">@livewire('page.siskop.finance.master', ['uuid' => $uuid])</x-hovertab.content>
                         <x-hovertab.content name="1">@livewire('page.siskop.finance.position', ['uuid' => $uuid])</x-hovertab.content>
-                        <x-hovertab.content name="5">@livewire('page.siskop.finance.repayment-schedule', ['uuid' => $uuid])</x-hovertab.content>
-                        <x-hovertab.content name="6">@livewire('page.siskop.finance.statements',['uuid' => $uuid])</x-hovertab.content>
+                        <x-hovertab.content name="5">@livewire('page.siskop.finance.repayment-schedule', ['uuid' => $uuid])</x-hovertab.content> --}}
+                        <x-hovertab.content name="0">@livewire('page.siskop.finance.statements',['uuid' => $uuid])</x-hovertab.content>
                     </div>
                 </div>
             </div>
