@@ -30,7 +30,15 @@
                 </x-slot>
             </x-dashboard.info-card>
         </x-general.grid>
+        <x-general.grid mobile="1" gap="5" sm="1" md="1" lg="2" xl="2" class="col-span-6 mt-8">
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <div class="" id="chartline"></div>
+            </div>
 
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <div class="" id="chartpie"></div>
+            </div>
+        </x-general.grid>
         <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="1" xl="1" class="col-span-6 items-center mt-8">
             <div class="bg-white p-4 shadow-lg rounded-lg">
                 <h1 class="font-semibold text-lg">PERMOHONAN YANG MASIH MENUNGGU KELULUSAN</h1>
