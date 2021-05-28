@@ -32,7 +32,7 @@
                         </x-general.table-body>
                         {{--  --}}
                         <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
-                            <x-general.button.icon href="#" target="" label="View"
+                            <x-general.button.icon href="{{route('member-show',1)}}" target="" label="View"
                                 color="indigo" livewire="">
                                 <x-heroicon-o-eye class="-ml-0.5 mr-2 h-4 w-4" />
                             </x-general.button.icon>
@@ -55,7 +55,7 @@
                             <p>0.00</p>
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-center font-medium text-gray-900">
-                            <x-general.button.icon href="#" target="" label="View"
+                            <x-general.button.icon href="{{route('member-show',2)}}" target="" label="View"
                                 color="indigo" livewire="">
                                 <x-heroicon-o-eye class="-ml-0.5 mr-2 h-4 w-4" />
                             </x-general.button.icon>

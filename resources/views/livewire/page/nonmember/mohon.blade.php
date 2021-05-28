@@ -209,6 +209,11 @@
             dibuat dari masa ke semasa.<br>
         4.	Saya mengaku bahawa segala maklumat yang saya berikan adalah benar.
             </p></div>`,
+            
+        }).then((result) => {
+            if (result.isConfirmed) {
+                location.href = '{{route('non-member2')}}'; 
+            }
         })
     }
 </script>

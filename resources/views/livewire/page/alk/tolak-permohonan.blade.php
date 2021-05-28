@@ -245,7 +245,7 @@
 
                                 </x-table.table-body>
 
-                                <x-table.table-body colspan="" class="text-center text-sm font-medium text-gray-700">
+                                <x-table.table-body colspan="" class="text-left text-sm font-medium text-gray-700">
                                     <p>-</p>
                                 </x-table.table-body>
 

@@ -46,6 +46,7 @@ Route::middleware('guest')->group(function () {
 
     //NON-MEMBER
     Route::get('nonmembers', [NonMemberController::class, 'index'])->name('non-member');
+    Route::get('nonmembers/1', [NonMemberController::class, 'dashboard2'])->name('non-member2');
     Route::get('nonmembers/MohonAhli', [NonMemberController::class, 'mohon'])->name('mohon');
     Route::get('nonmembers/salinanIC', [NonMemberController::class, 'salinanIc'])->name('salinanIc');
     Route::get('nonmembers/suratLantikan', [NonMemberController::class, 'suratTawaran'])->name('suratTawaran');
@@ -62,6 +63,7 @@ Route::middleware('guest')->group(function () {
     Route::get('members/jaminan', [MembersController::class, 'jaminan'])->name('members-jaminan');
     Route::get('members/pembiayaan', [MembersController::class, 'pembiayaan'])->name('members-pembiayaan');
     Route::get('members/firasat', [MembersController::class, 'firasat'])->name('members-firasat');
+    Route::get('members/{uuid}', [SiskopController::class, 'finance_show'])->name('member-show');
 
     //member Details Trading
     Route::get('members/produk/trading/makananTersedia', [MembersController::class, 'tradingMakananTersedia'])->name('members.product.trading.makananTersedia');

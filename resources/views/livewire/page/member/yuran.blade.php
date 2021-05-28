@@ -2,6 +2,9 @@
     <div class="z-20 relative mx-auto px-0 my-3 text-lg leading-6 font-medium text-cool-gray-900">
         <x-general.grid mobile="1" gap="5" sm="1" md="2" lg="1" xl="1" class="col-span-6 items-center mt-8">
             <div class="px-4 py-4 bg-white rounded-lg">
+                <div class="flex  justify-end space-x-4 pr-6 pt-6">
+                    <x-form.input label="Jumlah Yuran (RM)" value="457.47" livewire="" readonly/>
+                </div>
                 <x-general.table>
                     <x-slot name="thead">
                         <x-general.table-header class="text-left" value="Tarikh" sort="" livewire="" />

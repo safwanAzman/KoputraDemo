@@ -13,6 +13,12 @@
                 <div class="flex justify-center">
                     @if(Route::current()->uri == "members" || \Request::is("members/*") )
                         <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                    @elseif(Route::current()->uri == "adminkoputra1/produk" || \Request::is("adminkoputra1/produk/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                    @elseif(Route::current()->uri == "alk1/produk" || \Request::is("alk1/produk/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                    @elseif(Route::current()->uri == "cscorp/produk" || \Request::is("cscorp/produk/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
                     @elseif(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
                         <div>
                             <div class="font-semibold text-red-700 text-md">Orang Awam - RM {{ $description2}} </div>
@@ -24,6 +30,12 @@
                 <div class="flex justify-center">
                     @if(Route::current()->uri == "members" || \Request::is("members/*") )
                         <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                    @elseif(Route::current()->uri == "adminkoputra1/produk" || \Request::is("adminkoputra1/produk/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                    @elseif(Route::current()->uri == "alk1/produk" || \Request::is("alk1/produk/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
+                    @elseif(Route::current()->uri == "cscorp/produk" || \Request::is("cscorp/produk/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description }}</div>
                     @elseif(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
                         <div>
                             <div class="font-semibold text-red-700 text-md">Orang Awam - RM {{ $description2 }}</div>
@@ -34,6 +46,12 @@
             @elseif ($type == 'homestay')
                 <div class="flex justify-center">
                     @if(Route::current()->uri == "members" || \Request::is("members/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description2 }}</div>
+                    @elseif(Route::current()->uri == "adminkoputra1/produk" || \Request::is("adminkoputra1/produk/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description2 }}</div>
+                    @elseif(Route::current()->uri == "alk1/produk" || \Request::is("alk1/produk/*") )
+                        <div class="font-semibold text-red-700 text-md">RM {{ $description2 }}</div>
+                    @elseif(Route::current()->uri == "cscorp/produk" || \Request::is("cscorp/produk/*") )
                         <div class="font-semibold text-red-700 text-md">RM {{ $description2 }}</div>
                     @elseif(Route::current()->uri == "nonmembers" || \Request::is("nonmembers/*") )
                         <div>
